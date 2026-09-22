@@ -1,11 +1,716 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
 <Layout>
-	<Welcome />
+  <main>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="/" class="brand">FINICKY BEE</a>
+
+        <nav>
+          <a href="#finds">Finicky Bee Finds</a>
+          <a href="#collection">Collection</a>
+          <a href="#research">Research</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">FINICKY BEE</p>
+
+        <h1>Preserving Moments in Time — One Collectible at a Time.</h1>
+
+        <p class="hero-text">
+          Exploring vintage and antique collectibles through research,
+          documentation, storytelling, and thoughtful preservation.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#finds" class="button button-primary">
+            Explore Finicky Bee Finds
+          </a>
+
+          <a href="#collection" class="button button-secondary">
+            Explore the Collection
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="narrow">
+        <p class="eyebrow">WHAT IS FINICKY BEE?</p>
+
+        <h2>A collector's journey from discovery to preservation.</h2>
+
+        <p>
+          Finicky Bee is an independent collecting and research project
+          dedicated to discovering meaningful objects from the past and
+          documenting the stories behind them.
+        </p>
+
+        <p>
+          Each find begins with curiosity. Through careful observation,
+          research, photography, and documentation, objects become part of
+          a growing record of material history.
+        </p>
+      </div>
+    </section>
+
+    <section id="finds" class="feature section">
+      <div class="feature-image">
+        <div class="image-placeholder">
+          <span>FINICKY BEE FINDS</span>
+        </div>
+      </div>
+
+      <div class="feature-content">
+        <p class="eyebrow">DOCUMENTARY SERIES</p>
+
+        <h2>Every object has a story.</h2>
+
+        <p>
+          Finicky Bee Finds is a documentary series exploring the objects,
+          histories, makers, materials, and discoveries behind collectible
+          finds.
+        </p>
+
+        <p>
+          From an unexpected discovery to a carefully researched archive
+          record, each episode follows the journey of an object through
+          evidence and documentation.
+        </p>
+
+        <a href="#research" class="text-link">
+          Discover the stories →
+        </a>
+      </div>
+    </section>
+
+    <section class="process section">
+      <div class="narrow">
+        <p class="eyebrow">FROM FIND TO ARCHIVE</p>
+
+        <h2>A thoughtful process for every discovery.</h2>
+      </div>
+
+      <div class="process-grid">
+        <article>
+          <span>01</span>
+          <h3>Discover</h3>
+          <p>Find objects with potential historical, cultural, or collecting interest.</p>
+        </article>
+
+        <article>
+          <span>02</span>
+          <h3>Research</h3>
+          <p>Examine evidence, marks, materials, construction, and documented history.</p>
+        </article>
+
+        <article>
+          <span>03</span>
+          <h3>Document</h3>
+          <p>Record observations, research findings, photographs, and supporting details.</p>
+        </article>
+
+        <article>
+          <span>04</span>
+          <h3>Preserve</h3>
+          <p>Create a lasting record that helps keep the object's story connected to it.</p>
+        </article>
+
+        <article>
+          <span>05</span>
+          <h3>Share</h3>
+          <p>Tell the story through collections, research, documentaries, and educational content.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="collection" class="collection section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">COLLECTION / ARCHIVE</p>
+          <h2>Objects worth remembering.</h2>
+        </div>
+
+        <a href="#collection" class="text-link">View the archive →</a>
+      </div>
+
+      <div class="collection-grid">
+        <article class="collection-card">
+          <div class="card-placeholder"></div>
+          <div class="card-content">
+            <p class="archive-number">FBA ARCHIVE</p>
+            <h3>Featured collectible</h3>
+            <p>Research and documentation coming soon.</p>
+          </div>
+        </article>
+
+        <article class="collection-card">
+          <div class="card-placeholder"></div>
+          <div class="card-content">
+            <p class="archive-number">FBA ARCHIVE</p>
+            <h3>Featured collectible</h3>
+            <p>Research and documentation coming soon.</p>
+          </div>
+        </article>
+
+        <article class="collection-card">
+          <div class="card-placeholder"></div>
+          <div class="card-content">
+            <p class="archive-number">FBA ARCHIVE</p>
+            <h3>Featured collectible</h3>
+            <p>Research and documentation coming soon.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="research" class="research section">
+      <div class="research-content">
+        <p class="eyebrow">RESEARCH & STORIES</p>
+
+        <h2>Look closer. Ask questions. Follow the evidence.</h2>
+
+        <p>
+          Finicky Bee research focuses on identifying objects responsibly,
+          documenting physical observations, studying makers and materials,
+          and separating established information from uncertainty.
+        </p>
+
+        <p>
+          The goal is not simply to identify an object. It is to understand
+          what can be supported by evidence and preserve that knowledge for
+          future reference.
+        </p>
+
+        <a href="#research" class="button button-secondary">
+          Read the Research
+        </a>
+      </div>
+    </section>
+
+    <section class="mission section">
+      <div class="narrow">
+        <p class="eyebrow">SUPPORT THE MISSION</p>
+
+        <h2>Preservation is sustained by meaningful work.</h2>
+
+        <p>
+          Finicky Bee is an independent business. Collectibles may be offered
+          for sale through selected marketplaces and other channels.
+        </p>
+
+        <p>
+          Purchases and other support help sustain the time, research,
+          documentation, photography, preservation, and storytelling that
+          make the Finicky Bee mission possible.
+        </p>
+      </div>
+    </section>
+
+    <section class="where-to-find section">
+      <div class="narrow">
+        <p class="eyebrow">WHERE TO FIND FINICKY BEE</p>
+
+        <h2>Follow the collection wherever it travels.</h2>
+
+        <p>
+          Finicky Bee collectibles and stories may appear across several
+          marketplaces and platforms.
+        </p>
+
+        <div class="platform-list">
+          <span>eBay</span>
+          <span>Etsy</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="about-content">
+        <p class="eyebrow">ABOUT THE FOUNDER</p>
+
+        <h2>Built from curiosity, care, and a love of objects with stories.</h2>
+
+        <p>
+          Finicky Bee was created as an independent collecting and research
+          project with a simple belief: ordinary-looking objects can carry
+          extraordinary stories.
+        </p>
+
+        <p>
+          The work combines collecting, research, documentation,
+          entrepreneurship, and storytelling while keeping authenticity,
+          transparency, and responsible research at the center.
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-brand">FINICKY BEE</p>
+        <p>Preserving Moments in Time — One Collectible at a Time.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#collection">Collection</a>
+        <a href="#finds">Finicky Bee Finds</a>
+      </div>
+
+      <p class="copyright">
+        © {new Date().getFullYear()} Finicky Bee. All rights reserved.
+      </p>
+    </footer>
+  </main>
 </Layout>
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #f7f3e9;
+    color: #302f2a;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  :global(a) {
+    color: inherit;
+  }
+
+  .site-header {
+    background: #f7f3e9;
+    border-bottom: 1px solid #ddd6c7;
+  }
+
+  .header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .brand {
+    color: #2f4f3f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    gap: 24px;
+    font-size: 0.9rem;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  nav a:hover,
+  .text-link:hover {
+    color: #a77c16;
+  }
+
+  .hero {
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    background:
+      linear-gradient(
+        rgba(47, 79, 63, 0.86),
+        rgba(47, 79, 63, 0.92)
+      );
+    color: #fffaf0;
+  }
+
+  .hero-content {
+    width: min(1000px, calc(100% - 56px));
+    margin: 0 auto;
+    padding: 90px 0;
+  }
+
+  .eyebrow {
+    margin: 0 0 18px;
+    color: #a77c16;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+  }
+
+  .hero .eyebrow {
+    color: #e4c36b;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+  }
+
+  h1 {
+    max-width: 850px;
+    margin: 0;
+    font-size: clamp(3rem, 7vw, 6.5rem);
+    line-height: 0.98;
+  }
+
+  h2 {
+    margin: 0 0 25px;
+    color: #2f4f3f;
+    font-size: clamp(2.1rem, 4vw, 4rem);
+    line-height: 1.05;
+  }
+
+  h3 {
+    margin: 8px 0;
+    font-size: 1.5rem;
+  }
+
+  p {
+    line-height: 1.75;
+  }
+
+  .hero-text {
+    max-width: 680px;
+    margin: 32px 0;
+    font-size: 1.15rem;
+    line-height: 1.7;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 14px 21px;
+    border: 1px solid #d4a437;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .button-primary {
+    background: #d4a437;
+    color: #2f342d;
+  }
+
+  .button-secondary {
+    background: transparent;
+    color: #2f4f3f;
+  }
+
+  .hero .button-secondary {
+    color: #fffaf0;
+    border-color: #fffaf0;
+  }
+
+  .section {
+    padding: 110px 28px;
+  }
+
+  .narrow {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    text-align: center;
+  }
+
+  .intro p,
+  .mission p,
+  .where-to-find p {
+    font-size: 1.08rem;
+  }
+
+  .feature {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+  }
+
+  .feature-image {
+    min-height: 560px;
+  }
+
+  .image-placeholder {
+    height: 100%;
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d8d2c3;
+    color: #2f4f3f;
+    font-family: Georgia, "Times New Roman", serif;
+    letter-spacing: 0.12em;
+  }
+
+  .feature-content {
+    max-width: 520px;
+  }
+
+  .feature-content p {
+    font-size: 1.05rem;
+  }
+
+  .text-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #2f4f3f;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .process {
+    background: #e8ebe4;
+  }
+
+  .process-grid {
+    max-width: 1200px;
+    margin: 60px auto 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+  }
+
+  .process-grid article {
+    border-top: 1px solid #9da89d;
+    padding-top: 20px;
+  }
+
+  .process-grid span {
+    color: #a77c16;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .process-grid p {
+    font-size: 0.92rem;
+  }
+
+  .section-heading {
+    max-width: 1200px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 30px;
+  }
+
+  .collection-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .collection-card {
+    background: #fffaf0;
+    border: 1px solid #ddd6c7;
+  }
+
+  .card-placeholder {
+    height: 330px;
+    background: #d8d2c3;
+  }
+
+  .card-content {
+    padding: 25px;
+  }
+
+  .archive-number {
+    margin: 0;
+    color: #a77c16;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+  }
+
+  .card-content p:last-child {
+    margin-bottom: 0;
+  }
+
+  .research {
+    background: #2f4f3f;
+    color: #f7f3e9;
+  }
+
+  .research-content {
+    max-width: 850px;
+    margin: 0 auto;
+  }
+
+  .research h2 {
+    color: #fffaf0;
+  }
+
+  .research p {
+    font-size: 1.08rem;
+  }
+
+  .research .button-secondary {
+    margin-top: 20px;
+    color: #fffaf0;
+    border-color: #d4a437;
+  }
+
+  .mission {
+    text-align: center;
+  }
+
+  .where-to-find {
+    background: #e8ebe4;
+    text-align: center;
+  }
+
+  .platform-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 35px;
+  }
+
+  .platform-list span {
+    padding: 12px 18px;
+    border: 1px solid #aeb7ad;
+    background: #f7f3e9;
+  }
+
+  .about {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-content {
+    max-width: 750px;
+  }
+
+  .site-footer {
+    padding: 60px 28px;
+    background: #243c30;
+    color: #f7f3e9;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    margin: 0 0 10px;
+    color: #e4c36b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.14em;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    text-decoration: none;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    margin: 20px 0 0;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 800px) {
+    .header-inner {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    nav {
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 12px 18px;
+    }
+
+    .hero {
+      min-height: 620px;
+    }
+
+    .section {
+      padding: 80px 22px;
+    }
+
+    .feature {
+      grid-template-columns: 1fr;
+      gap: 45px;
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .collection-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .site-footer {
+      grid-template-columns: 1fr;
+    }
+
+    .copyright {
+      grid-column: auto;
+    }
+  }
+
+  @media (max-width: 520px) {
+    h1 {
+      font-size: 3rem;
+    }
+
+    .hero-actions {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .button {
+      text-align: center;
+    }
+
+    .process-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
