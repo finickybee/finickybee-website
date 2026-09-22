@@ -1,0 +1,366 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="/" class="brand">FINICKY BEE</a>
+
+        <nav>
+          <a href="/">Home</a>
+          <a href="/#finds">Finicky Bee Finds</a>
+          <a href="/#collection">Collection</a>
+          <a href="/#research">Research</a>
+          <a href="/#about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="legal-hero">
+      <div class="narrow">
+        <p class="eyebrow">PRIVACY</p>
+        <h1>Privacy Policy</h1>
+        <p class="intro">
+          Finicky Bee respects privacy and is committed to handling
+          information responsibly and transparently.
+        </p>
+        <p class="updated">Effective September 22, 2026</p>
+      </div>
+    </section>
+
+    <section class="legal-content section">
+      <div class="narrow">
+        <h2>About This Policy</h2>
+
+        <p>
+          This Privacy Policy explains how Finicky Bee ("Finicky Bee,"
+          "we," "us," or "our") handles information in connection with
+          the Finicky Bee website and its related public content.
+        </p>
+
+        <p>
+          Finicky Bee is an independent collecting, research,
+          documentation, storytelling, and resale business.
+        </p>
+
+        <h2>Information We Collect</h2>
+
+        <p>
+          The Finicky Bee website does not currently provide user accounts,
+          direct checkout, or forms designed to collect personal information
+          from visitors.
+        </p>
+
+        <p>
+          Like most websites, basic technical information may be processed
+          by the website's hosting or infrastructure providers when a visitor
+          accesses the site. This may include information such as IP address,
+          browser type, device information, requested pages, and access times.
+          Such information is generally used for security, reliability,
+          maintenance, and basic website operation.
+        </p>
+
+        <h2>Marketplace Transactions</h2>
+
+        <p>
+          Finicky Bee may offer collectibles for sale through third-party
+          marketplaces, including eBay and Etsy.
+        </p>
+
+        <p>
+          When you visit or purchase through a third-party marketplace,
+          that marketplace's own privacy policy and terms apply to the
+          information you provide there. Finicky Bee does not control the
+          privacy practices of those third-party services.
+        </p>
+
+        <h2>Cookies and Similar Technologies</h2>
+
+        <p>
+          The Finicky Bee website is designed to provide public informational
+          content and does not currently require visitors to create an account
+          or provide personal information in order to browse the site.
+        </p>
+
+        <p>
+          Third-party hosting, embedded services, or future website features
+          may use cookies or similar technologies. If these technologies are
+          introduced in a way that materially changes how personal information
+          is collected or used, this Privacy Policy may be updated.
+        </p>
+
+        <h2>How Information Is Used</h2>
+
+        <p>
+          Information that may be available through normal website operation
+          is used only as reasonably necessary to operate, secure, maintain,
+          and improve the website and its public content.
+        </p>
+
+        <p>
+          Finicky Bee does not use this website to build a buyer database,
+          customer relationship management system, or personal profile
+          database.
+        </p>
+
+        <h2>Third-Party Websites</h2>
+
+        <p>
+          The Finicky Bee website may contain links to third-party websites,
+          marketplaces, social platforms, or other external resources.
+          Finicky Bee is not responsible for the privacy practices, security,
+          content, or policies of those external services.
+        </p>
+
+        <p>
+          Visitors should review the privacy policies and terms of any
+          third-party service before providing personal information.
+        </p>
+
+        <h2>Children's Privacy</h2>
+
+        <p>
+          The Finicky Bee website is not designed to knowingly collect
+          personal information from children.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+
+        <p>
+          Finicky Bee may update this Privacy Policy when the website,
+          business practices, or applicable requirements change. The updated
+          version will be posted on this page with a revised effective date.
+        </p>
+
+        <h2>Questions</h2>
+
+        <p>
+          If you need to contact Finicky Bee regarding this Privacy Policy or
+the handling of information described in this policy, please email
+info@finickybee.com.
+
+For orders or transactions made through a third-party marketplace,
+please use the communication tools provided by the marketplace
+associated with that order.
+        </p>
+
+        <p class="legal-note">
+          This Privacy Policy is intended as general website information and
+          should be reviewed and adapted for the specific legal and operational
+          requirements of the business.
+        </p>
+
+        <a href="/" class="text-link">← Return to Finicky Bee</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-brand">FINICKY BEE</p>
+        <p>Preserving Moments in Time — One Collectible at a Time.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="/#about">About</a>
+        <a href="/#research">Research</a>
+        <a href="/#collection">Collection</a>
+        <a href="/#finds">Finicky Bee Finds</a>
+      </div>
+
+      <p class="copyright">
+        © {new Date().getFullYear()} Finicky Bee. All rights reserved.
+      </p>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    background: #f7f3ea;
+    color: #30302c;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+  }
+
+  .site-header {
+    border-bottom: 1px solid rgba(47, 79, 63, 0.15);
+    background: #f7f3ea;
+  }
+
+  .header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 22px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .brand {
+    color: #2f4f3f;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-decoration: none;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  nav a {
+    color: #30302c;
+    text-decoration: none;
+    font-size: 0.92rem;
+  }
+
+  nav a:hover,
+  .text-link:hover {
+    color: #2f4f3f;
+  }
+
+  .legal-hero {
+    padding: 100px 28px 70px;
+    background: #efe9dc;
+  }
+
+  .narrow {
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    margin: 0 0 14px;
+    color: #8b6b1f;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+
+  h1,
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #2f4f3f;
+    font-weight: 500;
+  }
+
+  h1 {
+    margin: 0 0 24px;
+    font-size: clamp(2.8rem, 6vw, 4.8rem);
+    line-height: 1.05;
+  }
+
+  h2 {
+    margin: 52px 0 16px;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  h2:first-child {
+    margin-top: 0;
+  }
+
+  .intro {
+    max-width: 700px;
+    margin: 0 0 18px;
+    font-size: 1.15rem;
+  }
+
+  .updated {
+    margin: 0;
+    color: #68685f;
+    font-size: 0.9rem;
+  }
+
+  .legal-content {
+    padding: 80px 28px;
+  }
+
+  .legal-content p {
+    margin: 0 0 18px;
+  }
+
+  .legal-note {
+    margin-top: 60px !important;
+    padding-top: 24px;
+    border-top: 1px solid rgba(47, 79, 63, 0.15);
+    color: #68685f;
+    font-size: 0.9rem;
+  }
+
+  .text-link {
+    display: inline-block;
+    margin-top: 28px;
+    color: #2f4f3f;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .site-footer {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 55px 28px;
+    border-top: 1px solid rgba(47, 79, 63, 0.15);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+  }
+
+  .footer-brand {
+    margin: 0 0 8px;
+    color: #2f4f3f;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 22px;
+  }
+
+  .footer-links a {
+    color: #30302c;
+    text-decoration: none;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    margin: 20px 0 0;
+    color: #68685f;
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 760px) {
+    .header-inner {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    nav {
+      gap: 12px 18px;
+    }
+
+    .legal-hero {
+      padding: 70px 22px 55px;
+    }
+
+    .legal-content {
+      padding: 60px 22px;
+    }
+
+    .site-footer {
+      grid-template-columns: 1fr;
+      padding: 45px 22px;
+    }
+
+    .copyright {
+      grid-column: auto;
+    }
+  }
+</style>
