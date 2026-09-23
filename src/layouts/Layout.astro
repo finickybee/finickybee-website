@@ -25,6 +25,17 @@ const {
 	content={description}
 />
 <link rel="canonical" href={`https://finickybee.com${Astro.url.pathname}`} />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Finicky Bee" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={`https://finickybee.com${Astro.url.pathname}`} />
+<meta property="og:image" content="https://finickybee.com/finicky-bee-og-image.png" />
+<meta property="og:image:alt" content="Finicky Bee logo" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content="https://finickybee.com/finicky-bee-og-image.png" />
 	</head>
 	<body>
 		<slot />
