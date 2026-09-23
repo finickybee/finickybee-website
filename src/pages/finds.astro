@@ -1,0 +1,440 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="/" class="brand">FINICKY BEE</a>
+
+        <nav>
+          <a href="/finds">Finicky Bee Finds</a>
+          <a href="/#collection">Collection</a>
+          <a href="/#research">Research</a>
+          <a href="/about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="narrow">
+        <p class="eyebrow">FINICKY BEE FINDS</p>
+
+        <h1>Every object has a story.</h1>
+
+        <p class="hero-text">
+          A documentary series exploring the objects, histories, makers,
+          materials, and discoveries behind collectible finds.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="narrow">
+        <p class="eyebrow">THE SERIES</p>
+
+        <h2>From unexpected discovery to documented story.</h2>
+
+        <p>
+          Finicky Bee Finds follows the journey of collectible objects from
+          the moment they are discovered through research, documentation,
+          photography, and storytelling.
+        </p>
+
+        <p>
+          Each find begins with curiosity. What is it? Who made it? When was
+          it made? What was it used for? What evidence can help tell its story?
+        </p>
+
+        <p>
+          The answers are not always immediate, and they are not always
+          certain. The documentary process follows the evidence and preserves
+          the questions that remain.
+        </p>
+      </div>
+    </section>
+
+    <section class="section finds-process">
+      <div class="narrow">
+        <p class="eyebrow">BEHIND EACH FIND</p>
+
+        <h2>Look closer. Follow the evidence.</h2>
+
+        <div class="process-list">
+          <article>
+            <span>01</span>
+            <div>
+              <h3>Discovery</h3>
+              <p>
+                An object catches the eye and begins its journey through the
+                Finicky Bee process.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>02</span>
+            <div>
+              <h3>Observation</h3>
+              <p>
+                Physical characteristics, materials, construction, marks,
+                labels, and other visible evidence are carefully examined.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>03</span>
+            <div>
+              <h3>Research</h3>
+              <p>
+                Available evidence is studied alongside documented sources,
+                maker information, historical references, and comparable
+                examples.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>04</span>
+            <div>
+              <h3>Documentation</h3>
+              <p>
+                Findings, observations, photographs, and supporting details
+                become part of the object's record.
+              </p>
+            </div>
+          </article>
+
+          <article>
+            <span>05</span>
+            <div>
+              <h3>Storytelling</h3>
+              <p>
+                The research becomes a documentary story that helps connect
+                the object with the people, places, materials, and history
+                surrounding it.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section documentary-note">
+      <div class="narrow">
+        <p class="eyebrow">A RECORD OF DISCOVERY</p>
+
+        <h2>Not every mystery has an immediate answer.</h2>
+
+        <p>
+          Finicky Bee Finds does not treat uncertainty as something that needs
+          to be hidden. When evidence is incomplete or conflicting, the
+          uncertainty becomes part of the story.
+        </p>
+
+        <p>
+          The goal is to document what can reasonably be supported, identify
+          what remains unknown, and preserve the research journey for future
+          reference.
+        </p>
+      </div>
+    </section>
+
+    <section class="section archive-link">
+      <div class="narrow">
+        <p class="eyebrow">FROM STORY TO ARCHIVE</p>
+
+        <h2>Some discoveries become part of the Finicky Bee archive.</h2>
+
+        <p>
+          Research and documentation can turn a discovered object into a
+          lasting record, connecting the documentary story with the object's
+          broader history.
+        </p>
+
+        <a href="/#collection" class="text-link">
+          Explore the Collection →
+        </a>
+      </div>
+    </section>
+
+    <section class="section founder">
+      <div class="narrow">
+        <p class="eyebrow">THE WORK BEHIND THE STORIES</p>
+
+        <h2>Independent collecting, research, and documentation.</h2>
+
+        <p>
+          Finicky Bee Finds is an independently produced documentary series
+          created as part of the broader Finicky Bee collecting and research
+          project.
+        </p>
+
+        <p>
+          Collectibles may be offered for sale through selected marketplaces.
+          Those purchases help sustain the time, research, documentation,
+          photography, preservation, and storytelling behind the series.
+        </p>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-brand">FINICKY BEE</p>
+        <p>Preserving Moments in Time — One Collectible at a Time.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="/about">About</a>
+        <a href="/#research">Research</a>
+        <a href="/#collection">Collection</a>
+        <a href="/finds">Finicky Bee Finds</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+
+      <p class="copyright">
+        © {new Date().getFullYear()} Finicky Bee. All rights reserved.
+      </p>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    background: #f7f3ea;
+    color: #2f302c;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .site-header {
+    border-bottom: 1px solid #ddd6c8;
+    background: #f7f3ea;
+  }
+
+  .header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .brand,
+  nav a,
+  .footer-links a {
+    color: #2f4f3f;
+    text-decoration: none;
+  }
+
+  .brand {
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+
+  nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  nav a,
+  .footer-links a {
+    font-size: 0.92rem;
+  }
+
+  .page-hero {
+    padding: 110px 24px 90px;
+    background: #2f4f3f;
+    color: #f7f3ea;
+  }
+
+  .section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 90px 24px;
+  }
+
+  .narrow {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    margin: 0 0 18px;
+    color: #d4a437;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+
+  h1 {
+    max-width: 900px;
+    margin: 0;
+    font-size: clamp(2.7rem, 6vw, 5rem);
+  }
+
+  h2 {
+    margin: 0 0 28px;
+    color: #2f4f3f;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+  }
+
+  h3 {
+    margin: 0 0 10px;
+    color: #2f4f3f;
+    font-size: 1.45rem;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  .hero-text {
+    max-width: 720px;
+    margin: 28px 0 0;
+    font-size: 1.12rem;
+    line-height: 1.7;
+  }
+
+  .finds-process {
+    background: #ece7da;
+    max-width: none;
+  }
+
+  .process-list {
+    max-width: 780px;
+    margin: 45px auto 0;
+  }
+
+  .process-list article {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 24px;
+    padding: 28px 0;
+    border-top: 1px solid #d4a437;
+  }
+
+  .process-list article > span {
+    color: #d4a437;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .process-list p {
+    margin-top: 0;
+  }
+
+  .documentary-note {
+    background: #f7f3ea;
+  }
+
+  .archive-link {
+    background: #2f4f3f;
+    color: #f7f3ea;
+    max-width: none;
+  }
+
+  .archive-link h2 {
+    color: #f7f3ea;
+  }
+
+  .archive-link .text-link {
+    color: #f7f3ea;
+  }
+
+  .founder {
+    padding-bottom: 110px;
+  }
+
+  .text-link {
+    color: #2f4f3f;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .text-link:hover {
+    text-decoration: underline;
+  }
+
+  .site-footer {
+    background: #2f4f3f;
+    color: #f7f3ea;
+    padding: 55px 24px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+  }
+
+  .site-footer p {
+    margin: 0 0 8px;
+  }
+
+  .footer-brand {
+    color: #d4a437;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 22px;
+  }
+
+  .footer-links a {
+    color: #f7f3ea;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    padding-top: 25px;
+    border-top: 1px solid rgba(247, 243, 234, 0.2);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 700px) {
+    .header-inner {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    nav {
+      gap: 12px 18px;
+    }
+
+    .page-hero {
+      padding: 80px 24px 70px;
+    }
+
+    .section {
+      padding: 65px 24px;
+    }
+
+    .process-list article {
+      grid-template-columns: 42px 1fr;
+      gap: 16px;
+    }
+
+    .site-footer {
+      grid-template-columns: 1fr;
+    }
+
+    .copyright {
+      grid-column: auto;
+    }
+  }
+</style>
