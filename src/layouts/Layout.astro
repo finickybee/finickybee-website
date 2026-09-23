@@ -1,12 +1,30 @@
+---
+interface Props {
+	title?: string;
+	description?: string;
+}
+
+const {
+	title = 'Finicky Bee | Preserving Moments in Time',
+	description = 'Finicky Bee explores vintage and antique collectibles through research, documentation, storytelling, and thoughtful preservation.'
+} = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+                <link rel="apple-touch-icon" href="/finicky-bee-logo.svg" />
 		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta name="author" content="Finicky Bee" />
+		<title>{title}</title>
+                <meta
+	name="description"
+	content={description}
+/>
+<link rel="canonical" href={`https://finickybee.com${Astro.url.pathname}`} />
 	</head>
 	<body>
 		<slot />
