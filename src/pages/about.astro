@@ -1,0 +1,402 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="/" class="brand">FINICKY BEE</a>
+
+        <nav>
+          <a href="/#finds">Finicky Bee Finds</a>
+          <a href="/#collection">Collection</a>
+          <a href="/#research">Research</a>
+          <a href="/about">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="narrow">
+        <p class="eyebrow">ABOUT FINICKY BEE</p>
+
+        <h1>Preserving Moments in Time — One Collectible at a Time.</h1>
+
+        <p class="hero-text">
+          Finicky Bee is an independent collecting, research, documentation,
+          and storytelling project focused on vintage and antique collectibles.
+        </p>
+      </div>
+    </section>
+<section class="section">
+  <div class="narrow">
+    <p class="eyebrow">THE FINICKY BEE STORY</p>
+
+    <h2>Discovering, collecting, and preserving objects with stories to tell.</h2>
+
+    <p>
+      Finicky Bee is dedicated to discovering, collecting, researching, and
+      preserving vintage, antique, nostalgic, and collectible treasures.
+    </p>
+
+    <p>
+      We carefully select objects for their craftsmanship, history, character,
+      curiosity, or the connection they can inspire.
+    </p>
+
+    <p>
+      Some collectibles make us smile the moment we discover them. Others make
+      us stop and wonder who made them, how they were used, and what stories
+      they may have carried through time.
+    </p>
+
+    <p>
+      Whether a piece brings back a cherished memory, sparks curiosity, or
+      simply catches the eye, we believe objects from the past can continue
+      to have meaning long after their original moment has passed.
+    </p>
+  </div>
+</section>
+
+<section class="section about-values">
+  <div class="narrow">
+    <p class="eyebrow">WHAT MATTERS</p>
+
+    <h2>Respect for the objects and the people behind them.</h2>
+
+    <p>
+      We have deep respect for the artists, makers, manufacturers,
+      craftspeople, collectors, and caretakers whose creativity, skill, and
+      dedication allow remarkable objects to survive through time.
+    </p>
+
+    <p>
+      We believe collectibles deserve to be appreciated, cared for, researched,
+      documented, and preserved.
+    </p>
+
+    <div class="value-list">
+      <article>
+        <h3>Historical Preservation</h3>
+        <p>
+          Keeping meaningful objects and their stories connected through
+          careful documentation.
+        </p>
+      </article>
+
+      <article>
+        <h3>Research</h3>
+        <p>
+          Studying physical evidence, makers, materials, marks, and documented
+          sources.
+        </p>
+      </article>
+
+      <article>
+        <h3>Authenticity</h3>
+        <p>
+          Separating what can be supported by evidence from what remains
+          uncertain.
+        </p>
+      </article>
+
+      <article>
+        <h3>Transparency</h3>
+        <p>
+          Presenting research honestly without manufacturing certainty where
+          evidence is incomplete.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section mission">
+  <div class="narrow">
+    <p class="eyebrow">FROM DISCOVERY TO PRESERVATION</p>
+
+    <h2>Every discovery begins with curiosity.</h2>
+
+    <p>
+      Through careful observation, research, photography, and documentation,
+      Finicky Bee works to understand what an object can tell us.
+    </p>
+
+    <p>
+      The process also means recognizing what the available evidence cannot
+      establish. When information is uncertain, that uncertainty becomes part
+      of the record rather than something to be filled with assumptions.
+    </p>
+
+    <p>
+      Collectibles may be offered for sale through selected marketplaces.
+      Those purchases help sustain the time, research, documentation,
+      photography, preservation, and storytelling that make the Finicky Bee
+      mission possible.
+    </p>
+  </div>
+</section>
+
+<section class="section founder">
+  <div class="narrow">
+    <p class="eyebrow">THE FOUNDER</p>
+
+    <h2>A collector, researcher, and entrepreneur preserving stories through objects.</h2>
+
+    <p>
+      Finicky Bee was created as an independent collecting and research
+      project with a simple belief: ordinary-looking objects can carry
+      extraordinary stories.
+    </p>
+
+    <p>
+      The work brings together collecting, research, documentation,
+      entrepreneurship, and storytelling while keeping authenticity,
+      transparency, and responsible research at the center.
+    </p>
+
+    <a
+      href="https://www.linkedin.com/in/daisybox/"
+      class="text-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      View the Founder’s Professional Profile →
+    </a>
+  </div>
+</section>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-brand">FINICKY BEE</p>
+        <p>Preserving Moments in Time — One Collectible at a Time.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="/about">About</a>
+        <a href="/#research">Research</a>
+        <a href="/#collection">Collection</a>
+        <a href="/#finds">Finicky Bee Finds</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+
+      <p class="copyright">
+        © {new Date().getFullYear()} Finicky Bee. All rights reserved.
+      </p>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    background: #f7f3ea;
+    color: #2f302c;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .site-header {
+    border-bottom: 1px solid #ddd6c8;
+    background: #f7f3ea;
+  }
+
+  .header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .brand,
+  nav a,
+  .footer-links a {
+    color: #2f4f3f;
+    text-decoration: none;
+  }
+
+  .brand {
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+
+  nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  nav a,
+  .footer-links a {
+    font-size: 0.92rem;
+  }
+
+  .page-hero {
+    padding: 110px 24px 90px;
+    background: #2f4f3f;
+    color: #f7f3ea;
+  }
+
+  .section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 90px 24px;
+  }
+
+  .narrow {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    margin: 0 0 18px;
+    color: #d4a437;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+
+  h1 {
+    max-width: 900px;
+    margin: 0;
+    font-size: clamp(2.7rem, 6vw, 5rem);
+  }
+
+  h2 {
+    margin: 0 0 28px;
+    color: #2f4f3f;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+  }
+
+  h3 {
+    margin: 0 0 10px;
+    color: #2f4f3f;
+    font-size: 1.45rem;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  .hero-text {
+    max-width: 720px;
+    margin: 28px 0 0;
+    font-size: 1.12rem;
+    line-height: 1.7;
+  }
+
+  .value-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px;
+    margin-top: 45px;
+  }
+
+  .value-list article {
+    border-top: 1px solid #d4a437;
+    padding-top: 20px;
+  }
+
+  .mission {
+    background: #ece7da;
+    max-width: none;
+  }
+
+  .mission .narrow,
+  .founder .narrow {
+    max-width: 780px;
+  }
+
+  .founder {
+    padding-bottom: 110px;
+  }
+
+  .text-link {
+    color: #2f4f3f;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .text-link:hover {
+    text-decoration: underline;
+  }
+
+  .site-footer {
+    background: #2f4f3f;
+    color: #f7f3ea;
+    padding: 55px 24px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+  }
+
+  .site-footer p {
+    margin: 0 0 8px;
+  }
+
+  .footer-brand {
+    color: #d4a437;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 22px;
+  }
+
+  .footer-links a {
+    color: #f7f3ea;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    padding-top: 25px;
+    border-top: 1px solid rgba(247, 243, 234, 0.2);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 700px) {
+    .header-inner {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    nav {
+      gap: 12px 18px;
+    }
+
+    .page-hero {
+      padding: 80px 24px 70px;
+    }
+
+    .section {
+      padding: 65px 24px;
+    }
+
+    .value-list {
+      grid-template-columns: 1fr;
+    }
+
+    .site-footer {
+      grid-template-columns: 1fr;
+    }
+
+    .copyright {
+      grid-column: auto;
+    }
+  }
+</style>
