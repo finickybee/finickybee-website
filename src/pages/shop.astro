@@ -1,0 +1,410 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <main>
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="/" class="brand">FINICKY BEE</a>
+
+        <nav>
+          <a href="/finds">Finicky Bee Finds</a>
+          <a href="/collection">Collection</a>
+          <a href="/research">Research</a>
+          <a href="/about">About</a>
+          <a href="/shop">Shop</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-hero">
+      <div class="narrow">
+        <p class="eyebrow">SHOP FINICKY BEE</p>
+
+        <h1>Discover something with a story.</h1>
+
+        <p class="hero-text">
+          Selected vintage, antique, nostalgic, and collectible objects
+          discovered through the Finicky Bee collecting and research journey.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="narrow">
+        <p class="eyebrow">THE COLLECTION CONTINUES</p>
+
+        <h2>Objects discovered, researched, and ready for a new chapter.</h2>
+
+        <p>
+          Some objects discovered through Finicky Bee eventually become
+          available to collectors and curious admirers.
+        </p>
+
+        <p>
+          Each listing is presented with photographs, condition details, and
+          available research so you can look closely at the object before
+          deciding whether it belongs in your collection.
+        </p>
+
+        <p>
+          Browse the current selection through the marketplaces where Finicky
+          Bee sells.
+        </p>
+      </div>
+    </section>
+
+    <section class="section marketplace">
+      <div class="narrow">
+        <p class="eyebrow">WHERE TO SHOP</p>
+
+        <h2>Find Finicky Bee online.</h2>
+
+        <div class="marketplace-list">
+          <article>
+            <h3>eBay</h3>
+
+            <p>
+              Explore the broader Finicky Bee collection, including vintage
+              and antique collectibles, books, oddities, kitchen and dining
+              pieces, holiday items, and other discoveries.
+            </p>
+
+            <a
+              href="https://www.ebay.com/str/finickybee"
+              class="button button-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Shop Finicky Bee on eBay →
+            </a>
+          </article>
+
+          <article>
+            <h3>Etsy</h3>
+
+            <p>
+              Discover selected Finicky Bee collectibles and vintage finds
+              available through the Etsy marketplace.
+            </p>
+
+            <a
+              href="https://www.etsy.com/shop/FinickyBee"
+              class="button button-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Shop Finicky Bee on Etsy →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mission">
+      <div class="narrow">
+        <p class="eyebrow">SUPPORT THE WORK</p>
+
+        <h2>Every purchase helps sustain the journey.</h2>
+
+        <p>
+          Finicky Bee is an independent collecting and research project.
+          Purchases help support the time, research, documentation,
+          photography, preservation, and storytelling behind the collection.
+        </p>
+
+        <p>
+          Marketplace orders, messages, returns, and transaction-related
+          communication are handled through the marketplace associated with
+          the purchase.
+        </p>
+      </div>
+    </section>
+
+    <section class="section finds-link">
+      <div class="narrow">
+        <p class="eyebrow">BEFORE THE SHOP</p>
+
+        <h2>Every object has a story before it becomes a listing.</h2>
+
+        <p>
+          Follow selected discoveries through the Finicky Bee Finds
+          documentary series and see the research and documentation behind
+          the objects.
+        </p>
+
+        <a href="/finds" class="text-link">
+          Explore Finicky Bee Finds →
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-brand">FINICKY BEE</p>
+        <p>Preserving Moments in Time — One Collectible at a Time.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="/about">About</a>
+        <a href="/finds">Finicky Bee Finds</a>
+        <a href="/collection">Collection</a>
+        <a href="/research">Research</a>
+        <a href="/shop">Shop</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+
+      <p class="copyright">
+        © {new Date().getFullYear()} Finicky Bee. All rights reserved.
+      </p>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    background: #f7f3ea;
+    color: #2f302c;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .site-header {
+    border-bottom: 1px solid #ddd6c8;
+    background: #f7f3ea;
+  }
+
+  .header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .brand,
+  nav a,
+  .footer-links a {
+    color: #2f4f3f;
+    text-decoration: none;
+  }
+
+  .brand {
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+
+  nav {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+  }
+
+  nav a,
+  .footer-links a {
+    font-size: 0.92rem;
+  }
+
+  .page-hero {
+    padding: 110px 24px 90px;
+    background: #2f4f3f;
+    color: #f7f3ea;
+  }
+
+  .section {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 90px 24px;
+  }
+
+  .narrow {
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    margin: 0 0 18px;
+    color: #d4a437;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.15;
+  }
+
+  h1 {
+    max-width: 900px;
+    margin: 0;
+    font-size: clamp(2.7rem, 6vw, 5rem);
+  }
+
+  h2 {
+    margin: 0 0 28px;
+    color: #2f4f3f;
+    font-size: clamp(2rem, 4vw, 3.4rem);
+  }
+
+  h3 {
+    margin: 0 0 14px;
+    color: #2f4f3f;
+    font-size: 1.8rem;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  .hero-text {
+    max-width: 720px;
+    margin: 28px 0 0;
+    font-size: 1.12rem;
+    line-height: 1.7;
+  }
+
+  .marketplace {
+    background: #ece7da;
+    max-width: none;
+  }
+
+  .marketplace-list {
+    max-width: 780px;
+    margin: 45px auto 0;
+  }
+
+  .marketplace-list article {
+    padding: 35px 0;
+    border-top: 1px solid #d4a437;
+  }
+
+  .marketplace-list article:last-child {
+    border-bottom: 1px solid #d4a437;
+  }
+
+  .marketplace-list p {
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 14px 22px;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid #2f4f3f;
+  }
+
+  .button-primary {
+    background: #2f4f3f;
+    color: #f7f3ea;
+  }
+
+  .button-secondary {
+    background: transparent;
+    color: #2f4f3f;
+  }
+
+  .button:hover {
+    text-decoration: underline;
+  }
+
+  .mission {
+    background: #f7f3ea;
+  }
+
+  .finds-link {
+    background: #2f4f3f;
+    color: #f7f3ea;
+    max-width: none;
+  }
+
+  .finds-link h2 {
+    color: #f7f3ea;
+  }
+
+  .finds-link .text-link {
+    color: #f7f3ea;
+  }
+
+  .text-link {
+    color: #2f4f3f;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .text-link:hover {
+    text-decoration: underline;
+  }
+
+  .site-footer {
+    background: #2f4f3f;
+    color: #f7f3ea;
+    padding: 55px 24px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+  }
+
+  .site-footer p {
+    margin: 0 0 8px;
+  }
+
+  .footer-brand {
+    color: #d4a437;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 22px;
+  }
+
+  .footer-links a {
+    color: #f7f3ea;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    padding-top: 25px;
+    border-top: 1px solid rgba(247, 243, 234, 0.2);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 700px) {
+    .header-inner {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    nav {
+      gap: 12px 18px;
+    }
+
+    .page-hero {
+      padding: 80px 24px 70px;
+    }
+
+    .section {
+      padding: 65px 24px;
+    }
+
+    .site-footer {
+      grid-template-columns: 1fr;
+    }
+
+    .copyright {
+      grid-column: auto;
+    }
+  }
+</style>
