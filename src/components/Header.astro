@@ -1,0 +1,89 @@
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="brand" aria-label="Finicky Bee home">
+      <img src="/finicky-bee-logo.svg" alt="Finicky Bee" />
+    </a>
+
+    <nav aria-label="Main navigation">
+      <a href="/finds">Finicky Bee Finds</a>
+      <a href="/collection">Collection</a>
+      <a href="/research">Research</a>
+      <a href="/about">About</a>
+      <a href="/shop">Shop</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid #ddd6c8;
+    background: #f7f3ea;
+  }
+
+  .header-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 12px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .brand {
+    display: block;
+    flex-shrink: 0;
+  }
+
+  .brand img {
+    display: block;
+    height: 96px;
+    width: auto;
+    object-fit: contain;
+  }
+
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  nav a {
+    color: #2f4f3f;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  nav a:hover {
+    color: #a77c16;
+  }
+
+  @media (max-width: 760px) {
+    .header-inner {
+      padding: 10px 18px;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand img {
+      height: 64px;
+    }
+
+    nav {
+      justify-content: flex-start;
+      gap: 8px 16px;
+    }
+  }
+
+  @media (max-width: 560px) {
+    .header-inner {
+      align-items: flex-start;
+    }
+
+    nav {
+      flex: 1;
+      padding-top: 4px;
+    }
+  }
+</style>

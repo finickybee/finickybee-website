@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 ---
 
 <Layout
@@ -7,19 +8,7 @@ import Layout from '../layouts/Layout.astro';
   description="Read the Finicky Bee Terms of Use for information about using the website, research content, marketplace links, and related materials."
 >
   <main>
-    <header class="site-header">
-      <div class="header-inner">
-        <a href="/" class="brand">FINICKY BEE</a>
-
-        <nav>
-          <a href="/">Home</a>
-          <a href="/#finds">Finicky Bee Finds</a>
-          <a href="/#collection">Collection</a>
-          <a href="/#research">Research</a>
-          <a href="/#about">About</a>
-        </nav>
-      </div>
-    </header>
+   <Header />
 
     <section class="legal-hero">
       <div class="narrow">
@@ -220,41 +209,6 @@ import Layout from '../layouts/Layout.astro';
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.7;
   }
-
-  .site-header {
-    border-bottom: 1px solid rgba(47, 79, 63, 0.15);
-    background: #f7f3ea;
-  }
-
-  .header-inner {
-    max-width: 1180px;
-    margin: 0 auto;
-    padding: 22px 28px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-  }
-
-  .brand {
-    color: #2f4f3f;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-decoration: none;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 22px;
-  }
-
-  nav a {
-    color: #30302c;
-    text-decoration: none;
-    font-size: 0.92rem;
-  }
-
   nav a:hover,
   .text-link:hover {
     color: #2f4f3f;
@@ -373,15 +327,6 @@ import Layout from '../layouts/Layout.astro';
   }
 
   @media (max-width: 760px) {
-    .header-inner {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-
-    nav {
-      gap: 12px 18px;
-    }
-
     .legal-hero {
       padding: 70px 22px 55px;
     }
