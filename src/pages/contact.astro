@@ -1,0 +1,79 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout
+  title="Contact | Finicky Bee"
+  description="Contact Finicky Bee for general business, website, research-content, and other appropriate inquiries."
+>
+  <Header />
+
+  <main class="contact-page">
+    <section class="contact-content">
+      <h1>Contact Finicky Bee</h1>
+
+      <p>
+        For general business, website, or other appropriate inquiries, please
+        email:
+      </p>
+
+      <p>
+        <strong>
+          <a href="mailto:info@finickybee.com">info@finickybee.com</a>
+        </strong>
+      </p>
+
+      <h2>Marketplace orders and transactions</h2>
+
+      <p>
+        Please use the communication tools provided by the marketplace where
+        the transaction was made. Finicky Bee does not handle marketplace
+        order communication through this website.
+      </p>
+    </section>
+  </main>
+
+  <style>
+    .contact-page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 72px 28px 100px;
+    }
+
+    .contact-content {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin-bottom: 28px;
+      color: #2f4f3f;
+    }
+
+    h2 {
+      margin-top: 48px;
+      margin-bottom: 16px;
+      color: #2f4f3f;
+    }
+
+    p {
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    a {
+      color: #2f4f3f;
+    }
+
+    a:hover {
+      color: #a77c16;
+    }
+
+    @media (max-width: 560px) {
+      .contact-page {
+        padding: 48px 20px 72px;
+      }
+    }
+  </style>
+</Layout>
