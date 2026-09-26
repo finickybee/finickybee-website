@@ -1,0 +1,265 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import { collectibles } from "../../data/collectibles.js";
+
+export function getStaticPaths() {
+  return collectibles.map((collectible) => ({
+    params: { slug: collectible.findSlug },
+    props: { collectible },
+  }));
+}
+
+const { collectible } = Astro.props;
+---
+
+<Layout
+  title={`${collectible.title} | Finicky Bee Finds`}
+  description={`${collectible.shortDescription} Explore its Finicky Bee Finds story and documentation.`}
+>
+  <main>
+    <Header />
+
+    <section class="story-hero">
+      <div class="story-content">
+        <p class="eyebrow">FINICKY BEE FINDS</p>
+
+        <h1>{collectible.title}</h1>
+
+        <p class="story-intro">
+          {collectible.shortDescription}
+        </p>
+      </div>
+    </section>
+
+    <section class="story-section">
+      <div class="story-layout">
+        <div class="story-image">
+          <img
+            src={collectible.image}
+            alt={collectible.title}
+          />
+        </div>
+
+        <div class="story-text">
+          <p class="eyebrow">THE STORY</p>
+
+          <h2>Every object has a story.</h2>
+
+          <p>
+            This collectible is part of the Finicky Bee collecting and
+            research journey.
+          </p>
+
+          <p>
+            Its story will be documented through observation, research,
+            photography, and supporting evidence as the record develops.
+          </p>
+
+          <p>
+            Finicky Bee distinguishes documented information from uncertainty
+            and does not assume details that cannot be supported by evidence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section story-note">
+      <div class="narrow">
+        <p class="eyebrow">DOCUMENTATION</p>
+
+        <h2>From discovery to archive.</h2>
+
+        <p>
+          The Finicky Bee Finds series follows objects through discovery,
+          research, documentation, and preservation.
+        </p>
+
+        <a href="/finds" class="text-link">
+          Back to Finicky Bee Finds →
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-brand">FINICKY BEE</p>
+        <p>Preserving Moments in Time — One Collectible at a Time.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="/about">About</a>
+        <a href="/finds">Finicky Bee Finds</a>
+        <a href="/collection">Collection</a>
+        <a href="/research">Research</a>
+        <a href="/shop">Shop</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+
+      <p class="copyright">
+        © {new Date().getFullYear()} Finicky Bee. All rights reserved.
+      </p>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    background: #f7f3e9;
+    color: #302f2a;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .story-hero {
+    padding: 110px 28px 90px;
+    background: #2f4f3f;
+    color: #fffaf0;
+  }
+
+  .story-content {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .eyebrow {
+    margin: 0 0 18px;
+    color: #d4a437;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+
+  h1,
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(3rem, 7vw, 6rem);
+  }
+
+  h2 {
+    margin: 0 0 28px;
+    color: #2f4f3f;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  .story-intro {
+    max-width: 700px;
+    margin: 28px 0 0;
+    font-size: 1.15rem;
+  }
+
+  .story-section {
+    padding: 100px 28px;
+  }
+
+  .story-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 70px;
+    align-items: center;
+  }
+
+  .story-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .story-text {
+    max-width: 600px;
+  }
+
+  .story-note {
+    background: #e8ebe4;
+  }
+
+  .narrow {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .text-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #2f4f3f;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .text-link:hover {
+    color: #a77c16;
+  }
+
+  .site-footer {
+    padding: 60px 28px;
+    background: #243c30;
+    color: #f7f3e9;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    margin: 0 0 10px;
+    color: #e4c36b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.14em;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    color: #f7f3e9;
+    text-decoration: none;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    margin: 20px 0 0;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 700px) {
+    .story-hero {
+      padding: 80px 22px 70px;
+    }
+
+    .story-section {
+      padding: 70px 22px;
+    }
+
+    .story-layout {
+      grid-template-columns: 1fr;
+      gap: 45px;
+    }
+
+    .site-footer {
+      grid-template-columns: 1fr;
+    }
+
+    .copyright {
+      grid-column: auto;
+    }
+  }
+</style>

@@ -1,6 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import {
+  collectibles,
+  featuredSettings,
+} from '../data/collectibles.js';
+
+const automaticFeatured =
+  collectibles.find((collectible) => collectible.featured) ?? collectibles[0];
+
+const manualFeatured =
+  collectibles.find(
+    (collectible) =>
+      collectible.id === featuredSettings.manualCollectibleId
+  ) ?? automaticFeatured;
+
+const featuredCollectible =
+  featuredSettings.mode === "manual"
+    ? manualFeatured
+    : automaticFeatured;
 ---
 
 <Layout
@@ -12,27 +30,49 @@ import Header from '../components/Header.astro';
 <main>
 
     <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">FINICKY BEE</p>
+  <div class="hero-content">
+    <div class="hero-copy">
+      <p class="eyebrow">FINICKY BEE</p>
 
-        <h1>Preserving Moments in Time — One Collectible at a Time.</h1>
+      <h1>Preserving Moments in Time — One Collectible at a Time.</h1>
 
-        <p class="hero-text">
-          Exploring vintage and antique collectibles through research,
-          documentation, storytelling, and thoughtful preservation.
-        </p>
+      <p class="hero-intro">
+        Every object has a story.
+      </p>
 
-        <div class="hero-actions">
-          <a href="/finds" class="button button-primary">
-            Explore Finicky Bee Finds
-          </a>
+    </div>
 
-          <a href="#collection" class="button button-secondary">
-            Explore the Collection
-          </a>
-        </div>
-      </div>
-    </section>
+    <div class="featured-collectible">
+  <a
+    href={`/finds/${featuredCollectible.findSlug}`}
+    class="featured-image-link"
+  >
+    <img
+      src={featuredCollectible.image}
+      alt={featuredCollectible.title}
+    />
+  </a>
+
+  <div class="featured-caption">
+    <p class="featured-label">FEATURED COLLECTIBLE</p>
+    <h2>{featuredCollectible.title}</h2>
+    <p>{featuredCollectible.shortDescription}</p>
+  </div>
+
+  <div class="hero-actions">
+    <a
+      href={`/finds/${featuredCollectible.findSlug}`}
+      class="button primary"
+    >
+      Explore the Find
+    </a>
+    <a href="/collection" class="button secondary">
+      Explore the Collection
+    </a>
+  </div>
+</div>
+  </div>
+</section>
 
     <section class="intro section">
       <div class="narrow">
@@ -55,11 +95,14 @@ import Header from '../components/Header.astro';
     </section>
 
     <section id="finds" class="feature section">
-      <div class="feature-image">
-        <div class="image-placeholder">
-          <span>FINICKY BEE FINDS</span>
-        </div>
-      </div>
+  <div class="feature-image">
+    <a href="/finds" aria-label="Explore Finicky Bee Finds">
+      <img
+        src="/images/homepage/finds.jpg"
+        alt="Antique manual coffee grinder"
+      />
+    </a>
+  </div>
 
       <div class="feature-content">
         <p class="eyebrow">DOCUMENTARY SERIES</p>
@@ -78,9 +121,9 @@ import Header from '../components/Header.astro';
           evidence and documentation.
         </p>
 
-        <a href="#research" class="text-link">
-          Discover the stories →
-        </a>
+       <a href="/finds" class="text-link">
+  Discover the stories →
+</a>
       </div>
     </section>
 
@@ -124,22 +167,46 @@ import Header from '../components/Header.astro';
       </div>
     </section>
 
-    <section id="collection" class="collection section">
+        <section id="collection" class="collection section">
       <div class="section-heading">
         <div>
           <p class="eyebrow">COLLECTION / ARCHIVE</p>
           <h2>A growing archive of collected objects.</h2>
         </div>
-
-        <a href="#collection" class="text-link">View the archive →</a>
       </div>
 
       <div class="collection-grid">
-      </div>
-          </section>
+        <article class="collection-card">
+          <a href="/collection" class="collection-image-link">
+            <img
+              src="/images/homepage/collection.jpg"
+              alt="Collection of decorative illustrated plates displayed with books and a flower"
+            />
+          </a>
 
+          <div class="card-content">
+            <p class="archive-number">SELECTED FROM THE ARCHIVE</p>
+            <h3>Decorative Plate Collection</h3>
+            <p>A collection of illustrated plates preserved as part of the archive.</p>
+
+            <a href="/collection" class="text-link">
+              View the archive →
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
     <section id="research" class="research section">
-      <div class="research-content">
+  <div class="research-image">
+    <a href="/research" aria-label="Explore Finicky Bee research">
+      <img
+       src="/images/homepage/research.png"
+        alt="Research study of a ceramic sculpture with magnified maker markings"
+      />
+    </a>
+  </div>
+
+  <div class="research-content">
         <p class="eyebrow">RESEARCH & STORIES</p>
 
         <h2>Look closer. Follow the evidence.</h2>
@@ -156,7 +223,7 @@ import Header from '../components/Header.astro';
           future reference.
         </p>
 
-        <a href="#research" class="button button-secondary">
+                <a href="/research" class="button button-secondary">
           Read the Research
         </a>
       </div>
@@ -193,9 +260,22 @@ Finicky Bee mission possible.
         </p>
 
         <div class="platform-list">
-          <span>eBay</span>
-          <span>Etsy</span>
-        </div>
+  <a
+    href="https://www.ebay.com/str/finickybee"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    eBay
+  </a>
+
+  <a
+    href="https://www.etsy.com/shop/FinickyBee"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Etsy
+  </a>
+</div>
       </div>
     </section>
 
@@ -305,22 +385,110 @@ Finicky Bee mission possible.
     color: #a77c16;
   }
 
-  .hero {
-    min-height: 680px;
-    display: flex;
-    align-items: center;
-    background:
-      linear-gradient(
-        rgba(47, 79, 63, 0.86),
-        rgba(47, 79, 63, 0.92)
-      );
+       .hero {
+    background: #2f4f3f;
     color: #fffaf0;
   }
 
   .hero-content {
-    width: min(1000px, calc(100% - 56px));
+    width: min(1200px, calc(100% - 56px));
+    min-height: 520px;
     margin: 0 auto;
-    padding: 90px 0;
+    padding: 60px 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
+    gap: 60px;
+    align-items: center;
+  }
+
+  .hero-copy {
+    min-width: 0;
+  }
+
+  .hero h1 {
+    max-width: 680px;
+    margin: 0;
+    font-size: clamp(3rem, 5.5vw, 5.5rem);
+    line-height: 0.98;
+  }
+
+  .hero-intro {
+    margin: 28px 0 30px;
+    font-size: 1.1rem;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .hero .button {
+    display: inline-block;
+    padding: 14px 21px;
+    border: 1px solid #d4a437;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .hero .button.primary {
+    background: #d4a437;
+    color: #2f342d;
+  }
+
+  .hero .button.secondary {
+    background: transparent;
+    color: #fffaf0;
+    border-color: #fffaf0;
+  }
+
+    .featured-collectible {
+  width: 100%;
+  max-width: 420px;
+  justify-self: end;
+}
+
+  .featured-image-link {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+}
+
+.featured-image-link img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .featured-caption {
+    padding-top: 18px;
+  }
+
+  .featured-label {
+    margin: 0 0 8px;
+    color: #e4c36b;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+  }
+
+  .featured-caption h2 {
+    margin: 0 0 4px;
+    color: #fffaf0;
+    font-size: 1.5rem;
+  }
+
+  .featured-caption p:last-child {
+    margin: 0;
+    color: #f7f3e9;
+    font-size: 0.95rem;
   }
 
   .eyebrow {
@@ -431,7 +599,13 @@ Finicky Bee mission possible.
   }
 
   .feature-image {
-    min-height: 560px;
+    width: 100%;
+  }
+
+  .feature-image img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .image-placeholder {
@@ -498,17 +672,30 @@ Finicky Bee mission possible.
     gap: 30px;
   }
 
-  .collection-grid {
+    .collection-grid {
     max-width: 1200px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
   }
 
   .collection-card {
-    background: #fffaf0;
-    border: 1px solid #ddd6c7;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 55px;
+    align-items: center;
+  }
+
+  .collection-image-link {
+    display: block;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+  }
+
+  .collection-image-link img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .card-placeholder {
@@ -533,11 +720,28 @@ Finicky Bee mission possible.
   }
 
   .research {
-    background: #2f4f3f;
-    color: #f7f3e9;
-  }
+  background: #2f4f3f;
+  color: #f7f3e9;
+}
 
-  .research-content {
+.research-image {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+}
+
+.research-image a {
+  display: block;
+}
+
+.research-image img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.research-content {
     max-width: 850px;
     margin: 0 auto;
   }
@@ -574,9 +778,20 @@ Finicky Bee mission possible.
   }
 
   .platform-list span {
-    padding: 12px 18px;
-    border: 1px solid #aeb7ad;
+    display: inline-block;
+    min-width: 90px;
+    padding: 13px 22px;
+    border: 1px solid #2f4f3f;
     background: #f7f3e9;
+    color: #2f4f3f;
+    font-weight: 600;
+    text-align: center;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .platform-list span:hover {
+    background: #2f4f3f;
+    color: #fffaf0;
   }
 
   .about {
@@ -622,23 +837,23 @@ Finicky Bee mission possible.
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     font-size: 0.8rem;
   }
-
-  @media (max-width: 800px) {
-    .header-inner {
-      align-items: flex-start;
-      flex-direction: column;
+   
+  @media (max-width: 700px) {
+      .hero {
+      min-height: auto;
     }
 
-    nav {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 10px;
-  font-size: 0.8rem;
-}
+    .hero-content {
+      width: min(100% - 44px, 700px);
+      min-height: auto;
+      padding: 60px 0 70px;
+      grid-template-columns: 1fr;
+      gap: 45px;
+    }
 
-    .hero {
-      min-height: 620px;
+    .featured-collectible {
+      max-width: none;
+      justify-self: stretch;
     }
 
     .section {

@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import { collectibles } from '../data/collectibles.js';
 ---
 
 <Layout
@@ -111,6 +112,44 @@ import Header from '../components/Header.astro';
               </p>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+       
+    <section class="section collection-items">
+      <div class="narrow">
+        <p class="eyebrow">CURRENT ARCHIVE</p>
+
+        <h2>Selected objects in the collection.</h2>
+
+        <div class="collection-list">
+          {
+            collectibles.map((collectible) => (
+              <article class="collection-item">
+                <a href={`/finds/${collectible.findSlug}`}>
+                  <img
+                    src={collectible.image}
+                    alt={collectible.title}
+                  />
+                </a>
+
+                <div>
+                  <p class="eyebrow">FINICKY BEE FINDS</p>
+
+                  <h3>{collectible.title}</h3>
+
+                  <p>{collectible.shortDescription}</p>
+
+                  <a
+                    href={`/finds/${collectible.findSlug}`}
+                    class="text-link"
+                  >
+                    Explore the Find →
+                  </a>
+                </div>
+              </article>
+            ))
+          }
         </div>
       </div>
     </section>
@@ -299,8 +338,38 @@ import Header from '../components/Header.astro';
     margin-top: 0;
   }
 
-  .archive-note {
+    .collection-items {
     background: #f7f3ea;
+  }
+  .collection-items .narrow {
+    max-width: 1100px;
+  }
+
+  .collection-list {
+    margin-top: 45px;
+    display: grid;
+    gap: 55px;
+  }
+
+    .collection-item {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    gap: 70px;
+    align-items: center;
+  }
+
+  .collection-item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .collection-item .eyebrow {
+    margin-bottom: 12px;
+  }
+
+  .collection-item h3 {
+    margin-bottom: 16px;
   }
 
   .finds-link {
