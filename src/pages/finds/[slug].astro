@@ -11,6 +11,33 @@ export function getStaticPaths() {
 }
 
 const { collectible } = Astro.props;
+
+const photos = [
+  {
+    src: "/images/finds/vintage-iron/01-hero.jpg",
+    alt: "Front side view of the vintage cast iron charcoal box iron",
+  },
+  {
+    src: "/images/finds/vintage-iron/02-alternate.jpg",
+    alt: "Alternate view of the vintage cast iron charcoal box iron",
+  },
+  {
+    src: "/images/finds/vintage-iron/03-rooster-catch.jpg",
+    alt: "Figural rooster catch on the vintage cast iron charcoal box iron",
+  },
+  {
+    src: "/images/finds/vintage-iron/04-interior.jpg",
+    alt: "Interior charcoal chamber of the vintage cast iron box iron",
+  },
+  {
+    src: "/images/finds/vintage-iron/05-handle.jpg",
+    alt: "Turned hardwood handle and cast iron handle support",
+  },
+  {
+    src: "/images/finds/vintage-iron/06-soleplate.jpg",
+    alt: "Soleplate of the vintage cast iron box iron",
+  },
+];
 ---
 
 <Layout
@@ -21,45 +48,102 @@ const { collectible } = Astro.props;
     <Header />
 
     <section class="story-hero">
-      <div class="story-content">
-        <p class="eyebrow">FINICKY BEE FINDS</p>
+      <div class="story-hero-inner">
+        <div class="story-hero-image">
+         <img
+  src={photos[0].src}
+  alt={photos[0].alt}
+/>
+        </div>
 
-        <h1>{collectible.title}</h1>
+        <div class="story-content">
+          <p class="eyebrow">
+  FINICKY BEE FINDS · {collectible.documentaryNumber} · {collectible.archiveNumber}
+</p>
 
-        <p class="story-intro">
-          {collectible.shortDescription}
-        </p>
+          <h1>{collectible.title}</h1>
+
+          <p class="editorial-title">{collectible.editorialTitle}</p>
+        </div>
       </div>
     </section>
 
     <section class="story-section">
-      <div class="story-layout">
-        <div class="story-image">
-          <img
-            src={collectible.image}
-            alt={collectible.title}
-          />
-        </div>
+  <div class="story-layout">
+   <div class="story-image">
+  <img
+    src={photos[3].src}
+    alt={photos[3].alt}
+  />
+</div>
 
-        <div class="story-text">
-          <p class="eyebrow">THE STORY</p>
+    <div class="story-text">
+      <p class="eyebrow">THE STORY</p>
 
-          <h2>Every object has a story.</h2>
+      <h2>A charcoal box iron built to carry its own heat.</h2>
 
-          <p>
-            This collectible is part of the Finicky Bee collecting and
-            research journey.
-          </p>
+      <p>
+        Before electric irons became commonplace, charcoal irons allowed heat
+        to travel with the object. This example has a hollow cast-iron body,
+        a hinged ventilated lid, and a figural rooster catch.
+      </p>
 
-          <p>
-            Its story will be documented through observation, research,
-            photography, and supporting evidence as the record develops.
-          </p>
+      <p>
+        The rooster serves both as ornament and as the mechanism that holds
+        the lid closed.
+      </p>
 
-          <p>
-            Finicky Bee distinguishes documented information from uncertainty
-            and does not assume details that cannot be supported by evidence.
-          </p>
+      <p>
+        This Finicky Bee Finds entry documents the object as received, with
+        its observable construction, condition, and distinctive details
+        preserved as part of the archive.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="story-section documentary-section">
+  <div class="narrow">
+    <p class="eyebrow">THE DOCUMENTARY</p>
+
+    <h2>Watch the story of the object.</h2>
+
+    <p>
+      Follow FB-00017 as this charcoal box iron is examined, documented,
+      and preserved through the Finicky Bee Finds series.
+    </p>
+
+    <a
+      href="https://youtu.be/uSRMLEcfQ5M"
+      class="text-link"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Watch the Finicky Bee documentary →
+    </a>
+  </div>
+</section>
+    <section class="story-section photo-record">
+      <div class="narrow">
+        <p class="eyebrow">PHOTOGRAPHIC RECORD</p>
+
+        <h2>Observed details of the object.</h2>
+
+        <div class="photo-grid">
+         {
+  photos.slice(1, 3).map((photo) => (
+    <figure>
+      <img src={photo.src} alt={photo.alt} />
+    </figure>
+  ))
+}
+
+{
+  photos.slice(4).map((photo) => (
+    <figure>
+      <img src={photo.src} alt={photo.alt} />
+    </figure>
+  ))
+}
         </div>
       </div>
     </section>
@@ -114,14 +198,28 @@ const { collectible } = Astro.props;
   }
 
   .story-hero {
-    padding: 110px 28px 90px;
+    padding: 80px 28px;
     background: #2f4f3f;
     color: #fffaf0;
   }
 
-  .story-content {
-    max-width: 900px;
+  .story-hero-inner {
+    max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 70px;
+    align-items: center;
+  }
+
+  .story-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .story-content {
+    max-width: 620px;
   }
 
   .eyebrow {
@@ -141,7 +239,7 @@ const { collectible } = Astro.props;
 
   h1 {
     margin: 0;
-    font-size: clamp(3rem, 7vw, 6rem);
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
   }
 
   h2 {
@@ -154,10 +252,12 @@ const { collectible } = Astro.props;
     line-height: 1.8;
   }
 
-  .story-intro {
-    max-width: 700px;
-    margin: 28px 0 0;
-    font-size: 1.15rem;
+  .editorial-title {
+    margin: 24px 0 0;
+    color: #e4c36b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-style: italic;
   }
 
   .story-section {
@@ -182,7 +282,9 @@ const { collectible } = Astro.props;
   .story-text {
     max-width: 600px;
   }
-
+.documentary-section {
+  background: #f7f3e9;
+}
   .story-note {
     background: #e8ebe4;
   }
@@ -190,6 +292,23 @@ const { collectible } = Astro.props;
   .narrow {
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  .photo-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .photo-grid figure {
+    margin: 0;
+  }
+
+  .photo-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 
   .text-link {
@@ -242,11 +361,31 @@ const { collectible } = Astro.props;
 
   @media (max-width: 700px) {
     .story-hero {
-      padding: 80px 22px 70px;
+      padding: 70px 22px;
     }
+
+    .story-hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.story-content {
+  order: 1;
+}
+
+.story-hero-image {
+  order: 2;
+  width: 100%;
+}
 
     .story-section {
       padding: 70px 22px;
+    }
+
+    .photo-grid {
+      grid-template-columns: 1fr;
+      gap: 22px;
     }
 
     .story-layout {

@@ -5,11 +5,17 @@ export const featuredSettings = {
 
 export const collectibles = [
   {
-    id: "vintage-iron",
-    title: "Vintage Iron",
-    shortDescription: "A vintage iron from the Finicky Bee collection.",
+  id: "vintage-iron",
+  documentaryNumber: "FB-00017",
+  archiveNumber: "FBA-00017",
+  title: "Cast Iron Charcoal Box Iron with Figural Rooster Catch",
+  editorialTitle: "The Watchful Rooster",
+    shortDescription:
+      "A cast iron charcoal box iron with a figural rooster catch.",
     image: "/images/homepage/hero.jpg",
     findSlug: "vintage-iron",
+    documentaryNumber: "FB-00017",
+    archiveNumber: "FBA-00017",
     featured: true,
   },
 ];
