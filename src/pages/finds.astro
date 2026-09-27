@@ -1,6 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
+import { collectibles } from '../data/collectibles.js';
+
+const featuredCollectible =
+  collectibles.find((collectible) => collectible.featured) ?? collectibles[0];
 ---
 
 <Layout
@@ -114,6 +118,36 @@ import Header from '../components/Header.astro';
         </div>
       </div>
     </section>
+
+    <section class="section featured-find">
+  <div class="narrow">
+    <p class="eyebrow">FEATURED FIND</p>
+
+    <img
+      src={featuredCollectible.image}
+      alt={featuredCollectible.title}
+      class="featured-find-image"
+    />
+
+    <h2>{featuredCollectible.editorialTitle}</h2>
+
+    <p>
+      {featuredCollectible.title}
+    </p>
+
+    <p>
+      {featuredCollectible.documentaryNumber} ·
+      {featuredCollectible.archiveNumber}
+    </p>
+
+    <a
+      href={`/finds/${featuredCollectible.findSlug}`}
+      class="text-link"
+    >
+      Explore the story →
+    </a>
+  </div>
+</section>
 
     <section class="section documentary-note">
       <div class="narrow">
@@ -269,6 +303,13 @@ import Header from '../components/Header.astro';
   .finds-process {
     background: #ece7da;
     max-width: none;
+  }
+  .featured-find-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 0 35px;
+    object-fit: contain;
   }
 
   .process-list {
