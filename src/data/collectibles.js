@@ -16,4 +16,17 @@ export const collectibles = [
     findSlug: "vintage-iron",
     featured: true,
   },
+
+  {
+    id: "robert-stanley-nativity",
+    documentaryNumber: "FB-00001",
+    archiveNumber: "FBA-00001",
+    title: "Robert Stanley Light-Up Nativity",
+    editorialTitle: "The Promise of Christmas",
+    shortDescription:
+      "An illuminated Nativity display from the mid-2000s with its original stand and manufacturer packaging.",
+    image: "/images/finds/robert-stanley-nativity/01-hero.jpg",
+    findSlug: "robert-stanley-nativity",
+    featured: false,
+  },
 ];
