@@ -25,7 +25,7 @@ export const collectibles = [
     editorialTitle: "The Promise of Christmas",
     shortDescription:
       "An illuminated Nativity display from the mid-2000s with its original stand and manufacturer packaging.",
-    image: "/images/finds/robert-stanley-nativity/01-hero.jpg",
+    image: "/images/finds/FB-00001/FB-0001- img1.jpg",
     findSlug: "robert-stanley-nativity",
     featured: false,
   },
