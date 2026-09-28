@@ -121,31 +121,41 @@ const featuredCollectible =
 
     <section class="section featured-find">
   <div class="narrow">
-    <p class="eyebrow">FEATURED FIND</p>
+    <p class="eyebrow">DOCUMENTED FINDS</p>
 
-    <img
-      src={featuredCollectible.image}
-      alt={featuredCollectible.title}
-      class="featured-find-image"
-    />
+    <div class="documented-finds">
+      {
+        collectibles.map((collectible) => (
+          <article class="documented-find">
+            <img
+              src={collectible.image}
+              alt={collectible.title}
+              class="featured-find-image"
+            />
 
-    <h2>{featuredCollectible.editorialTitle}</h2>
+            <div class="documented-find-content">
+              <h2>{collectible.editorialTitle}</h2>
 
-    <p>
-      {featuredCollectible.title}
-    </p>
+              <p>
+                {collectible.title}
+              </p>
 
-    <p>
-      {featuredCollectible.documentaryNumber} ·
-      {featuredCollectible.archiveNumber}
-    </p>
+              <p>
+                {collectible.documentaryNumber} ·
+                {collectible.archiveNumber}
+              </p>
 
-    <a
-      href={`/finds/${featuredCollectible.findSlug}`}
-      class="text-link"
-    >
-      Explore the story →
-    </a>
+              <a
+                href={`/finds/${collectible.findSlug}`}
+                class="text-link"
+              >
+                Explore the story →
+              </a>
+            </div>
+          </article>
+        ))
+      }
+    </div>
   </div>
 </section>
 
@@ -304,12 +314,18 @@ const featuredCollectible =
     background: #ece7da;
     max-width: none;
   }
-  .featured-find-image {
+    .featured-find-image {
     display: block;
     width: 100%;
     height: auto;
     margin: 0 0 35px;
     object-fit: contain;
+  }
+
+  .documented-find + .documented-find {
+    margin-top: 100px;
+    padding-top: 100px;
+    border-top: 1px solid #d4a437;
   }
 
   .process-list {
