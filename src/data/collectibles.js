@@ -25,8 +25,20 @@ export const collectibles = [
     editorialTitle: "The Promise of Christmas",
     shortDescription:
       "An illuminated Nativity display from the mid-2000s with its original stand and manufacturer packaging.",
-    image: "/images/finds/FB-00001/FB-0001- img1.jpg",
+    image: "/images/finds/FB-0001/FB-0001- img1.jpg",
     findSlug: "robert-stanley-nativity",
+    featured: false,
+  },
+
+    {
+    id: "royal-doulton-lion",
+    documentaryNumber: "FB-0002",
+    archiveNumber: "FBA-00002",
+    title: "Royal Doulton African Series Lion — D.6356",
+    shortDescription:
+      "A Royal Doulton African Series Lion charger with a black-and-white wildlife transfer-print composition.",
+    image: "/images/finds/FB-0002/FB-0002-img1.PNG",
+    findSlug: "royal-doulton-lion",
     featured: false,
   },
 ];

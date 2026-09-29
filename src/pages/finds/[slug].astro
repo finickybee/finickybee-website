@@ -13,6 +13,7 @@ export function getStaticPaths() {
 const { collectible } = Astro.props;
 
 const isNativity = collectible.id === "robert-stanley-nativity";
+const isRoyalDoulton = collectible.id === "royal-doulton-lion";
 
 const photos = isNativity
   ? [
@@ -41,34 +42,76 @@ const photos = isNativity
         alt: "Measurement photograph showing the approximate width of the Nativity display",
       },
     ]
-  : [
-      {
-        src: "/images/finds/vintage-iron/01-hero.jpg",
-        alt: "Front side view of the vintage cast iron charcoal box iron",
-      },
-      {
-        src: "/images/finds/vintage-iron/02-alternate.jpg",
-        alt: "Alternate view of the vintage cast iron charcoal box iron",
-      },
-      {
-        src: "/images/finds/vintage-iron/03-rooster-catch.jpg",
-        alt: "Figural rooster catch on the vintage cast iron charcoal box iron",
-      },
-      {
-        src: "/images/finds/vintage-iron/04-interior.jpg",
-        alt: "Interior charcoal chamber of the vintage cast iron box iron",
-      },
-      {
-        src: "/images/finds/vintage-iron/05-handle.jpg",
-        alt: "Turned hardwood handle and cast iron handle support",
-      },
-      {
-        src: "/images/finds/vintage-iron/06-soleplate.jpg",
-        alt: "Soleplate of the vintage cast iron box iron",
-      },
-    ];
+  : isRoyalDoulton
+    ? [
+        {
+          src: "/images/finds/FB-0002/FB-0002-img1.PNG",
+          alt: "Full front view of the Royal Doulton African Series Lion decorative plate",
+        },
+        {
+          src: "/images/finds/FB-0002/img2.JPG",
+          alt: "Angled view of the Royal Doulton African Series Lion decorative plate",
+        },
+        {
+          src: "/images/finds/FB-0002/img4.JPG",
+          alt: "Angled upright view showing the glazed ceramic surface and wildlife border",
+        },
+        {
+          src: "/images/finds/FB-0002/img3.JPG",
+          alt: "Front view of the reclining lion and African wildlife transfer-print composition",
+        },
+        {
+          src: "/images/finds/FB-0002/img5.JPG",
+          alt: "Close view of the Royal Doulton African Series Lion plate",
+        },
+        {
+          src: "/images/finds/FB-0002/img7.JPG",
+          alt: "Reverse view of the Royal Doulton African Series Lion plate",
+        },
+        {
+          src: "/images/finds/FB-0002/img8.JPG",
+          alt: "Close view of the Royal Doulton backstamp and D.6356 marking",
+        },
+        {
+          src: "/images/finds/FB-0002/img9.JPG",
+          alt: "Measurement photograph showing the approximate 13.5-inch diameter",
+        },
+      ]
+    : [
+        {
+          src: "/images/finds/vintage-iron/01-hero.jpg",
+          alt: "Front side view of the vintage cast iron charcoal box iron",
+        },
+        {
+          src: "/images/finds/vintage-iron/02-alternate.jpg",
+          alt: "Alternate view of the vintage cast iron charcoal box iron",
+        },
+        {
+          src: "/images/finds/vintage-iron/03-rooster-catch.jpg",
+          alt: "Figural rooster catch on the vintage cast iron charcoal box iron",
+        },
+        {
+          src: "/images/finds/vintage-iron/04-interior.jpg",
+          alt: "Interior charcoal chamber of the vintage cast iron box iron",
+        },
+        {
+          src: "/images/finds/vintage-iron/05-handle.jpg",
+          alt: "Turned hardwood handle and cast iron handle support",
+        },
+        {
+          src: "/images/finds/vintage-iron/06-soleplate.jpg",
+          alt: "Soleplate of the vintage cast iron box iron",
+        },
+      ];
 
 const storyPhoto = isNativity ? photos[2] : photos[3];
+
+const heroPhoto = isRoyalDoulton
+  ? {
+      src: "/images/finds/FB-0002/FB-0002-img1.PNG",
+      alt: "Royal Doulton African Series Lion D.6356 decorative plate",
+    }
+  : photos[0];
 ---
 
 <Layout
@@ -81,11 +124,11 @@ const storyPhoto = isNativity ? photos[2] : photos[3];
     <section class="story-hero">
       <div class="story-hero-inner">
         <div class="story-hero-image">
-          <img
-            src={photos[0].src}
-            alt={photos[0].alt}
-          />
-        </div>
+  <img
+    src={heroPhoto.src}
+    alt={heroPhoto.alt}
+  />
+</div>
 
         <div class="story-content">
           <p class="eyebrow">
@@ -100,126 +143,185 @@ const storyPhoto = isNativity ? photos[2] : photos[3];
     </section>
 
     {
-      isNativity ? (
-        <>
-          <section class="story-section">
-            <div class="story-layout">
-              <div class="story-image">
-                <img
-                  src={storyPhoto.src}
-                  alt={storyPhoto.alt}
-                />
-              </div>
+  isNativity ? (
+    <>
+      <section class="story-section">
+        <div class="story-layout">
+          <div class="story-image">
+            <img
+              src={storyPhoto.src}
+              alt={storyPhoto.alt}
+            />
+          </div>
 
-              <div class="story-text">
-                <p class="eyebrow">THE STORY</p>
+          <div class="story-text">
+            <p class="eyebrow">THE STORY</p>
 
-                <h2>A warm amber glow and a story worth preserving.</h2>
+            <h2>A warm amber glow and a story worth preserving.</h2>
 
-                <p>
-                  This illuminated Nativity display presents a warm glowing
-                  scene featuring Mary, Joseph, shepherds, and a lamb.
-                </p>
+            <p>
+              This illuminated Nativity display presents a warm glowing
+              scene featuring Mary, Joseph, shepherds, and a lamb.
+            </p>
 
-                <p>
-                  The raised decorative border carries the scripture phrase
-                  “Unto Us A Child Is Born,” documented in the original
-                  Finicky Bee Finds documentary as a reference to Isaiah 9:6.
-                </p>
+            <p>
+              The raised decorative border carries the scripture phrase
+              “Unto Us A Child Is Born,” documented in the original
+              Finicky Bee Finds documentary as a reference to Isaiah 9:6.
+            </p>
 
-                <p>
-                  The original display stand and manufacturer packaging remain
-                  with the piece, preserving important parts of its documented
-                  presentation.
-                </p>
-              </div>
-            </div>
-          </section>
+            <p>
+              The original display stand and manufacturer packaging remain
+              with the piece, preserving important parts of its documented
+              presentation.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          <section class="story-section documentary-section">
-            <div class="narrow">
-              <p class="eyebrow">THE DOCUMENTARY</p>
+      <section class="story-section documentary-section">
+        <div class="narrow">
+          <p class="eyebrow">THE DOCUMENTARY</p>
 
-              <h2>Watch the story of the object.</h2>
+          <h2>Watch the story of the object.</h2>
 
-              <p>
-                Follow FB-00001 as this Robert Stanley light-up Nativity is
-                examined, documented, and preserved through the Finicky Bee
-                Finds series.
-              </p>
+          <p>
+            Follow FB-00001 as this Robert Stanley light-up Nativity is
+            examined, documented, and preserved through the Finicky Bee Finds
+            series.
+          </p>
 
-              <a
-                href="https://youtu.be/6k83B7htaMw"
-                class="text-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Watch the Finicky Bee documentary →
-              </a>
-            </div>
-          </section>
-        </>
-      ) : (
-        <>
-          <section class="story-section">
-            <div class="story-layout">
-              <div class="story-image">
-                <img
-                  src={storyPhoto.src}
-                  alt={storyPhoto.alt}
-                />
-              </div>
+          <a
+            href="https://youtu.be/6k83B7htaMw"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch the Finicky Bee documentary →
+          </a>
+        </div>
+      </section>
+    </>
+  ) : isRoyalDoulton ? (
+    <>
+      <section class="story-section">
+        <div class="story-layout">
+          <div class="story-image">
+            <img
+              src="/images/finds/FB-0002/img3.JPG"
+              alt="Royal Doulton African Series Lion D.6356 plate"
+            />
+          </div>
 
-              <div class="story-text">
-                <p class="eyebrow">THE STORY</p>
+          <div class="story-text">
+            <p class="eyebrow">THE STORY</p>
 
-                <h2>A charcoal box iron built to carry its own heat.</h2>
+            <h2>A lion at rest, preserved in English ceramic.</h2>
 
-                <p>
-                  Before electric irons became commonplace, charcoal irons
-                  allowed heat to travel with the object. This example has a
-                  hollow cast-iron body, a hinged ventilated lid, and a figural
-                  rooster catch.
-                </p>
+            <p>
+              This Royal Doulton African Series plate presents a reclining
+              lion within a black-and-white wildlife transfer-print
+              composition.
+            </p>
 
-                <p>
-                  The rooster serves both as ornament and as the mechanism that
-                  holds the lid closed.
-                </p>
+            <p>
+              The surrounding border depicts African wildlife and landscape
+              imagery, including zebras, antelope, and acacia trees.
+            </p>
 
-                <p>
-                  This Finicky Bee Finds entry documents the object as
-                  received, with its observable construction, condition, and
-                  distinctive details preserved as part of the archive.
-                </p>
-              </div>
-            </div>
-          </section>
+            <p>
+              The reverse carries the Royal Doulton maker's mark together
+              with the pattern number D.6356 and the African Series,
+              Lion, and African Game Reserve designations.
+            </p>
+          </div>
+        </div>
+      </section>
 
-          <section class="story-section documentary-section">
-            <div class="narrow">
-              <p class="eyebrow">THE DOCUMENTARY</p>
+      <section class="story-section documentary-section">
+        <div class="narrow">
+          <p class="eyebrow">THE DOCUMENTARY</p>
 
-              <h2>Watch the story of the object.</h2>
+          <h2>Watch the story of the object.</h2>
 
-              <p>
-                Follow FB-00017 as this charcoal box iron is examined,
-                documented, and preserved through the Finicky Bee Finds series.
-              </p>
+          <p>
+            Follow FB-0002 as this Royal Doulton African Series Lion plate is
+            examined, documented, and preserved through the Finicky Bee Finds
+            series.
+          </p>
 
-              <a
-                href="https://youtu.be/uSRMLEcfQ5M"
-                class="text-link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Watch the Finicky Bee documentary →
-              </a>
-            </div>
-          </section>
-        </>
-      )
-    }
+          <a
+             href="https://youtu.be/UPWvUe1DiFw"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch the Finicky Bee documentary →
+          </a>
+        </div>
+      </section>
+    </>
+  ) : (
+    <>
+      <section class="story-section">
+        <div class="story-layout">
+          <div class="story-image">
+            <img
+              src={storyPhoto.src}
+              alt={storyPhoto.alt}
+            />
+          </div>
+
+          <div class="story-text">
+            <p class="eyebrow">THE STORY</p>
+
+            <h2>A charcoal box iron built to carry its own heat.</h2>
+
+            <p>
+              Before electric irons became commonplace, charcoal irons
+              allowed heat to travel with the object. This example has a
+              hollow cast-iron body, a hinged ventilated lid, and a figural
+              rooster catch.
+            </p>
+
+            <p>
+              The rooster serves both as ornament and as the mechanism that
+              holds the lid closed.
+            </p>
+
+            <p>
+              This Finicky Bee Finds entry documents the object as
+              received, with its observable construction, condition, and
+              distinctive details preserved as part of the archive.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section documentary-section">
+        <div class="narrow">
+          <p class="eyebrow">THE DOCUMENTARY</p>
+
+          <h2>Watch the story of the object.</h2>
+
+          <p>
+            Follow FB-00017 as this charcoal box iron is examined,
+            documented, and preserved through the Finicky Bee Finds series.
+          </p>
+
+          <a
+           href={isRoyalDoulton ? "https://youtu.be/UPWvUe1DiFw" : "https://youtu.be/uSRMLEcfQ5M"}
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch the Finicky Bee documentary →
+          </a>
+        </div>
+      </section>
+    </>
+  )
+}
 
     <section class="story-section photo-record">
       <div class="narrow">
@@ -288,6 +390,177 @@ const storyPhoto = isNativity ? photos[2] : photos[3];
             </div>
           </div>
         </section>
+          ) : isRoyalDoulton ? (
+        <section class="story-section archive-record">
+          <div class="narrow">
+            <p class="eyebrow">COLLECTIBLE ARCHIVE RECORD</p>
+
+            <h2>Object record.</h2>
+
+            <div class="archive-details">
+              <p>
+                <strong>Archive ID:</strong> {collectible.archiveNumber}
+              </p>
+
+              <p>
+                <strong>Documentary / Drop No.:</strong> {collectible.documentaryNumber}
+              </p>
+
+              <p>
+                <strong>Documentary Title:</strong> Royal Doulton African Series Lion — D.6356
+              </p>
+
+              <p>
+                <strong>Object:</strong> Royal Doulton African Series Lion Charger / Decorative Plate
+              </p>
+
+              <p>
+                <strong>Maker / Brand:</strong> Royal Doulton
+              </p>
+
+              <p>
+                <strong>Pattern:</strong> D.6356
+              </p>
+
+              <p>
+                <strong>Series:</strong> African Series
+              </p>
+
+              <p>
+                <strong>Subject:</strong> Lion
+              </p>
+
+              <p>
+                <strong>Theme / Series:</strong> African Game Reserve
+              </p>
+
+              <p>
+                <strong>Country of Manufacture:</strong> England
+              </p>
+
+              <p>
+                <strong>Material:</strong> Ceramic
+              </p>
+
+              <p>
+                <strong>Approximate Diameter:</strong> 13.5 inches
+              </p>
+
+              <h3>Description</h3>
+
+              <p>
+                A large round decorative ceramic plate featuring a reclining lion
+                in a black-and-white wildlife transfer-print composition. The
+                surrounding border depicts African wildlife and landscape imagery,
+                including zebras, antelope/oryx, and acacia trees.
+              </p>
+
+              <p>
+                The piece has a glazed ceramic surface and is intended primarily
+                for decorative display.
+              </p>
+
+              <h3>Backstamp / Markings</h3>
+
+              <p>
+                The reverse is clearly marked:
+              </p>
+
+              <p>
+                D.6356.<br />
+                AFRICAN SERIES<br />
+                LION<br />
+                AFRICAN GAME RESERVE.
+              </p>
+
+              <p>
+                The reverse also bears the Royal Doulton lion-and-crown maker's
+                mark with Made in Royal Doulton England wording.
+              </p>
+
+              <h3>Production Period</h3>
+
+              <p>
+                <strong>Undetermined.</strong>
+              </p>
+
+              <p>
+                The original Finicky Bee sales documentation and documentary
+                attributed the piece to the 1980s. That attribution has not been
+                independently verified.
+              </p>
+
+              <p>
+                The surviving backstamp does not contain a visible date code
+                sufficient to establish the production period of this individual
+                piece.
+              </p>
+
+              <h3>Condition</h3>
+
+              <p>
+                Pre-owned; good condition based on surviving documentation and
+                examination.
+              </p>
+
+              <p>
+                The surviving documentation reports:
+              </p>
+
+              <ul>
+                <li>No chips</li>
+                <li>No cracks</li>
+                <li>Minor wear on the front</li>
+                <li>Minor discoloration on the reverse</li>
+              </ul>
+
+              <p>
+                The documentary footage shows the transfer image and glazed
+                surface intact.
+              </p>
+
+              <h3>Documentation Sources</h3>
+
+              <ul>
+                <li>Original Finicky Bee Finds documentary FB-0002</li>
+                <li>Original Finicky Bee photographs</li>
+                <li>Physical examination of the surviving Royal Doulton backstamp</li>
+                <li>Original product documentation</li>
+                <li>Supporting historical research concerning the Royal Doulton African Series</li>
+              </ul>
+
+              <h3>Attribution / Authentication Note</h3>
+
+              <p>
+                Identification is based on the surviving physical object, clearly
+                legible Royal Doulton backstamp, pattern number, series designation,
+                documentary footage, photographs, original documentation, and
+                supporting research.
+              </p>
+
+              <p>
+                No professional authentication has been performed.
+              </p>
+
+              <h3>Archive Reconstruction Note</h3>
+
+              <p>
+                Original archive record unavailable.
+              </p>
+
+              <p>
+                This archive record is a later reconstruction created from
+                surviving Finicky Bee Finds documentary material, photographs,
+                physical markings, original documentation, and subsequent research.
+              </p>
+
+              <p>
+                The reconstruction distinguishes directly observed evidence,
+                source-attributed information, and unresolved historical questions.
+              </p>
+            </div>
+          </div>
+        </section>
       ) : (
         <section class="story-section archive-record">
           <div class="narrow">
@@ -335,8 +608,8 @@ const storyPhoto = isNativity ? photos[2] : photos[3];
 
               <p>
                 Heavy cast iron charcoal box iron of pointed form with a hollow
-                charcoal chamber, hinged lid, side ventilation openings, cast
-                iron soleplate, and original wooden handle.
+                charcoal chamber, hinged lid, side ventilation openings, cast iron
+                soleplate, and original wooden handle.
               </p>
 
               <h3>Measurements</h3>
@@ -351,8 +624,8 @@ const storyPhoto = isNativity ? photos[2] : photos[3];
               <h3>Materials &amp; Construction</h3>
 
               <p>
-                Cast iron body, lid, latch, and soleplate with hardwood handle
-                and iron hinge hardware.
+                Cast iron body, lid, latch, and soleplate with hardwood handle and
+                iron hinge hardware.
               </p>
 
               <h3>Condition Assessment</h3>
@@ -368,16 +641,14 @@ const storyPhoto = isNativity ? photos[2] : photos[3];
 
               <p>
                 This record follows the Finicky Bee Documentation Integrity
-                Standard. Observable facts, research-based estimates, and
-                unknowns are distinguished. No appraisal or valuation is
-                provided.
+                Standard. Observable facts, research-based estimates, and unknowns
+                are distinguished. No appraisal or valuation is provided.
               </p>
             </div>
           </div>
         </section>
       )
-    }
-
+     }
     <section class="story-section story-note">
       <div class="narrow">
         <p class="eyebrow">DOCUMENTATION</p>

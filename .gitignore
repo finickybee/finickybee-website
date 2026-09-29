@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+# local working backups
+src/pages/finds/*.astro.backup
+src/pages/finds/*.astro.before-fb0002-archive-fix
