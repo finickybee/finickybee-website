@@ -6,8 +6,8 @@ export const featuredSettings = {
 export const collectibles = [
   {
     id: "vintage-iron",
-    documentaryNumber: "FB-00017",
-    archiveNumber: "FBA-00017",
+    documentaryNumber: "FB-0017",
+    archiveNumber: "FBA-0017",
     title: "Cast Iron Charcoal Box Iron with Figural Rooster Catch",
     editorialTitle: "The Watchful Rooster",
     shortDescription:
@@ -19,8 +19,8 @@ export const collectibles = [
 
   {
     id: "robert-stanley-nativity",
-    documentaryNumber: "FB-00001",
-    archiveNumber: "FBA-00001",
+    documentaryNumber: "FB-0001",
+    archiveNumber: "FBA-0001",
     title: "Robert Stanley Light-Up Nativity",
     editorialTitle: "The Promise of Christmas",
     shortDescription:
@@ -33,7 +33,7 @@ export const collectibles = [
     {
     id: "royal-doulton-lion",
     documentaryNumber: "FB-0002",
-    archiveNumber: "FBA-00002",
+    archiveNumber: "FBA-0002",
     title: "Royal Doulton African Series Lion — D.6356",
     shortDescription:
       "A Royal Doulton African Series Lion charger with a black-and-white wildlife transfer-print composition.",
