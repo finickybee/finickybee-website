@@ -89,10 +89,56 @@ import Header from "../components/Header.astro";
     }
 
     a:hover {
-      color: #a77c16;
-    }
+  color: #a77c16;
+}
 
-    @media (max-width: 560px) {
+.site-footer {
+  background: #2f4f3f;
+  color: #f7f3ea;
+  padding: 55px 24px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 40px;
+}
+
+.site-footer p {
+  margin: 0 0 8px;
+}
+
+.footer-brand {
+  color: #d4a437;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 22px;
+}
+
+.footer-links a {
+  color: #f7f3ea;
+}
+
+.copyright {
+  grid-column: 1 / -1;
+  padding-top: 25px;
+  border-top: 1px solid rgba(247, 243, 234, 0.2);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .copyright {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 560px) {
       .contact-page {
         padding: 48px 20px 72px;
       }
