@@ -395,10 +395,12 @@ const heroPhoto = photos[0];
             <strong>Style:</strong> {collectible.object.style}
           </p>
 
-          <p>
-            <strong>Country of Origin:</strong>{" "}
-            {collectible.object.countryOfOrigin}
-          </p>
+          {collectible.object.countryOfOrigin && (
+            <p>
+              <strong>Country of Origin:</strong>{" "}
+              {collectible.object.countryOfOrigin}
+            </p>
+          )}
 
           <p>
             <strong>Material:</strong> {collectible.object.material}
