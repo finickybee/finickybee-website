@@ -152,6 +152,122 @@ export const collectibles = [
     featured: false,
   },
   {
+  id: "japanese-imari-plates-set-of-2",
+  documentaryNumber: "FB-0005",
+  archiveNumber: "FBA-0005",
+  title:
+    "Vintage Japanese Imari Style Porcelain Plates Set of 2 10in Decorative Collector",
+  editorialTitle: "The Japanese Imari Plates",
+  shortDescription:
+    "A set of two Japanese Imari style porcelain plates attributed to Taiseido, featuring traditional floral and geometric decoration.",
+  object: {
+    makerOrAttribution: "Taiseido, attributed; not authenticated",
+    objectType: "Decorative Porcelain Plate Set",
+    style: "Imari Style",
+    countryOfOrigin: "Japan",
+    material: "Porcelain",
+    productionPeriod: "Undetermined",
+  },
+  dimensions: {
+    diameter: "Approximately 10 inches each",
+    height: "Approximately 1 inch each",
+  },
+  condition: {
+    summary: "Pre-owned; excellent vintage condition.",
+    observed:
+      "No chips, cracks, visible repairs, or visible restoration were reported in the supplied Etsy listing documentation.",
+    additional:
+      "Minor scratches, light surface wear, storage wear, or light glaze wear may be present. No original packaging was documented.",
+  },
+  story: {
+    heading:
+      "A pair of Japanese Imari style plates preserved for further research.",
+    paragraphs: [
+      "This Finicky Bee Finds entry documents a set of two Japanese Imari style porcelain plates attributed to Taiseido.",
+      "The plates feature traditional floral and geometric decoration arranged across segmented panels, with blue, rust red, white, and neutral earth tones forming the overall decorative palette.",
+      "The pair is documented through its observable decoration, construction, dimensions, condition, and surviving Etsy marketplace documentation as part of the Finicky Bee archive.",
+    ],
+  },
+  documentary: {
+    url: "https://youtu.be/QxhbGhvkXpE",
+    description:
+      "Follow FB-0005 as this pair of Japanese Imari style porcelain plates is examined, documented, and preserved through the Finicky Bee Finds series.",
+  },
+  research: {
+    objectIdentification:
+      "Set of two Japanese porcelain plates in an Imari style decorative tradition, attributed to Taiseido based on the supplied Etsy listing documentation.",
+    physicalDescription:
+      "Pair of round decorative porcelain plates with traditional floral and geometric motifs, segmented decorative panels, and blue, rust red, white, and neutral earth-tone decoration.",
+    productionPeriodNote:
+      "The supplied Etsy listing describes the plates as likely late 20th-century decorative production, approximately the 1970s–1990s, but identifies this as a research-based estimate only. The available evidence is insufficient to establish a definitive production period for these individual plates.",
+    attributionNote:
+      "The Taiseido attribution is based on the supplied Etsy listing documentation and has not been professionally authenticated. A red multi-character mark is visibly present on the underside of the plate, but the characters are not transcribed in this record because they cannot be established with sufficient confidence from the available photographic evidence.",
+  },
+  documentation: {
+    sources: [
+      "Original Finicky Bee Finds documentary FB-0005",
+      "Original Finicky Bee photographs",
+      "Surviving Etsy listing documentation",
+      "Physical examination of the surviving object",
+    ],
+    integrityStatement:
+      "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, source-attributed information, research-based assessments, and unresolved historical questions are distinguished. No appraisal or valuation is provided.",
+  },
+  storyPhotoIndex: 2,
+  photos: [
+    {
+      src: "/images/finds/FB-0005/FB-0005-img1.jpg    ← Scene 1 · Primary hero photo - Full front pair display.JPG",
+      alt:
+        "Full front view of the pair of Japanese Imari style porcelain plates",
+    },
+    {
+      src: "/images/finds/FB-0005/img2.jpg    ← Scene 2 · Entire back of plate with sticker.JPG",
+      alt:
+        "Back view of a Japanese Imari style porcelain plate showing the underside and sticker",
+    },
+    {
+      src: "/images/finds/FB-0005/Scene 3 → img3.jpg (detail)-Set presentation.jpg",
+      alt:
+        "Detailed presentation view of the Japanese Imari style porcelain plate set",
+    },
+    {
+      src: "/images/finds/FB-0005/Scene 4 → img4.jpg (surface close-up).jpg",
+      alt:
+        "Close view of the decorated porcelain surface and traditional Imari style motifs",
+    },
+    {
+      src: "/images/finds/FB-0005/img5.jpg    ← Scene 5 · Red maker stamp close-up.JPG",
+      alt:
+        "Close view of the red multi-character mark on the underside of the porcelain plate",
+    },
+    {
+      src: "/images/finds/FB-0005/img7.jpg    ← Scene 7 · Side thickness profile.JPG",
+      alt:
+        "Side profile showing the thickness of the Japanese porcelain plate",
+    },
+    {
+      src: "/images/finds/FB-0005/img8.jpg    ← Scene 8 · Measuring tape showing 10inch.JPG",
+      alt:
+        "Measuring view showing the approximately 10-inch diameter of the porcelain plate",
+    },
+    {
+      src: "/images/finds/FB-0005/FB-0005-img9.jpg",
+      alt:
+        "Angled view of the Japanese Imari style porcelain plate",
+    },
+  ],
+  sections: {
+    storyLabel: "THE STORY",
+    documentaryLabel: "THE DOCUMENTARY",
+    archiveLabel: "COLLECTIBLE ARCHIVE RECORD",
+    photographicRecordLabel: "PHOTOGRAPHIC RECORD",
+  },
+  image:
+    "/images/finds/FB-0005/FB-0005-img1.jpg    ← Scene 1 · Primary hero photo - Full front pair display.JPG",
+  findSlug: "japanese-imari-plates-set-of-2",
+  featured: false,
+},
+{
     id: "baby-coos-porcelain-doll",
     documentaryNumber: "FB-0004",
     archiveNumber: "FBA-0004",
