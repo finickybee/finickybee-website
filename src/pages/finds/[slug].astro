@@ -395,7 +395,7 @@ const heroPhoto = photos[0];
             <strong>Style:</strong> {collectible.object.style}
           </p>
 
-          {collectible.object.countryOfOrigin && (
+                                      {collectible.object.countryOfOrigin && (
             <p>
               <strong>Country of Origin:</strong>{" "}
               {collectible.object.countryOfOrigin}
@@ -947,22 +947,22 @@ const heroPhoto = photos[0];
     margin: 0 auto;
   }
 
-  .photo-grid {
-    margin-top: 50px;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 28px;
-  }
+ .photo-grid {
+  margin-top: 50px;
+  column-count: 2;
+  column-gap: 28px;
+}
 
-  .photo-grid figure {
-    margin: 0;
-  }
+.photo-grid figure {
+  margin: 0 0 28px;
+  break-inside: avoid;
+}
 
-  .photo-grid img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+.photo-grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
   .text-link {
     display: inline-block;
