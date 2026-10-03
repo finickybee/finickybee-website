@@ -404,10 +404,12 @@ const heroPhoto = isRoyalDoulton
         <h2>Observed details of the object.</h2>
 
         <div class="photo-grid">
-          {
+         {
   (isNativity
     ? photos.filter((_, index) => index !== 0 && index !== 2)
-    : photos.filter((_, index) => index !== 0 && index !== 3)
+    : isTeizan
+      ? photos.filter((_, index) => index !== 0 && index !== 1)
+      : photos.filter((_, index) => index !== 0 && index !== 3)
   ).map((photo) => (
     <figure>
       <img src={photo.src} alt={photo.alt} />
