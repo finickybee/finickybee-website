@@ -1,0 +1,1040 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import { collectibles } from "../../data/collectibles.js";
+
+export function getStaticPaths() {
+  return collectibles.map((collectible) => ({
+    params: { slug: collectible.findSlug },
+    props: { collectible },
+  }));
+}
+
+const collectible = collectibles.find(
+  (item) => item.id === "teizan-imari-charger"
+);
+
+const isNativity = collectible.id === "robert-stanley-nativity";
+const isRoyalDoulton = collectible.id === "royal-doulton-lion";
+const isTeizan = collectible.id === "teizan-imari-charger";
+
+const photos = isNativity
+  ? [
+      {
+        src: "/images/finds/FB-0001/FB-0001- img1.jpg",
+        alt: "Full view of the Robert Stanley illuminated Nativity display with original stand",
+      },
+      {
+        src: "/images/finds/FB-0001/img2.jpg",
+        alt: "Angled view of the Robert Stanley illuminated Nativity display",
+      },
+      {
+        src: "/images/finds/FB-0001/img3.jpg",
+        alt: "Close view of the illuminated Nativity scene",
+      },
+      {
+        src: "/images/finds/FB-0001/img5.jpg",
+        alt: "Rear view showing the lightbox construction of the Nativity display",
+      },
+      {
+        src: "/images/finds/FB-0001/img8.jpg",
+        alt: "Original display stand and rear wiring",
+      },
+      {
+        src: "/images/finds/FB-0001/img10.JPG",
+        alt: "Measurement photograph showing the approximate width of the Nativity display",
+      },
+    ]
+  : isRoyalDoulton
+    ? [
+        {
+          src: "/images/finds/FB-0002/FB-0002-img1.PNG",
+          alt: "Full front view of the Royal Doulton African Series Lion decorative plate",
+        },
+        {
+          src: "/images/finds/FB-0002/img2.JPG",
+          alt: "Angled view of the Royal Doulton African Series Lion decorative plate",
+        },
+        {
+          src: "/images/finds/FB-0002/img4.JPG",
+          alt: "Angled upright view showing the glazed ceramic surface and wildlife border",
+        },
+        {
+          src: "/images/finds/FB-0002/img3.JPG",
+          alt: "Front view of the reclining lion and African wildlife transfer-print composition",
+        },
+        {
+          src: "/images/finds/FB-0002/img5.JPG",
+          alt: "Close view of the Royal Doulton African Series Lion plate",
+        },
+        {
+          src: "/images/finds/FB-0002/img7.JPG",
+          alt: "Reverse view of the Royal Doulton African Series Lion plate",
+        },
+        {
+          src: "/images/finds/FB-0002/img8.JPG",
+          alt: "Close view of the Royal Doulton backstamp and D.6356 marking",
+        },
+        {
+          src: "/images/finds/FB-0002/img9.JPG",
+          alt: "Measurement photograph showing the approximate 13.5-inch diameter",
+        },
+      ]
+        : isTeizan
+      ? [
+          {
+            src: "/images/finds/FB-0003/FB-0003.JPG",
+            alt: "Full front view of the Japanese Imari style porcelain charger attributed to Teizan",
+          },
+          {
+            src: "/images/finds/FB-0003/img1.JPG",
+            alt: "Detailed view of the hand-painted Imari style decoration",
+          },
+          {
+            src: "/images/finds/FB-0003/img3.JPG",
+            alt: "Angled view of the Japanese porcelain charger",
+          },
+          {
+            src: "/images/finds/FB-0003/img4.JPG",
+            alt: "Close view of the floral and bird decoration",
+          },
+          {
+            src: "/images/finds/FB-0003/img5.JPG",
+            alt: "Detailed view of the gold accent decoration",
+          },
+          {
+            src: "/images/finds/FB-0003/img6.JPG",
+            alt: "Reverse view of the Japanese porcelain charger",
+          },
+          {
+            src: "/images/finds/FB-0003/img7.JPG",
+            alt: "Close view of the porcelain surface and decorative details",
+          },
+          {
+            src: "/images/finds/FB-0003/img8.JPG",
+            alt: "Additional detail view of the Imari style decoration",
+          },
+          {
+            src: "/images/finds/FB-0003/img9.JPG",
+            alt: "Additional photographic record of the charger",
+          },
+        ]
+      : [
+          {
+            src: "/images/finds/vintage-iron/01-hero.jpg",
+            alt: "Front side view of the vintage cast iron charcoal box iron",
+          },
+          {
+            src: "/images/finds/vintage-iron/02-alternate.jpg",
+            alt: "Alternate view of the vintage cast iron charcoal box iron",
+          },
+          {
+            src: "/images/finds/vintage-iron/03-rooster-catch.jpg",
+            alt: "Figural rooster catch on the vintage cast iron charcoal box iron",
+          },
+          {
+            src: "/images/finds/vintage-iron/04-interior.jpg",
+            alt: "Interior charcoal chamber of the vintage cast iron box iron",
+          },
+          {
+            src: "/images/finds/vintage-iron/05-handle.jpg",
+            alt: "Turned hardwood handle and cast iron handle support",
+          },
+          {
+            src: "/images/finds/vintage-iron/06-soleplate.jpg",
+            alt: "Soleplate of the vintage cast iron box iron",
+          },
+        ];
+
+const storyPhoto = isNativity
+  ? photos[2]
+  : isTeizan
+    ? photos[1]
+    : photos[3];
+
+const heroPhoto = isRoyalDoulton
+  ? {
+      src: "/images/finds/FB-0002/FB-0002-img1.PNG",
+      alt: "Royal Doulton African Series Lion D.6356 decorative plate",
+    }
+  : isTeizan
+    ? {
+        src: "/images/finds/FB-0003/FB-0003.JPG",
+        alt: "Full front view of the Japanese Imari style porcelain charger attributed to Teizan",
+      }
+    : photos[0];
+---
+
+<Layout
+  title={`${collectible.title} | Finicky Bee Finds`}
+  description={`${collectible.shortDescription} Explore its Finicky Bee Finds story and documentation.`}
+>
+  <main>
+    <Header />
+
+    <section class="story-hero">
+      <div class="story-hero-inner">
+        <div class="story-hero-image">
+  <img
+    src={heroPhoto.src}
+    alt={heroPhoto.alt}
+  />
+</div>
+
+        <div class="story-content">
+          <p class="eyebrow">
+            FINICKY BEE FINDS · {collectible.documentaryNumber} · {collectible.archiveNumber}
+          </p>
+
+          <h1>{collectible.title}</h1>
+
+          <p class="editorial-title">{collectible.editorialTitle}</p>
+        </div>
+      </div>
+    </section>
+
+    {
+  isNativity ? (
+    <>
+      <section class="story-section">
+  <div class="story-layout">
+    <div class="story-image">
+      <img
+        src={storyPhoto.src}
+        alt={storyPhoto.alt}
+      />
+    </div>
+
+    <div class="story-text">
+      <p class="eyebrow">THE STORY</p>
+
+      <h2>A Japanese Imari-style charger with a richly painted decorative surface.</h2>
+
+      <p>
+        This Finicky Bee Finds entry documents a Japanese porcelain charger
+        attributed to Teizan, decorated in an Imari-style palette of red,
+        blue, green, black, and gold.
+      </p>
+
+      <p>
+        The charger features hand-painted floral and bird motifs arranged
+        across a segmented decorative composition, with gold detailing
+        throughout the design.
+      </p>
+
+      <p>
+        The piece is documented as received, with its observable decoration,
+        construction, dimensions, and condition preserved as part of the
+        Finicky Bee archive.
+      </p>
+    </div>
+  </div>
+</section>
+
+      <section class="story-section documentary-section">
+        <div class="narrow">
+          <p class="eyebrow">THE DOCUMENTARY</p>
+
+          <h2>Watch the story of the object.</h2>
+
+          <p>
+            Follow FB-0001 as this Robert Stanley light-up Nativity is
+            examined, documented, and preserved through the Finicky Bee Finds
+            series.
+          </p>
+
+          <a
+            href="https://youtu.be/6k83B7htaMw"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch the Finicky Bee documentary →
+          </a>
+        </div>
+      </section>
+    </>
+  ) : isRoyalDoulton ? (
+    <>
+      <section class="story-section">
+        <div class="story-layout">
+          <div class="story-image">
+            <img
+              src="/images/finds/FB-0002/img3.JPG"
+              alt="Royal Doulton African Series Lion D.6356 plate"
+            />
+          </div>
+
+          <div class="story-text">
+            <p class="eyebrow">THE STORY</p>
+
+            <h2>A lion at rest, preserved in English ceramic.</h2>
+
+            <p>
+              This Royal Doulton African Series plate presents a reclining
+              lion within a black-and-white wildlife transfer-print
+              composition.
+            </p>
+
+            <p>
+              The surrounding border depicts African wildlife and landscape
+              imagery, including zebras, antelope, and acacia trees.
+            </p>
+
+            <p>
+              The reverse carries the Royal Doulton maker's mark together
+              with the pattern number D.6356 and the African Series,
+              Lion, and African Game Reserve designations.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="story-section documentary-section">
+        <div class="narrow">
+          <p class="eyebrow">THE DOCUMENTARY</p>
+
+          <h2>Watch the story of the object.</h2>
+
+          <p>
+            Follow FB-0002 as this Royal Doulton African Series Lion plate is
+            examined, documented, and preserved through the Finicky Bee Finds
+            series.
+          </p>
+
+          <a
+             href="https://youtu.be/UPWvUe1DiFw"
+            class="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watch the Finicky Bee documentary →
+          </a>
+        </div>
+      </section>
+    </>
+  ) : (
+    <>
+     <section class="story-section">
+  <div class="story-layout">
+    <div class="story-image">
+      <img
+        src={storyPhoto.src}
+        alt={storyPhoto.alt}
+      />
+    </div>
+
+    <div class="story-text">
+      <p class="eyebrow">THE STORY</p>
+
+      <h2>A richly decorated Japanese Imari style charger with a story to investigate.</h2>
+
+      <p>
+        This Finicky Bee Finds entry documents a Japanese porcelain charger
+        attributed to Teizan, featuring an Imari-style decorative palette of
+        red, blue, green, black, and gold.
+      </p>
+
+      <p>
+        The surface is arranged in a segmented composition with floral and
+        bird motifs surrounding a central decorative medallion. Gold detailing
+        adds another layer to the painted design.
+      </p>
+
+      <p>
+        The piece is documented as received, with its observable decoration,
+        construction, dimensions, and condition preserved as part of the
+        Finicky Bee archive. No visible chips or cracks were observed during
+        documentation.
+      </p>
+    </div>
+  </div>
+</section>
+
+      {
+  isTeizan ? (
+    <section class="story-section documentary-section">
+      <div class="narrow">
+        <p class="eyebrow">THE DOCUMENTARY</p>
+        <h2>Watch the story of the object.</h2>
+        <p>
+          Follow FB-0003 as this Japanese Imari style porcelain charger is
+          examined, documented, and preserved through the Finicky Bee Finds
+          series.
+        </p>
+        <a
+          href="https://youtu.be/sWQ887wp8tw"
+          class="text-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Watch the Finicky Bee documentary →
+        </a>
+      </div>
+    </section>
+  ) : (
+    <section class="story-section documentary-section">
+      <div class="narrow">
+        <p class="eyebrow">THE DOCUMENTARY</p>
+        <h2>Watch the story of the object.</h2>
+        <p>
+          Follow FB-0017 as this charcoal box iron is examined,
+          documented, and preserved through the Finicky Bee Finds series.
+        </p>
+        <a
+          href="https://youtu.be/uSRMLEcfQ5M"
+          class="text-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Watch the Finicky Bee documentary →
+        </a>
+      </div>
+    </section>
+  )
+}
+    </>
+  )
+}
+
+    <section class="story-section photo-record">
+      <div class="narrow">
+        <p class="eyebrow">PHOTOGRAPHIC RECORD</p>
+
+        <h2>Observed details of the object.</h2>
+
+        <div class="photo-grid">
+          {
+  (isNativity
+    ? photos.filter((_, index) => index !== 0 && index !== 2)
+    : photos.filter((_, index) => index !== 0 && index !== 3)
+  ).map((photo) => (
+    <figure>
+      <img src={photo.src} alt={photo.alt} />
+    </figure>
+  ))
+}
+        </div>
+      </div>
+    </section>
+
+    {
+      isNativity ? (
+        <section class="story-section archive-record">
+          <div class="narrow">
+            <p class="eyebrow">COLLECTIBLE ARCHIVE RECORD</p>
+
+            <h2>Object record.</h2>
+
+            <div class="archive-details">
+              <p>
+                <strong>Archive ID:</strong> {collectible.archiveNumber}
+              </p>
+
+              <p>
+                <strong>Object:</strong> Robert Stanley Light-Up Nativity
+              </p>
+
+              <p>
+                <strong>Product / Packaging Name:</strong> <em>The Promise of Christmas</em>
+              </p>
+
+              <p>
+                <strong>Documented Era:</strong> Mid-2000s
+              </p>
+
+              <p>
+                <strong>Condition:</strong> Pre-owned; good condition. Minor
+                signs of wear, including scratches. The original manufacturer
+                box is present but is worn and in poor condition. The original
+                display stand is present, and the lighting assembly is part of
+                the object.
+              </p>
+
+              <p>
+                <strong>Approximate Width:</strong> 18 inches across
+              </p>
+
+              <p>
+                <strong>Documentation Note:</strong> Identification and
+                attribution are based on surviving documentary, packaging,
+                photographic, and listing documentation. No professional
+                authentication was performed.
+              </p>
+            </div>
+          </div>
+        </section>
+          ) : isRoyalDoulton ? (
+        <section class="story-section archive-record">
+          <div class="narrow">
+            <p class="eyebrow">COLLECTIBLE ARCHIVE RECORD</p>
+
+            <h2>Object record.</h2>
+
+            <div class="archive-details">
+              <p>
+                <strong>Archive ID:</strong> {collectible.archiveNumber}
+              </p>
+
+              <p>
+                <strong>Documentary / Drop No.:</strong> {collectible.documentaryNumber}
+              </p>
+
+              <p>
+                <strong>Documentary Title:</strong> Royal Doulton African Series Lion — D.6356
+              </p>
+
+              <p>
+                <strong>Object:</strong> Royal Doulton African Series Lion Charger / Decorative Plate
+              </p>
+
+              <p>
+                <strong>Maker / Brand:</strong> Royal Doulton
+              </p>
+
+              <p>
+                <strong>Pattern:</strong> D.6356
+              </p>
+
+              <p>
+                <strong>Series:</strong> African Series
+              </p>
+
+              <p>
+                <strong>Subject:</strong> Lion
+              </p>
+
+              <p>
+                <strong>Theme / Series:</strong> African Game Reserve
+              </p>
+
+              <p>
+                <strong>Country of Manufacture:</strong> England
+              </p>
+
+              <p>
+                <strong>Material:</strong> Ceramic
+              </p>
+
+              <p>
+                <strong>Approximate Diameter:</strong> 13.5 inches
+              </p>
+
+              <h3>Description</h3>
+
+              <p>
+                A large round decorative ceramic plate featuring a reclining lion
+                in a black-and-white wildlife transfer-print composition. The
+                surrounding border depicts African wildlife and landscape imagery,
+                including zebras, antelope/oryx, and acacia trees.
+              </p>
+
+              <p>
+                The piece has a glazed ceramic surface and is intended primarily
+                for decorative display.
+              </p>
+
+              <h3>Backstamp / Markings</h3>
+
+              <p>
+                The reverse is clearly marked:
+              </p>
+
+              <p>
+                D.6356.<br />
+                AFRICAN SERIES<br />
+                LION<br />
+                AFRICAN GAME RESERVE.
+              </p>
+
+              <p>
+                The reverse also bears the Royal Doulton lion-and-crown maker's
+                mark with Made in Royal Doulton England wording.
+              </p>
+
+              <h3>Production Period</h3>
+
+              <p>
+                <strong>Undetermined.</strong>
+              </p>
+
+              <p>
+                The original Finicky Bee sales documentation and documentary
+                attributed the piece to the 1980s. That attribution has not been
+                independently verified.
+              </p>
+
+              <p>
+                The surviving backstamp does not contain a visible date code
+                sufficient to establish the production period of this individual
+                piece.
+              </p>
+
+              <h3>Condition</h3>
+
+              <p>
+                Pre-owned; good condition based on surviving documentation and
+                examination.
+              </p>
+
+              <p>
+                The surviving documentation reports:
+              </p>
+
+              <ul>
+                <li>No chips</li>
+                <li>No cracks</li>
+                <li>Minor wear on the front</li>
+                <li>Minor discoloration on the reverse</li>
+              </ul>
+
+              <p>
+                The documentary footage shows the transfer image and glazed
+                surface intact.
+              </p>
+
+              <h3>Documentation Sources</h3>
+
+              <ul>
+                <li>Original Finicky Bee Finds documentary FB-0002</li>
+                <li>Original Finicky Bee photographs</li>
+                <li>Physical examination of the surviving Royal Doulton backstamp</li>
+                <li>Original product documentation</li>
+                <li>Supporting historical research concerning the Royal Doulton African Series</li>
+              </ul>
+
+              <h3>Attribution / Authentication Note</h3>
+
+              <p>
+                Identification is based on the surviving physical object, clearly
+                legible Royal Doulton backstamp, pattern number, series designation,
+                documentary footage, photographs, original documentation, and
+                supporting research.
+              </p>
+
+              <p>
+                No professional authentication has been performed.
+              </p>
+
+              <h3>Archive Reconstruction Note</h3>
+
+              <p>
+                Original archive record unavailable.
+              </p>
+
+              <p>
+                This archive record is a later reconstruction created from
+                surviving Finicky Bee Finds documentary material, photographs,
+                physical markings, original documentation, and subsequent research.
+              </p>
+
+              <p>
+                The reconstruction distinguishes directly observed evidence,
+                source-attributed information, and unresolved historical questions.
+              </p>
+            </div>
+          </div>
+        </section>
+      ) : isTeizan ? (
+  <section class="story-section archive-record">
+    <div class="narrow">
+      <p class="eyebrow">COLLECTIBLE ARCHIVE RECORD</p>
+
+      <h2>Object record.</h2>
+
+      <div class="archive-details">
+        <p>
+          <strong>Archive ID:</strong> {collectible.archiveNumber}
+        </p>
+
+        <p>
+          <strong>Documentary / Drop No.:</strong> {collectible.documentaryNumber}
+        </p>
+
+        <p>
+          <strong>Object:</strong> Japanese Imari Style Porcelain Charger Plate
+        </p>
+
+        <p>
+          <strong>Maker / Attribution:</strong> Teizan, attributed
+        </p>
+
+        <p>
+          <strong>Object Type:</strong> Decorative Porcelain Charger
+        </p>
+
+        <p>
+          <strong>Style:</strong> Arita Imari Style
+        </p>
+
+        <p>
+          <strong>Country of Origin:</strong> Japan
+        </p>
+
+        <p>
+          <strong>Material:</strong> Porcelain
+        </p>
+
+        <p>
+          <strong>Production Period:</strong> Undetermined
+        </p>
+
+        <p>
+          <strong>Approximate Diameter:</strong> 12.2 inches
+        </p>
+
+        <p>
+          <strong>Approximate Height:</strong> 1.6 inches
+        </p>
+
+        <h3>Object Identification</h3>
+
+        <p>
+          Japanese porcelain charger attributed to Teizan and decorated in an
+          Imari-style palette of red, blue, green, black, and gold. The
+          decorative composition includes floral and bird motifs arranged
+          across segmented panels surrounding a central medallion.
+        </p>
+
+        <h3>Physical Description</h3>
+
+        <p>
+          Large round decorative porcelain charger with hand-painted
+          ornamentation, floral and bird imagery, segmented decorative panels,
+          and gold accent detailing. The piece is documented as received.
+        </p>
+
+        <h3>Production Period</h3>
+
+        <p>
+          <strong>Undetermined.</strong>
+        </p>
+
+        <p>
+          Surviving sales and marketplace documentation contains conflicting
+          era descriptions. The available evidence is not sufficient to
+          establish a definitive production period for this individual piece.
+        </p>
+
+        <h3>Condition</h3>
+
+        <p>
+          Pre-owned; excellent condition considering age based on the surviving
+          documentation and examination.
+        </p>
+
+        <p>
+          No visible chips or cracks were observed during documentation.
+          Minimal storage wear and normal artist or manufacturing variations
+          may be present. No original packaging was documented.
+        </p>
+
+        <h3>Documentation Sources</h3>
+
+        <ul>
+          <li>Original Finicky Bee Finds documentary FB-0003</li>
+          <li>Original Finicky Bee photographs</li>
+          <li>Surviving marketplace listing documentation</li>
+          <li>Physical examination of the surviving object</li>
+        </ul>
+
+        <h3>Attribution / Authentication Note</h3>
+
+        <p>
+          The piece is attributed to Teizan based on the surviving
+          documentation. No professional authentication has been performed.
+        </p>
+
+        <h3>Documentation Integrity Statement</h3>
+
+        <p>
+          This record follows the Finicky Bee Documentation Integrity Standard.
+          Observable facts, source-attributed information, research-based
+          assessments, and unresolved historical questions are distinguished.
+          No appraisal or valuation is provided.
+        </p>
+      </div>
+    </div>
+  </section>
+      ) : null
+}
+    <section class="story-section story-note">
+      <div class="narrow">
+        <p class="eyebrow">DOCUMENTATION</p>
+
+        <h2>From discovery to archive.</h2>
+
+        <p>
+          The Finicky Bee Finds series follows objects through discovery,
+          research, documentation, and preservation.
+        </p>
+
+        <a href="/finds" class="text-link">
+          Back to Finicky Bee Finds →
+        </a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>
+        <p class="footer-brand">FINICKY BEE</p>
+        <p>Preserving Moments in Time — One Collectible at a Time.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="/about">About</a>
+        <a href="/finds">Finicky Bee Finds</a>
+        <a href="/collection">Collection</a>
+        <a href="/research">Research</a>
+        <a href="/shop">Shop</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+      </div>
+
+      <p class="copyright">
+        © {new Date().getFullYear()} Finicky Bee. All rights reserved.
+      </p>
+    </footer>
+  </main>
+</Layout>
+
+<style>
+  :global(body) {
+    margin: 0;
+    background: #f7f3e9;
+    color: #302f2a;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .story-hero {
+    padding: 80px 28px;
+    background: #2f4f3f;
+    color: #fffaf0;
+  }
+
+  .story-hero-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 70px;
+    align-items: center;
+  }
+
+  .story-hero-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .story-content {
+    max-width: 620px;
+  }
+
+  .eyebrow {
+    margin: 0 0 18px;
+    color: #d4a437;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+  }
+
+  h1,
+  h2 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+  }
+
+  h2 {
+    margin: 0 0 28px;
+    color: #2f4f3f;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+  }
+
+  p {
+    line-height: 1.8;
+  }
+
+  .editorial-title {
+    margin: 24px 0 0;
+    color: #e4c36b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.4rem, 2.5vw, 2rem);
+    font-style: italic;
+  }
+
+  .story-section {
+    padding: 100px 28px;
+  }
+
+  .story-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+    gap: 70px;
+    align-items: center;
+  }
+
+  .story-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .story-text {
+    max-width: 600px;
+  }
+
+  .documentary-section {
+    background: #f7f3e9;
+  }
+
+  .story-note {
+    background: #e8ebe4;
+  }
+
+  .archive-record {
+    background: #f1eee4;
+  }
+
+  .archive-details {
+    max-width: 760px;
+  }
+
+  .archive-details p {
+    margin: 0 0 24px;
+  }
+
+  .archive-details strong {
+    color: #2f4f3f;
+  }
+
+  .archive-details h3 {
+    margin: 42px 0 16px;
+    color: #2f4f3f;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.45rem;
+    font-weight: 400;
+  }
+
+  .narrow {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .photo-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .photo-grid figure {
+    margin: 0;
+  }
+
+  .photo-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .text-link {
+    display: inline-block;
+    margin-top: 18px;
+    color: #2f4f3f;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .text-link:hover {
+    color: #a77c16;
+  }
+
+  .site-footer {
+    padding: 60px 28px;
+    background: #243c30;
+    color: #f7f3e9;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    margin: 0 0 10px;
+    color: #e4c36b;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.14em;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links a {
+    color: #f7f3e9;
+    text-decoration: none;
+  }
+
+  .copyright {
+    grid-column: 1 / -1;
+    margin: 20px 0 0;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 0.8rem;
+  }
+
+  @media (max-width: 700px) {
+    .story-hero {
+      padding: 70px 22px;
+    }
+
+    .story-hero-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .story-content {
+      order: 1;
+    }
+
+    .story-hero-image {
+      order: 2;
+      width: 100%;
+    }
+
+    .story-section {
+      padding: 70px 22px;
+    }
+
+    .photo-grid {
+      grid-template-columns: 1fr;
+      gap: 22px;
+    }
+
+    .story-layout {
+      grid-template-columns: 1fr;
+      gap: 45px;
+    }
+
+    .site-footer {
+      grid-template-columns: 1fr;
+    }
+
+    .copyright {
+      grid-column: auto;
+    }
+  }
+</style>

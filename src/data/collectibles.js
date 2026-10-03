@@ -41,4 +41,16 @@ export const collectibles = [
     findSlug: "royal-doulton-lion",
     featured: false,
   },
+  {
+    id: "teizan-imari-charger",
+    documentaryNumber: "FB-0003",
+    archiveNumber: "FBA-0003",
+    title: "Japanese Imari Style Porcelain Charger Plate Teizan Arita Ware Collectible Decor",
+    editorialTitle: "The Teizan Imari Charger",
+    shortDescription:
+      "A Japanese porcelain charger attributed to Teizan, decorated in an Imari-style palette with floral and bird motifs and gold detailing.",
+    image: "/images/finds/FB-0003/FB-0003.JPG",
+    findSlug: "teizan-imari-charger",
+    featured: false,
+  },
 ];
