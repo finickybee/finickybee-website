@@ -2,6 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import { collectibles } from '../data/collectibles.js';
+const sortedCollectibles = [...collectibles].sort(
+  (a, b) =>
+    Number(b.documentaryNumber.replace("FB-", "")) -
+    Number(a.documentaryNumber.replace("FB-", ""))
+);
 ---
 
 <Layout
@@ -124,7 +129,7 @@ import { collectibles } from '../data/collectibles.js';
 
         <div class="collection-list">
           {
-            collectibles.map((collectible) => (
+            sortedCollectibles.map((collectible) => (
               <article class="collection-item">
                 <a href={`/finds/${collectible.findSlug}`}>
                   <img
