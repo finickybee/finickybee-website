@@ -2,6 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import { collectibles } from '../data/collectibles.js';
+const sortedCollectibles = [...collectibles].sort(
+  (a, b) =>
+    Number(b.documentaryNumber.replace("FB-", "")) -
+    Number(a.documentaryNumber.replace("FB-", ""))
+);
 
 const featuredCollectible =
   collectibles.find((collectible) => collectible.featured) ?? collectibles[0];
@@ -125,7 +130,7 @@ const featuredCollectible =
 
     <div class="documented-finds">
       {
-        collectibles.map((collectible) => (
+        sortedCollectibles.map((collectible) => (
           <article class="documented-find">
             <img
               src={collectible.image}
