@@ -22,15 +22,15 @@ const legacyPhotos = {
       alt: "Robert Stanley Light-Up Nativity",
     },
     {
-      src: "/images/finds/FB-0001/FB-0001- img2.jpg",
+      src: "/images/finds/FB-0001/img2.jpg",
       alt: "Robert Stanley Nativity display",
     },
     {
-      src: "/images/finds/FB-0001/FB-0001- img3.jpg",
+      src: "/images/finds/FB-0001/img3.jpg",
       alt: "Robert Stanley Nativity detail",
     },
     {
-      src: "/images/finds/FB-0001/FB-0001- img4.jpg",
+      src: "/images/finds/FB-0001/img4.jpg",
       alt: "Robert Stanley Nativity detail",
     },
   ],
@@ -41,15 +41,15 @@ const legacyPhotos = {
       alt: "Royal Doulton African Series Lion D.6356 decorative plate",
     },
     {
-      src: "/images/finds/FB-0002/FB-0002-img2.PNG",
+      src: "/images/finds/FB-0002/img2.JPG",
       alt: "Royal Doulton African Series Lion detail",
     },
     {
-      src: "/images/finds/FB-0002/FB-0002-img3.PNG",
+      src: "/images/finds/FB-0002/img3.JPG",
       alt: "Royal Doulton African Series Lion detail",
     },
     {
-      src: "/images/finds/FB-0002/FB-0002-img4.PNG",
+      src: "/images/finds/FB-0002/img4.JPG",
       alt: "Royal Doulton African Series Lion detail",
     },
   ],
@@ -60,18 +60,26 @@ const legacyPhotos = {
       alt: "Cast iron charcoal box iron with figural rooster catch",
     },
     {
-      src: "/images/finds/vintage-iron/02.jpg",
+      src: "/images/finds/vintage-iron/02-alternate.jpg",
       alt: "Cast iron charcoal box iron detail",
     },
     {
-      src: "/images/finds/vintage-iron/03.jpg",
+      src: "/images/finds/vintage-iron/03-rooster-catch.jpg",
       alt: "Cast iron charcoal box iron detail",
     },
     {
-      src: "/images/finds/vintage-iron/04.jpg",
-      alt: "Cast iron charcoal box iron detail",
-    },
-  ],
+    src: "/images/finds/vintage-iron/04-interior.jpg",
+    alt: "Cast iron charcoal box iron detail",
+},
+{
+    src: "/images/finds/vintage-iron/05-handle.jpg",
+    alt: "Cast iron charcoal box iron wooden handle detail",
+},
+{
+    src: "/images/finds/vintage-iron/06-soleplate.jpg",
+    alt: "Cast iron charcoal box iron soleplate detail",
+},
+],
 };
 
 const photos =
@@ -79,7 +87,7 @@ const photos =
     ? collectible.photos
     : legacyPhotos[collectible.id] ?? [];
 
-const storyPhotoIndex = collectible.storyPhotoIndex ?? (isNativity ? 2 : 3);
+const storyPhotoIndex = collectible.storyPhotoIndex ?? ((isNativity || isRoyalDoulton) ? 2 : 3);
 const storyPhoto = photos[storyPhotoIndex] ?? photos[0];
 const heroPhoto = photos[0];
 ---
