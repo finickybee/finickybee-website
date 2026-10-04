@@ -1,6 +1,12 @@
 export const featuredSettings = {
   mode: "automatic",
   manualCollectibleId: "vintage-iron",
+
+  documentaryMode: "automatic",
+  manualDocumentaryId: "vintage-iron",
+
+  archiveMode: "automatic",
+  manualArchiveId: "vintage-iron",
 };
 
 export const collectibles = [
@@ -15,6 +21,7 @@ export const collectibles = [
     image: "/images/finds/vintage-iron/01-hero.jpg",
     findSlug: "vintage-iron",
     featured: true,
+documentaryFeatureCandidate: true,
   },
 
   {
@@ -266,6 +273,7 @@ export const collectibles = [
     "/images/finds/FB-0005/FB-0005-img1.jpg    ← Scene 1 · Primary hero photo - Full front pair display.JPG",
   findSlug: "japanese-imari-plates-set-of-2",
   featured: false,
+  archiveFeatureCandidate: true,
 },
 {
     id: "baby-coos-porcelain-doll",

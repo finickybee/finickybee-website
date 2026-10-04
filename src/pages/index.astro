@@ -6,8 +6,11 @@ import {
   featuredSettings,
 } from '../data/collectibles.js';
 
-const automaticFeatured =
-  collectibles.find((collectible) => collectible.featured) ?? collectibles[0];
+const automaticFeatured = [...collectibles].sort(
+  (a, b) =>
+    Number(b.documentaryNumber.replace("FB-", "")) -
+    Number(a.documentaryNumber.replace("FB-", ""))
+)[0];
 
 const manualFeatured =
   collectibles.find(
@@ -19,6 +22,45 @@ const featuredCollectible =
   featuredSettings.mode === "manual"
     ? manualFeatured
     : automaticFeatured;
+const automaticDocumentary =
+  [...collectibles]
+    .filter((collectible) => collectible.documentaryFeatureCandidate === true)
+    .sort(
+      (a, b) =>
+        Number(b.documentaryNumber.replace("FB-", "")) -
+        Number(a.documentaryNumber.replace("FB-", ""))
+    )[0] ?? automaticFeatured;
+
+const manualDocumentary =
+  collectibles.find(
+    (collectible) =>
+      collectible.id === featuredSettings.manualDocumentaryId
+  ) ?? automaticDocumentary;
+
+const documentaryCollectible =
+  featuredSettings.documentaryMode === "manual"
+    ? manualDocumentary
+    : automaticDocumentary;
+
+const automaticArchive =
+  [...collectibles]
+    .filter((collectible) => collectible.archiveFeatureCandidate === true)
+    .sort(
+      (a, b) =>
+        Number(b.documentaryNumber.replace("FB-", "")) -
+        Number(a.documentaryNumber.replace("FB-", ""))
+    )[0] ?? automaticFeatured;
+
+const manualArchive =
+  collectibles.find(
+    (collectible) =>
+      collectible.id === featuredSettings.manualArchiveId
+  ) ?? automaticArchive;
+
+const archiveCollectible =
+  featuredSettings.archiveMode === "manual"
+    ? manualArchive
+    : automaticArchive;
 ---
 
 <Layout
@@ -96,13 +138,16 @@ const featuredCollectible =
 
     <section id="finds" class="feature section">
   <div class="feature-image">
-    <a href="/finds" aria-label="Explore Finicky Bee Finds">
-      <img
-        src="/images/homepage/finds.jpg"
-        alt="Antique manual coffee grinder"
-      />
-    </a>
-  </div>
+  <a
+    href={`/finds/${documentaryCollectible.findSlug}`}
+    aria-label={`Explore ${documentaryCollectible.title}`}
+  >
+    <img
+      src={documentaryCollectible.image}
+      alt={documentaryCollectible.title}
+    />
+  </a>
+</div>
 
       <div class="feature-content">
         <p class="eyebrow">DOCUMENTARY SERIES</p>
@@ -175,23 +220,26 @@ const featuredCollectible =
         </div>
       </div>
 
-      <div class="collection-grid">
-        <article class="collection-card">
-          <a href="/collection" class="collection-image-link">
-            <img
-              src="/images/homepage/collection.jpg"
-              alt="Collection of decorative illustrated plates displayed with books and a flower"
-            />
-          </a>
+     <div class="collection-grid">
+  <article class="collection-card">
+    <a
+      href={`/finds/${archiveCollectible.findSlug}`}
+      class="collection-image-link"
+    >
+      <img
+        src={archiveCollectible.image}
+        alt={archiveCollectible.title}
+      />
+    </a>
 
           <div class="card-content">
             <p class="archive-number">SELECTED FROM THE ARCHIVE</p>
             <h3>Decorative Plate Collection</h3>
-            <p>A collection of illustrated plates preserved as part of the archive.</p>
+<p>A collection of illustrated collected objects preserved as part of the archive.</p>
 
-            <a href="/collection" class="text-link">
-              View the archive →
-            </a>
+<a href="/collection" class="text-link">
+  View the archive →
+</a>
           </div>
         </article>
       </div>
@@ -695,7 +743,7 @@ Finicky Bee mission possible.
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .card-placeholder {
