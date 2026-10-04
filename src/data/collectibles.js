@@ -536,4 +536,144 @@ documentaryFeatureCandidate: true,
 
     featured: false,
   },
+  {
+    id: "shadow-weaver-studio-pottery-female-figure",
+    documentaryNumber: "FB-0007",
+    archiveNumber: "FBA-0007",
+
+    title:
+      "Vintage Hand-Marked Shadow Weaver Studio Pottery Female Figure Art Sculpture",
+
+    editorialTitle: "The Shadow Weaver Studio Pottery Figure",
+
+    shortDescription:
+      "A hand-marked studio pottery female figure with textured hair, a woven textile accent, and a speckled blue-gray ceramic surface.",
+
+    object: {
+      makerOrAttribution:
+        "Unknown; visible base marking reads \"Shadow Weaver\"",
+      objectType: "Studio Art Pottery Sculpture",
+      style: "Studio Art Pottery / Folk Art Inspired",
+      countryOfOrigin: "Undetermined",
+      material: "Ceramic Pottery / Fiber Textile Accent",
+      productionPeriod: "Undetermined",
+    },
+
+    dimensions: {
+      height: "Approximately 18 inches",
+      width: "Approximately 7 inches",
+      weight: "Approximately 6 lbs.",
+    },
+
+    condition: {
+      summary:
+        "Pre-owned; good condition based on the supplied marketplace documentation.",
+      observed:
+        "The supplied listing documentation reports no cracks or chips and no major damage observed.",
+      additional:
+        "Surface wear, storage wear, age-related display wear, handmade manufacturing variations, and other minor signs of use may be present.",
+    },
+
+    story: {
+      heading:
+        "A hand-marked studio pottery figure preserved for further research.",
+
+      paragraphs: [
+        "This Finicky Bee Finds entry documents a large female figure sculpture identified by a visible hand-marked \"Shadow Weaver\" inscription.",
+        "The figure combines a speckled blue-gray ceramic body with textured black hair, terracotta-toned facial details, and a hand-applied woven textile accent.",
+        "The object is documented through its observable form, visible marking, dimensions, condition, photography, and surviving marketplace documentation as part of the Finicky Bee archive.",
+      ],
+    },
+
+    documentary: {
+      url: "https://youtu.be/DJQ_dHnh9rE",
+      description:
+        "Follow FB-0007 as this hand-marked studio pottery female figure is examined, documented, and preserved through the Finicky Bee Finds series.",
+    },
+
+    research: {
+      objectIdentification:
+        "Studio art pottery female figure sculpture with a visible hand-marked \"Shadow Weaver\" inscription.",
+
+      physicalDescription:
+        "Large vertical female figure with textured black hair, terracotta-toned facial details, a woven textile accent, and a speckled blue-gray ceramic surface.",
+
+      productionPeriodNote:
+        "The supplied marketplace listing gives a research-based estimate of likely 1990s–2000s production. This estimate has not been independently established, so the Finicky Bee archive records the production period as Undetermined.",
+
+      attributionNote:
+        "The maker is currently unknown. The visible \"Shadow Weaver\" marking is documented as an observed inscription and is not being treated as a confirmed maker attribution.",
+    },
+
+    documentation: {
+      sources: [
+        "Original Finicky Bee Finds documentary FB-0007",
+        "Original Finicky Bee photographs",
+        "Surviving eBay listing documentation",
+        "Surviving Etsy listing documentation",
+        "Physical examination of the surviving object",
+      ],
+
+      integrityStatement:
+        "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, source-attributed information, research-based assessments, and unresolved historical questions are distinguished. No appraisal or valuation is provided.",
+    },
+
+    storyPhotoIndex: 2,
+
+    photos: [
+      {
+        src: "/images/finds/FB-0007/FB-0007-img1.JPG",
+        alt:
+          "Full front view of the hand-marked Shadow Weaver studio pottery female figure",
+      },
+      {
+        src: "/images/finds/FB-0007/FB-0007-img2.JPG",
+        alt:
+          "Bottom of the Shadow Weaver studio pottery figure showing the visible marking",
+      },
+      {
+        src: "/images/finds/FB-0007/FB-0007-img3.JPG",
+        alt:
+          "Detail view of the face, hair, and upper body of the Shadow Weaver studio pottery figure",
+      },
+      {
+        src: "/images/finds/FB-0007/FB-0007-img4.JPG",
+        alt:
+          "Close view of the bottom of the Shadow Weaver studio pottery figure",
+      },
+      {
+        src: "/images/finds/FB-0007/FB-0007-img5.JPG",
+        alt:
+          "Back view of the Shadow Weaver studio pottery female figure",
+      },
+      {
+        src: "/images/finds/FB-0007/FB-0007-img7.JPG",
+        alt:
+          "Side profile showing the thickness and sculptural form of the figure",
+      },
+    ],
+
+    lifestyleImage:
+      "/images/finds/FB-0007/FB-0007-img9.JPG",
+
+    sourceListings: {
+      ebay:
+        "https://www.ebay.com/itm/336625970613",
+      etsy:
+        "https://www.etsy.com/listing/4518044153/vintage-hand-marked-shadow-weaver-studio",
+    },
+
+    sections: {
+      storyLabel: "THE STORY",
+      documentaryLabel: "THE DOCUMENTARY",
+      archiveLabel: "COLLECTIBLE ARCHIVE RECORD",
+      photographicRecordLabel: "PHOTOGRAPHIC RECORD",
+    },
+
+    image: "/images/finds/FB-0007/FB-0007-img1.JPG",
+
+    findSlug: "shadow-weaver-studio-pottery-female-figure",
+
+    featured: false,
+  },
 ];
