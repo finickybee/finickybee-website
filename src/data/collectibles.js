@@ -402,4 +402,138 @@ documentaryFeatureCandidate: true,
     findSlug: "baby-coos-porcelain-doll",
     featured: false,
   },
+  {
+    id: "jake-g-studio-pottery-sculpture",
+    documentaryNumber: "FB-0006",
+    archiveNumber: "FBA-0006",
+
+    title:
+      "Rare Signed Jake G Studio Pottery Abstract Sculpture Dated 2014 Ceramic Art",
+
+    editorialTitle: "The Jake G Studio Pottery Sculpture",
+
+    shortDescription:
+      "A signed and dated studio pottery sculpture with an intertwined abstract form and glazed ceramic surface.",
+
+    object: {
+      makerOrAttribution:
+        "Jake G, signed; attribution based on visible marking and supplied marketplace documentation",
+      objectType: "Abstract Studio Pottery Sculpture",
+      style: "Contemporary Abstract Modernist",
+      countryOfOrigin: "Undetermined",
+      material: "Glazed Ceramic / Pottery",
+      productionPeriod: "2014, based on the dated marking documented in the supplied source material",
+    },
+
+    dimensions: {
+      height: "Approximately 15 inches",
+      width: "Approximately 7 inches",
+    },
+
+    condition: {
+      summary:
+        "Pre-owned; very good display condition based on the supplied marketplace documentation.",
+      observed:
+        "No major damage was reported in the supplied listing documentation.",
+      additional:
+        "Minor surface wear, light shelf wear, handmade pottery imperfections, and production irregularities may be present.",
+    },
+
+    story: {
+      heading:
+        "A signed studio pottery sculpture preserved for further research.",
+
+      paragraphs: [
+        "This Finicky Bee Finds entry documents a signed and dated studio pottery sculpture attributed to Jake G.",
+        "The sculpture has an intertwined openwork form with flowing curves and a glazed ceramic surface that emphasizes its sculptural structure.",
+        "The object is documented through its observable form, visible marking, dimensions, condition, and surviving marketplace documentation as part of the Finicky Bee archive.",
+      ],
+    },
+
+    documentary: {
+      url: "https://youtu.be/ruj1fkncLrI",
+      description:
+        "Follow FB-0006 as this signed and dated studio pottery sculpture is examined, documented, and preserved through the Finicky Bee Finds series.",
+    },
+
+    research: {
+      objectIdentification:
+        "Abstract studio pottery sculpture attributed to Jake G based on the visible marking and supplied marketplace documentation.",
+
+      physicalDescription:
+        "Vertical ceramic sculpture with an intertwined openwork form, flowing curved elements, and a glazed surface with metallic-inspired visual qualities.",
+
+      productionPeriodNote:
+        "The supplied marketplace documentation identifies the piece as dated 2014 and records the marking as 10/24/14. The date is therefore documented as source-attributed information associated with the visible marking, rather than independently established production history.",
+
+      attributionNote:
+        "The supplied marketplace documentation identifies the maker or artist as Jake G and the object bears a visible marking associated with that name. The attribution has not been professionally authenticated.",
+    },
+
+    documentation: {
+      sources: [
+        "Original Finicky Bee Finds documentary FB-0006",
+        "Original Finicky Bee photographs",
+        "Surviving eBay listing documentation",
+        "Physical examination of the surviving object",
+      ],
+
+      integrityStatement:
+        "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, source-attributed information, research-based assessments, and unresolved historical questions are distinguished. No appraisal or valuation is provided.",
+    },
+
+    storyPhotoIndex: 2,
+
+    photos: [
+      {
+        src: "/images/finds/FB-0006/IMG_1.JPG",
+        alt:
+          "Full view of the signed Jake G studio pottery abstract sculpture",
+      },
+      {
+  src: "/images/finds/FB-0006/FB-0006-img2.JPG",
+  alt:
+    "Back view of the studio pottery sculpture showing the underside and marking",
+},
+      {
+        src: "/images/finds/FB-0006/Scene 3 · img3.jpg    Detail view.JPG",
+        alt:
+          "Detail view of the intertwined form of the studio pottery sculpture",
+      },
+      {
+        src: "/images/finds/FB-0006/Scene 4 · img4.jpg    Surface  - close-up.JPG",
+        alt:
+          "Close view of the glazed ceramic surface of the sculpture",
+      },
+      {
+        src:
+          "/images/finds/FB-0006/Scene 5 img5.jpg    bottom maker stamp close-up, marked Jake G..JPG",
+        alt:
+          "Close view of the maker marking associated with Jake G on the sculpture",
+      },
+      {
+        src: "/images/finds/FB-0006/FB-0006-img7.JPG",
+        alt:
+          "Side profile showing the thickness and sculptural form of the ceramic piece",
+      },
+      {
+  src: "/images/finds/FB-0006/FB-0006-img8.png",
+  alt:
+    "Measuring view documenting the dimensions of the studio pottery sculpture",
+},
+    ],
+
+    sections: {
+      storyLabel: "THE STORY",
+      documentaryLabel: "THE DOCUMENTARY",
+      archiveLabel: "COLLECTIBLE ARCHIVE RECORD",
+      photographicRecordLabel: "PHOTOGRAPHIC RECORD",
+    },
+
+    image: "/images/finds/FB-0006/IMG_1.JPG",
+
+    findSlug: "jake-g-studio-pottery-sculpture",
+
+    featured: false,
+  },
 ];
