@@ -1044,4 +1044,130 @@ documentaryFeatureCandidate: true,
       "/images/finds/FB-0010/Scene 1 → img1.jpg Pair of Figurine Full front  display .JPG",
     findSlug: "corsairs-of-the-carrara-base"
   },
+  {
+    id: "sentinel-of-two-worlds",
+    documentaryNumber: "FB-0011",
+    archiveNumber: "FBA-0011",
+
+    title: "Carved Wooden African-Style Wall Mask",
+    editorialTitle: "The Sentinel of Two Worlds",
+    shortDescription:
+      "A tall carved Indonesian wooden wall mask in an African-inspired decorative style, marked Made in Indonesia and W171A, documented as a modern decorative export object rather than an African ethnographic artifact.",
+
+    object: {
+      makerOrAttribution:
+        "Unattributed Indonesian workshop; W171A treated as an importer",
+      objectType: "Carved wooden African-style decorative wall mask",
+      style: "Modern Indonesian African-inspired decorative wall art",
+      countryOfOrigin: "Indonesia",
+      material:
+        "Solid carved tropical hardwood (Albesia / Albizia type) with stained and limed / whitewashed finish",
+      productionPeriod: "Late 20th – early 21st century (research-based estimate)"
+    },
+
+    dimensions: {
+      overall:
+        "Approx. 38 in H × 12 in W × 10 in D"
+    },
+
+    condition: {
+      summary:
+        "Good vintage / pre-owned decorative condition; structurally sound with no breaks or losses to the carving.",
+      observed:
+        "The original stain and limed finish remain present. The reverse hanger and both paper labels are retained, including the Made in Indonesia label and handwritten W171A code.",
+      additional:
+        "Age-appropriate surface wear and light scuffing are present, including rubbed high points and minor edge and handling wear. The Made in Indonesia label shows partial lifting. Natural wood grain lines and tonal variation are documented as characteristics of the material rather than damage."
+    },
+
+    story: {
+      heading: "A Modern Indonesian Mask with an African-Inspired Form",
+      paragraphs: [
+        "This Finicky Bee Finds entry documents a tall carved wooden wall mask titled The Sentinel of Two Worlds, identified by its surviving Made in Indonesia label as an Indonesian-made decorative object.",
+        "The mask is carved from a single block of tropical hardwood and features an elongated human face, a stylized quadruped across the forehead, and two smaller standing figures flanking the nose. The visible carving, undercut relief, gouge facets, and unfinished reverse provide evidence of hand-finished construction.",
+        "The reverse carries a printed Made in Indonesia label and a handwritten W171A code. The code is treated as an importer reference rather than an artist signature. No individual carver or specific workshop has been established from the surviving evidence.",
+        "Although the form draws from African-inspired decorative imagery, this object is documented as Indonesian-made decorative wall art only. It is not described or presented as an African ethnographic or ceremonial artifact."
+      ]
+    },
+
+    documentary: {
+      url: "https://youtu.be/3zTD6HEP04Q",
+      description:
+        "Original Finicky Bee Finds documentary FB-0011."
+    },
+
+    research: {
+      objectIdentification:
+        "Carved wooden Indonesian decorative wall mask in an African-inspired style, approximately 38 inches tall, with surviving Made in Indonesia and W171A labels.",
+
+      physicalDescription:
+        "Single-block carved tropical hardwood wall mask with an elongated human face, pierced eyes and mouth, a stylized quadruped across the forehead, and two small standing figures flanking the nose. The reverse is unfinished and retains a metal wall hanger and paper labels.",
+
+      productionPeriodNote:
+        "The production period is estimated as late 20th to early 21st century based on the construction, materials, labeling, decorative genre, and historical context of Indonesian export-decor production. The exact production year cannot be established from the surviving evidence.",
+
+      attributionNote:
+        "The surviving Made in Indonesia label supports the stated country of origin. The handwritten W171A marking is treated as an importer code rather than an artist's signature. No individual carver or specific workshop has been established. This assessment is based on research and examination of the surviving object and has not been professionally authenticated by a qualified specialist."
+    },
+
+    documentation: {
+      sources: [
+        "Original Finicky Bee Finds documentary FB-0011",
+        "Original Finicky Bee photographs",
+        "Surviving eBay listing documentation",
+        "Surviving Etsy listing documentation",
+        "Physical examination of the surviving object",
+        "Visible Made in Indonesia and W171A labels",
+        "Comparative research into Indonesian African-style decorative wall masks"
+      ],
+
+      integrityStatement:
+        "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, source-attributed information, research-based assessments, and unresolved historical questions are distinguished. The Indonesian origin is supported by the surviving Made in Indonesia label. The W171A marking is treated as an importer code rather than an artist signature. The late 20th to early 21st century production period is a research-based assessment rather than an established fact. The object is African in decorative style only and is not described or implied as an African ethnographic or ceremonial artifact. No appraisal or valuation is provided."
+    },
+
+    storyPhotoIndex: 1,
+
+    photos: [
+      {
+        src: "/images/finds/FB-0011/front-display.png",
+        alt:
+          "Full front view of the carved wooden Indonesian African-style decorative wall mask"
+      },
+      {
+        src: "/images/finds/FB-0011/face-detail.jpg",
+        alt:
+          "Close view of the carved face, forehead quadruped, flanking figures, nose, and mouth"
+      },
+      {
+        src: "/images/finds/FB-0011/back-maker-mark.png",
+        alt:
+          "Reverse view documenting the Made in Indonesia label and W171A marking"
+      },
+      {
+        src: "/images/finds/FB-0011/measurement.png",
+        alt:
+          "Measurement view documenting the approximately 38-inch height and 12 by 10-inch dimensions"
+      },
+      {
+        src: "/images/finds/FB-0011/three-quarter-views.png",
+        alt:
+          "Multiple views showing the left side, full front, and right side of the carved wooden mask"
+      },
+      {
+        src: "/images/finds/FB-0011/reverse-detail.png",
+        alt:
+          "Reverse detail showing the carved wood surface, hanger, and visible construction details"
+      }
+    ],
+
+    sections: [
+      "story",
+      "documentary",
+      "photographic-record",
+      "archive-record"
+    ],
+
+    image:
+      "/images/finds/FB-0011/front-display.png",
+    findSlug: "sentinel-of-two-worlds"
+  }
 ];
