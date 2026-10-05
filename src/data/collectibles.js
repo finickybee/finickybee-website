@@ -676,4 +676,126 @@ documentaryFeatureCandidate: true,
 
     featured: false,
   },
+  {
+    id: "wm-adams-ironstone-tureen",
+    documentaryNumber: "FB-0008",
+    archiveNumber: "FBA-0008",
+
+    title: "Wm Adams & Sons Real Ironstone China Tureen — Complete Set",
+    editorialTitle: "Wm Adams & Sons Real Ironstone China Tureen — Complete Set",
+    shortDescription:
+      "A marked Wm Adams & Sons Real Ironstone China tureen, complete with matching lid, underplate, and ladle, documented as an early 20th-century Staffordshire ironstone set.",
+
+    object: {
+      makerOrAttribution: "Wm Adams & Sons, England",
+      objectType: "Covered soup tureen with matching underplate and ladle",
+      style: "Real Ironstone China / molded white ironstone",
+      countryOfOrigin: "England",
+      material: "Real Ironstone China (ironstone earthenware), clear glaze",
+      productionPeriod: "Undetermined — likely mid-20th century"
+    },
+
+    dimensions: {
+      overall:
+        "Tureen approx. 15 in L × 9.5 in W × 12 in H; underplate approx. 15.5 in L × 10.5 in W; ladle approx. 12 in L"
+    },
+
+    condition: {
+      summary:
+        "Excellent for age — unrestored; light crazing and minor age staining; no chips, cracks, or repairs observed.",
+      observed:
+        "All four pieces are structurally sound, with handles and pedestal intact. The lid seats correctly, and the ladle and underplate are matching components. Minor scratches, light surface/storage wear, faint age staining, and light yellow spotting on the reverse of the underplate were observed.",
+      additional:
+        "The printed maker's backstamp is legible on both the tureen and underplate. No visible chips, hairlines, cracks, losses, restorations, or replaced components were observed."
+    },
+
+    story: {
+      heading: "A Complete Staffordshire Ironstone Table Service",
+      paragraphs: [
+        "This complete set consists of a covered soup tureen with matching lid, underplate, and ladle. Its molded white ironstone body, wheat relief, applied scroll handles, and footed pedestal base reflect the durable yet formal tableware produced by Staffordshire potteries.",
+        "The underside of both the tureen and underplate carries a printed royal-arms backstamp reading “REAL IRONSTONE CHINA / Wm ADAMS & SONS, ENGLAND.” The surviving mark provides the primary basis for attribution to Wm Adams & Sons of England.",
+        "The surviving backstamp and construction provide useful chronological evidence, but published references assign differing date ranges to this mark configuration. The exact production period therefore remains undetermined, with mid-20th-century production currently the stronger working hypothesis.",
+        "Complete ironstone sets such as this became less common as individual pieces were lost through breakage, storage, and estate dispersal. The survival of the tureen, lid, matching underplate, and ladle together makes the set particularly useful as a documented example of its period."
+      ]
+    },
+
+   documentary: {
+  url: "https://youtu.be/nknbOpfbsgY",
+  description:
+    "Original Finicky Bee Finds documentary FB-0008."
+},
+
+    research: {
+      objectIdentification:
+        "Wm Adams & Sons Real Ironstone China covered soup tureen with matching underplate and ladle.",
+      physicalDescription:
+        "Molded white ironstone body with clear glaze, wheat relief, applied scroll handles, footed pedestal base, matching underplate, and ladle. Printed royal-arms backstamp present on the tureen and underplate.",
+      productionPeriodNote:
+  "The surviving Wm Adams & Sons backstamp provides useful chronological evidence, but published references assign differing date ranges to this mark configuration. One specialist white-ironstone reference places a comparable mark circa 1918–1930s, while The Potteries dates the illustrated printed mark to 1950+ and another marks reference places its introduction around 1950–1962. The Ceres/Wheat body style was produced by Adams over a much longer period and does not independently resolve the date. The exact production period therefore remains undetermined, with mid-20th-century production currently the stronger working hypothesis.",
+      attributionNote:
+  "Attribution rests on the printed backstamp identifying Wm Adams & Sons, England. The mark reads “REAL IRONSTONE CHINA / Wm ADAMS & SONS, ENGLAND.” The backstamp supports manufacturer attribution but does not, by itself, establish an exact production date."
+    },
+
+    documentation: {
+      sources: [
+        "Original Finicky Bee Finds documentary FB-0008",
+        "Original Finicky Bee photographs",
+        "Surviving eBay listing documentation",
+        "Surviving Etsy listing documentation",
+        "Physical examination of the surviving object",
+        "The Potteries — English potters' use of Royal Coat of Arms",
+        "Stoke Museums — Guides to Dating Pottery from Backstamps",
+        "Hemswell Antique Centres — Identifying Antique Pottery Marks"
+      ],
+      integrityStatement:
+  "Identification and dating are presented as research-based conclusions from the surviving object, visible marks, construction, and documented research sources. Published references assign differing date ranges to this mark configuration, so the exact production period remains undetermined. The current mid-20th-century assessment is a working hypothesis rather than an established production date."
+    },
+
+    storyPhotoIndex: 2,
+
+    photos: [
+      {
+        src: "/images/finds/FB-0008/FB-0008-img1.JPG",
+        alt: "Wm Adams & Sons Real Ironstone China tureen complete set displayed"
+      },
+      {
+        src: "/images/finds/FB-0008/FB-0008-img2.JPG",
+        alt: "Wm Adams & Sons maker's marks on the tureen and matching underplate"
+      },
+      {
+        src: "/images/finds/FB-0008/FB-0008-img3.JPG",
+        alt: "Detailed view of the complete Wm Adams & Sons ironstone tureen set"
+      },
+      {
+        src: "/images/finds/FB-0008/FB-0008-img4.JPG",
+        alt: "Bottom view of the Wm Adams & Sons ironstone tureen and components"
+      },
+      {
+        src: "/images/finds/FB-0008/FB-0008-img5.JPG",
+        alt: "Detailed view of the tureen, lid, ladle, and matching underplate"
+      },
+      {
+        src: "/images/finds/FB-0008/FB-0008-img7.JPG",
+        alt: "Side thickness profile of the Wm Adams & Sons ironstone tureen"
+      },
+      {
+        src: "/images/finds/FB-0008/FB-0008-img8.JPG",
+        alt: "Measuring tape showing dimensions of the Wm Adams & Sons ironstone tureen"
+      },
+      {
+        src: "/images/finds/FB-0008/FB-0008-img9.JPG",
+        alt: "Lifestyle display of the Wm Adams & Sons ironstone tureen set"
+      }
+    ],
+
+    sections: [
+      "story",
+      "documentary",
+      "photographic-record",
+      "archive-record"
+    ],
+
+    image: "/images/finds/FB-0008/FB-0008-img1.JPG",
+    findSlug: "wm-adams-ironstone-tureen"
+  },
 ];
