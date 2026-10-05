@@ -798,4 +798,120 @@ documentaryFeatureCandidate: true,
     image: "/images/finds/FB-0008/FB-0008-img1.JPG",
     findSlug: "wm-adams-ironstone-tureen"
   },
+  {
+    id: "imperial-style-coffee-mill",
+    documentaryNumber: "FB-0009",
+    archiveNumber: "FBA-0009",
+
+    title: "Antique Imperial-Style Coffee Mill",
+    editorialTitle: "Antique Imperial-Style Coffee Mill",
+    shortDescription:
+      "An unmarked Imperial-style American lap coffee mill, attributed to Arcade Manufacturing Co. or a contemporary maker, documented through its construction, casting pattern, mechanism, and surviving condition.",
+
+    object: {
+      makerOrAttribution:
+        "Unmarked; attributed to Arcade Manufacturing Co. or contemporary",
+      objectType: "Lap-style (table-top) hand-crank coffee mill / grinder",
+      style: "Imperial-style",
+      countryOfOrigin: "United States",
+      material:
+        "Hardwood case with cast iron hopper, mechanism, and crank; turned wood knobs",
+      productionPeriod: "Circa 1890–1910"
+    },
+
+    dimensions: {
+      overall:
+        "Approx. 7 in square base; 7.5 in to top of iron dome; 10.5–11 in to top of crank knob; weight approx. 3.8 lb"
+    },
+
+    condition: {
+      summary:
+        "Good antique condition; unrestored, with documented loss to the bottom base molding and an absent original paper label.",
+      observed:
+        "Original finish with even, mellow patina across the hardwood case. Box-jointed case and grounds drawer remain intact and tight, and the drawer slides freely. The burr grinding mechanism is present and complete, and the crank turns.",
+      additional:
+        "Surface oxidation and rust are present on the interior iron of the hopper and mechanism. Coffee staining is present inside the grounds drawer. A section of the wooden base molding is broken along one bottom edge, leaving a rough break line with exposed wood fiber; the mill remains structurally stable and sits flat. Tack holes in the top board indicate that an original paper label was once affixed. No cracks or chips were observed elsewhere in the case wood, and no repairs or replacements were detected."
+    },
+
+    story: {
+      heading: "A Working Coffee Mill from the American Kitchen",
+      paragraphs: [
+        "Before vacuum-packed ground coffee became commonplace, whole roasted coffee beans were part of everyday American kitchen life, and grinding was a routine household task. A lap-style mill such as this one could be placed on a table or held in the lap while beans were fed into the iron hopper and ground by turning the hand crank.",
+        "This mill has a square hardwood case with machine-cut box joints, a pull-out grounds drawer, an ornamental cast iron hopper dome with Victorian scrollwork, a pivoting swing cover, a curved cast iron crank, and a turned wood knob. Its construction profile places it within the factory-made American coffee mill forms that became common during the late nineteenth century.",
+        "The casting pattern closely resembles the Imperial family of lap mills associated with Arcade Manufacturing Co. of Freeport, Illinois. However, the surviving mill is unmarked. Because other manufacturers produced closely similar Imperial-style mills, including Parker, Wrightsville Hardware, and Sun Manufacturing, the defensible attribution remains Imperial-style, attributed to Arcade Manufacturing Co. or a contemporary maker.",
+        "The mill survives with its mechanism intact and original finish, while also retaining evidence of long use and age, including coffee staining, interior oxidation, and a documented loss to the wooden base molding. Its value to the archive is documentary: it preserves a physical example of an everyday American kitchen tool and the evidence needed to study its construction and attribution."
+      ]
+    },
+
+    documentary: {
+      url: "https://youtu.be/xhHcSg7fAXw",
+      description:
+        "Original Finicky Bee Finds documentary FB-0009."
+    },
+
+    research: {
+      objectIdentification:
+        "Imperial-style lap coffee mill / table-top hand-crank grinder, unmarked and attributed to Arcade Manufacturing Co. or a contemporary maker.",
+      physicalDescription:
+        "Square hardwood case with machine-cut box joints, pull-out grounds drawer, ornamental cast iron hopper dome with Victorian scrollwork, pivoting swing cover, curved cast iron crank, turned wood knob, and adjustable burr mechanism.",
+      productionPeriodNote:
+        "The estimated production period is circa 1890–1910, based on the construction profile, machine-cut box joinery, casting pattern, hardware, and comparison with documented American factory-made coffee mills of the period. The exact production year cannot be established from the surviving unmarked example.",
+      attributionNote:
+        "The casting pattern is a close match to the Imperial family of lap mills associated with Arcade Manufacturing Co. of Freeport, Illinois. Because the mill has no surviving maker's mark or paper label and other manufacturers produced closely similar Imperial-style mills, the defensible attribution is Imperial-style, attributed to Arcade Manufacturing Co. or a contemporary maker, unmarked."
+    },
+
+    documentation: {
+      sources: [
+        "Original Finicky Bee Finds documentary FB-0009",
+        "Original Finicky Bee photographs",
+        "Surviving eBay listing documentation",
+        "Surviving Etsy listing documentation",
+        "Physical examination of the surviving object",
+        "Documented comparison with marked Arcade Imperial examples",
+        "Dealer and auction records referenced in the original archive research",
+        "Antique Coffee Grinder Store — Arcade company history",
+        "Period manufacturing context for American box-jointed coffee mills"
+      ],
+      integrityStatement:
+        "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, source-attributed information, research-based assessments, and unresolved historical questions are distinguished. Identification, attribution, and dating are presented as research-based conclusions from the surviving object, its construction and casting pattern, and documented research sources. The maker attribution remains qualified because the surviving mill is unmarked and closely similar examples were produced by other manufacturers. The circa 1890–1910 production period is a research-based estimate rather than an established production date. This attribution is based on research and examination of the surviving object and has not been professionally authenticated by a qualified specialist. No appraisal or valuation is provided."
+    },
+
+      storyPhotoIndex: 1,
+
+    photos: [
+      {
+        src: "/images/finds/FB-0009/IMG_1742.JPG",
+        alt: "Antique Imperial-Style Coffee Mill showing its cast iron hopper, crank, and hardwood case"
+      },
+      {
+  src: "/images/finds/FB-0009/IMG_1738.JPG",
+  alt: "View of the Antique Imperial-Style Coffee Mill"
+},
+      {
+        src: "/images/finds/FB-0009/IMG_1748.JPG",
+        alt: "Close view of the hopper and grinding mechanism of the Antique Imperial-Style Coffee Mill"
+      },
+      {
+        src: "/images/finds/FB-0009/IMG_1753.JPG",
+        alt: "Front detail of the hopper and crank on the Antique Imperial-Style Coffee Mill"
+      },
+      {
+        src: "/images/finds/FB-0009/IMG_1771.JPG",
+        alt: "Detailed view of the Antique Imperial-Style Coffee Mill"
+      },
+      {
+        src: "/images/finds/FB-0009/IMG_1763.JPG",
+        alt: "Side view of the Antique Imperial-Style Coffee Mill"
+      }
+    ],
+    sections: [
+      "story",
+      "documentary",
+      "photographic-record",
+      "archive-record"
+    ],
+
+    image: "/images/finds/FB-0009/IMG_1742.JPG",
+    findSlug: "imperial-style-coffee-mill"
+  }
 ];
