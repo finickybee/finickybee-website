@@ -913,5 +913,135 @@ documentaryFeatureCandidate: true,
 
     image: "/images/finds/FB-0009/IMG_1742.JPG",
     findSlug: "imperial-style-coffee-mill"
-  }
+    },
+  {
+    id: "corsairs-of-the-carrara-base",
+    documentaryNumber: "FB-0010",
+    archiveNumber: "FBA-0010",
+
+    title: "Vintage Depose Italy Pirate Figurines Pair (802 & 803)",
+    editorialTitle: "The Corsairs of the Carrara Base",
+    shortDescription:
+      "A matched pair of vintage Italian pirate figurines marked Depose Italy 802 and 803, mounted on genuine Carrara marble bases and attributed to the Fontanini / Simonetti tradition.",
+
+    object: {
+      makerOrAttribution:
+        "Marked Depose Italy 802 & 803; attributed to the Fontanini / Simonetti tradition",
+      objectType: "Matched pair of hand-painted resin pirate / corsair figurines on Carrara marble bases",
+      style: "Post-war Italian decorative figure tradition",
+      countryOfOrigin: "Italy",
+      material:
+        "Hand-painted cast resin figures with genuine Carrara marble bases, gilt-finished scrollwork plinths, and felt undersides",
+      productionPeriod: "Circa mid-century, pre-1980s (research-based estimate)"
+    },
+
+    dimensions: {
+      overall:
+        "Buccaneer 802 approx. 8 in tall; Quartermaster 803 approx. 9 in tall; each marble base approx. 4.5 in × 3 in"
+    },
+
+    condition: {
+      summary:
+        "Good vintage condition; unrestored, with original paint, labels, and mounting components retained.",
+      observed:
+        "Both figures are structurally sound with bright, well-preserved painted surfaces. Original gold Carrara marble labels remain on both bases, and the figures remain mounted to their gilt-finished plinths.",
+      additional:
+        "One marble base, associated with the Quartermaster 803, has a vertical crack along the front edge. Light surface wear is present. No visible chips or breaks to the figures, repaints, repairs, or replaced figure components were observed during documentation. The Buccaneer 802 turns on its screw mount."
+    },
+
+    story: {
+      heading: "Two Italian Corsairs Preserved on Carrara Marble",
+
+      paragraphs: [
+        "This Finicky Bee Finds entry documents a matched pair of vintage Italian pirate or corsair figurines marked Depose Italy 802 and 803 and mounted on genuine Carrara marble bases.",
+
+        "The figures represent a Buccaneer and a Quartermaster, each presented on an ornate gilt-finished plinth. Their hand-painted resin construction, marble bases, applied decorative details, and surviving maker and material labels reflect the post-war Italian decorative-figure tradition.",
+
+        "The surviving marks provide important evidence for the pair. Both gilt plinths carry embossed Depose Italy markings with model numbers 802 and 803, while the marble bases retain gold labels identifying Genuine Carrara Marble and Made in Italy.",
+
+        "The pair is attributed to the Fontanini / Simonetti tradition as a research-based assessment rather than a professionally authenticated maker identification. The archive preserves the distinction between the surviving marks, the physical evidence, and the broader historical attribution."
+      ]
+    },
+
+    documentary: {
+      url: "https://youtu.be/ddYJnVgLjkA",
+      description:
+        "Original Finicky Bee Finds documentary FB-0010."
+    },
+
+    research: {
+      objectIdentification:
+        "Matched pair of Italian decorative pirate / corsair figures marked Depose Italy 802 and 803, mounted on genuine Carrara marble bases and attributed to the Fontanini / Simonetti tradition.",
+
+      physicalDescription:
+        "Hand-painted cast resin Buccaneer and Quartermaster figures mounted to gilt-finished scrollwork plinths over genuine Carrara marble bases. Both bases retain original gold Genuine Carrara Marble — Made in Italy labels, and both plinths carry embossed Depose Italy model markings.",
+
+      productionPeriodNote:
+  "The production period is estimated as circa mid-century, pre-1980s, based on the surviving Depose Italy markings, the marking tradition associated with earlier Fontanini production, construction characteristics, and historical context. The exact production year cannot be established from the surviving evidence.",
+
+      attributionNote:
+        "The figures are marked Depose Italy 802 and 803 and are associated with the Fontanini / Simonetti tradition based on their construction profile, markings, and documented historical comparison. The exact factory line and specific sculptor have not been established. This attribution is based on research and examination of the surviving objects and has not been professionally authenticated by a qualified specialist."
+    },
+
+    documentation: {
+      sources: [
+        "Original Finicky Bee Finds documentary FB-0010",
+        "Original Finicky Bee photographs",
+        "Surviving eBay listing documentation",
+        "Surviving Etsy listing documentation",
+        "Physical examination of the surviving objects",
+        "Documented Fontanini / Simonetti historical and marking research",
+        "Depose Italy markings and surviving Carrara marble labels"
+      ],
+
+      integrityStatement:
+        "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, source-attributed information, research-based assessments, and unresolved historical questions are distinguished. The Fontanini / Simonetti attribution and circa mid-century, pre-1980s production period are research-based assessments rather than established facts. This attribution is based on research and examination of the surviving objects and has not been professionally authenticated by a qualified specialist. No appraisal or valuation is provided."
+    },
+
+    storyPhotoIndex: 1,
+
+    photos: [
+      {
+        src: "/images/finds/FB-0010/Scene 1 → img1.jpg Pair of Figurine Full front  display .JPG",
+        alt:
+          "Full front view of the matched pair of vintage Depose Italy pirate figurines on Carrara marble bases"
+      },
+      {
+        src: "/images/finds/FB-0010/Scene 10 img10.jpg  Lifestyle Image.JPG",
+        alt:
+          "Lifestyle display of the vintage Depose Italy pirate figurine pair"
+      },
+      {
+        src: "/images/finds/FB-0010/Scene 3 · img3.jpg   Pair of Figurine Close up view of the makers marking at the bottom back side of the base.JPG",
+        alt:
+          "Close view of the Depose Italy maker markings on the pirate figurine pair"
+      },
+      {
+        src: "/images/finds/FB-0010/scene-5-measurement.jpg",
+        alt:
+          "Measurement view documenting the approximately 8-inch height and 4.5 by 3-inch base dimensions of the Buccaneer 802 figurine"
+      },
+      {
+        src: "/images/finds/FB-0010/Scene 8 · img8.jpgPirate Quartermaster Figurine (803) one marble base has a CRACK has a crack along the front edge.jpg",
+        alt:
+          "Close view documenting the crack along the front edge of the Quartermaster 803 Carrara marble base"
+      },
+      {
+        src: "/images/finds/FB-0010/Scene 9 · img9.jpg    Side thickness profile the pair figurines.jpg",
+        alt:
+          "Side profile showing the thickness and form of the matched pirate figurine pair"
+      }
+    ],
+
+    sections: [
+      "story",
+      "documentary",
+      "photographic-record",
+      "archive-record"
+    ],
+
+    image:
+      "/images/finds/FB-0010/Scene 1 → img1.jpg Pair of Figurine Full front  display .JPG",
+    findSlug: "corsairs-of-the-carrara-base"
+  },
 ];
