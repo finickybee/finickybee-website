@@ -733,7 +733,7 @@ documentaryFeatureCandidate: true,
       productionPeriodNote:
   "The surviving Wm Adams & Sons backstamp provides useful chronological evidence, but published references assign differing date ranges to this mark configuration. One specialist white-ironstone reference places a comparable mark circa 1918–1930s, while The Potteries dates the illustrated printed mark to 1950+ and another marks reference places its introduction around 1950–1962. The Ceres/Wheat body style was produced by Adams over a much longer period and does not independently resolve the date. The exact production period therefore remains undetermined, with mid-20th-century production currently the stronger working hypothesis.",
       attributionNote:
-  "Attribution rests on the printed backstamp identifying Wm Adams & Sons, England. The mark reads “REAL IRONSTONE CHINA / Wm ADAMS & SONS, ENGLAND.” The backstamp supports manufacturer attribution but does not, by itself, establish an exact production date."
+  "Attribution rests on the printed backstamp identifying Wm Adams & Sons, England. The mark reads “REAL IRONSTONE CHINA / Wm ADAMS & SONS, ENGLAND.” The backstamp supports manufacturer attribution but does not, by itself, establish an exact production date. This attribution is based on research and examination of the surviving object and has not been professionally authenticated by a qualified specialist.",
     },
 
     documentation: {
