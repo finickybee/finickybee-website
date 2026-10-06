@@ -1243,7 +1243,6 @@ documentaryFeatureCandidate: true,
         "Original Finicky Bee Finds documentary FB-0012",
         "Original Finicky Bee photographs",
         "Surviving eBay listing documentation",
-        "Completed eBay transaction documentation for item 336653810012",
         "Physical examination of the surviving object",
         "Underside ARTINA / SKS / ZINN / 95% maker and material mark",
         {
