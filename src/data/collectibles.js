@@ -1204,7 +1204,7 @@ documentaryFeatureCandidate: true,
       observed:
         "The stein appears complete with its hinged lid, hinge, handle, thumb lift, full-relief lion finial, relief body panels, base, and rim borders present.",
       additional:
-        "Light handling wear and normal surface/reflective variation are visible. A small rim ding/minor edge deformation is documented at the upper inner lip. No major body split, missing handle, detached lid, or missing finial is visible in the supplied photographs."
+        "Light handling wear and normal surface/reflective variation are visible. A small rim ding/minor edge deformation is documented at the upper inner lip. No major body split, missing handle, detached lid, or missing during the physical inspection and documentation."
     },
 
     story: {
@@ -1304,4 +1304,147 @@ documentaryFeatureCandidate: true,
       "/images/finds/FB-0012/front-display.png",
     findSlug: "artina-bayern-pewter-stein"
   },
+  {
+  id: "six-tales-of-neubacher",
+  documentaryNumber: "FB-0013",
+  archiveNumber: "FBA-0013",
+
+  title: "Kaiser Classic Fairy Tales — The Six Tales of Neubacher",
+  editorialTitle: "The Six Tales of Neubacher — Kaiser Porcelain & Gerda Neubacher",
+  shortDescription:
+    "A complete matched set of six Kaiser Porzellan collector plates from the Classic Fairy Tales series, documented with their surviving maker marks, G. Neubacher signatures, Bradex sequence, and accompanying story booklets.",
+
+  object: {
+    makerOrAttribution:
+      "Kaiser Porzellan; maker mark reads AK / KAISER / W. GERMANY; artwork signed G. Neubacher",
+    objectType: "Set of six porcelain collector / wall plates",
+    style: "Classic Fairy Tales / German Märchen",
+    countryOfOrigin: "West Germany, based on the surviving W. GERMANY maker's mark",
+    material:
+      "Hard-paste porcelain with gloss white body, 24-karat gold rim decoration, polychrome transfer decoration, and hand-applied raised enamel and gold accents",
+    productionPeriod: "1982–1984 (research-based)"
+  },
+
+  dimensions: {
+    diameter: "Approximately 7.5 inches each"
+  },
+
+  condition: {
+    summary:
+      "Very good display condition; complete matched six-plate set with six accompanying story booklets.",
+    observed:
+      "All six plates are present and correctly matched to the Classic Fairy Tales sequence. The surviving reverses retain their maker, artist, German edition, and Bradex markings.",
+    additional:
+      "Several reverses retain old adhesive tape and tape-shadow/residue, with light gold-rim handling wear. No original boxes are included. No chips, cracks, or repairs were identified during the physical inspection and documentation."
+  },
+
+  story: {
+    heading: "The Six Tales of Neubacher",
+    paragraphs: [
+      "This Finicky Bee Finds entry documents a complete matched set of six Kaiser Porzellan plates from the Classic Fairy Tales series, with artwork signed G. Neubacher.",
+      "Each plate presents a different European fairy tale, with the complete sequence consisting of The Frog King, Puss in Boots, Little Red Riding Hood, Hansel and Gretel, Cinderella, and Sleeping Beauty.",
+      "The surviving reverses provide useful documentary evidence for the set. The plates carry the Kaiser W. GERMANY maker mark, German edition text, individual Bradex numbers from 22-K.4-5.1 through 22-K.4-5.6, and individual hand-inked numbers.",
+      "The six plates are accompanied by six matching miniature storybook or certificate booklets. Their complete sequence, surviving markings, direct measurement, and documented condition are preserved as part of the Finicky Bee archive."
+    ]
+  },
+
+  documentary: {
+    url: "https://youtu.be/botWqHvT2OY",
+    description:
+      "Original Finicky Bee Finds documentary FB-0013."
+  },
+
+  research: {
+    objectIdentification:
+      "Complete matched set of six Kaiser Porzellan porcelain collector plates from the Classic Fairy Tales series. The set corresponds to Bradex numbers 22-K.4-5.1 through 22-K.4-5.6. The artwork on the surviving plates is signed G. Neubacher.",
+
+    physicalDescription:
+      "Six round porcelain wall or collector plates, each approximately 7.5 inches in diameter, with gloss white bodies, 24-karat gold rim decoration, polychrome fairy-tale imagery, raised enamel and gold accents, pierced foot rings for wall hanging, and documented Kaiser / W. GERMANY reverse markings. Each plate carries an individual hand-inked number.",
+
+    productionPeriodNote:
+      "The series is documented as 1982–1984 based on independent research. The surviving Kaiser W. GERMANY mark is consistent with West German production, and the complete series is documented within the Finicky Bee research record as 1982–1984.",
+
+    attributionNote:
+      "The maker attribution is supported by the surviving crowned-AK / KAISER / W. GERMANY mark. The artwork is signed “G. Neubacher.” This attribution is based on research and examination of the surviving object and has not been professionally authenticated by a qualified specialist."
+  },
+
+  documentation: {
+    sources: [
+      "Original Finicky Bee Finds documentary FB-0013",
+      "Original Finicky Bee photographs",
+      "eBay listing documentation",
+      "Etsy listing documentation",
+      "Physical examination and documentation of the surviving set",
+      "Kaiser / W. GERMANY maker mark",
+      "G. Neubacher signatures on the surviving plates",
+      "German edition text present on the surviving plates",
+      "Bradex 22-K.4-5.1 through 22-K.4-5.6 sequence documented on the surviving plates",
+      "Finicky Bee Finds archive record and research notes"
+    ],
+
+    integrityStatement:
+      "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, research-based information, and unresolved historical questions are distinguished. The Kaiser maker attribution, G. Neubacher signature, six-plate sequence, Bradex numbers, and 1982–1984 series period are documented in the Finicky Bee archive based on examination of the surviving objects and research. No appraisal or valuation is provided."
+  },
+
+  storyPhotoIndex: 1,
+
+  photos: [
+    {
+      src: "/images/finds/FB-0013/hero-six-plates.jpg",
+      alt:
+        "Full front display of all six Kaiser Classic Fairy Tales plates with their accompanying story booklets"
+    },
+    {
+      src: "/images/finds/FB-0013/back-marks-group.jpg",
+      alt:
+        "Reverse views documenting the Kaiser maker marks, G. Neubacher signatures, German edition text, and Bradex sequence"
+    },
+    {
+      src: "/images/finds/FB-0013/cinderella.png",
+      alt: "Kaiser Classic Fairy Tales plate depicting Cinderella"
+    },
+    {
+      src: "/images/finds/FB-0013/frog-king.png",
+      alt: "Kaiser Classic Fairy Tales plate depicting The Frog King"
+    },
+    {
+      src: "/images/finds/FB-0013/hansel-and-gretel.png",
+      alt: "Kaiser Classic Fairy Tales plate depicting Hansel and Gretel"
+    },
+    {
+      src: "/images/finds/FB-0013/little-red-riding-hood.png",
+      alt: "Kaiser Classic Fairy Tales plate depicting Little Red Riding Hood"
+    },
+    {
+      src: "/images/finds/FB-0013/measurement.jpg",
+      alt:
+        "Measurement view documenting the approximately 7.5-inch diameter of the Kaiser Classic Fairy Tales plates"
+    },
+    {
+      src: "/images/finds/FB-0013/puss-in-boots.png",
+      alt: "Kaiser Classic Fairy Tales plate depicting Puss in Boots"
+    },
+    {
+      src: "/images/finds/FB-0013/sleeping-beauty.png",
+      alt: "Kaiser Classic Fairy Tales plate depicting Sleeping Beauty"
+    }
+  ],
+
+  sourceListings: {
+    ebay:
+      "https://www.ebay.com/itm/336655096632",
+    etsy:
+      "https://www.etsy.com/listing/4527488333/vintage-kaiser-w-germany-gerda-neubacher"
+  },
+
+  sections: [
+    "story",
+    "documentary",
+    "photographic-record",
+    "archive-record"
+  ],
+
+  image: "/images/finds/FB-0013/hero-six-plates.jpg",
+  findSlug: "six-tales-of-neubacher"
+},
 ];
