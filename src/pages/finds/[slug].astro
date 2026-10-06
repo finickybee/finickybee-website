@@ -481,8 +481,16 @@ const heroPhoto = photos[0];
 
           <ul>
             {collectible.documentation.sources.map((source) => (
-              <li>{source}</li>
-            ))}
+  <li>
+    {typeof source === "string" ? (
+      source
+    ) : (
+      <a href={source.url} target="_blank" rel="noopener noreferrer">
+        {source.label}
+      </a>
+    )}
+  </li>
+))}
           </ul>
 
           <h3>Attribution / Authentication Note</h3>

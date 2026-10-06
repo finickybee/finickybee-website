@@ -1168,6 +1168,141 @@ documentaryFeatureCandidate: true,
 
     image:
       "/images/finds/FB-0011/front-display.png",
-    findSlug: "sentinel-of-two-worlds"
-  }
+      findSlug: "sentinel-of-two-worlds"
+},
+{
+    id: "artina-bayern-pewter-stein",
+    documentaryNumber: "FB-0012",
+    archiveNumber: "FBA-0012",
+
+    title: "ARTINA SKS ZINN 95% Bayern / Bavaria Pewter Lidded Beer Stein",
+    editorialTitle: "The Bavarian Lion — ARTINA SKS ZINN 95% Pewter Stein",
+    shortDescription:
+      "A substantial ARTINA SKS ZINN 95% pewter lidded stein with Bavarian relief decoration, including the Bavarian crest, Neuschwanstein Castle, München/Marienplatz, and a three-dimensional Bavarian lion finial.",
+
+    object: {
+      makerOrAttribution:
+        "ARTINA SKS; marked ARTINA / SKS / ZINN / 95%; closely corresponding to ARTINA SKS Bayern/Bavaria model 60192",
+      objectType: "Lidded pewter beer stein / tankard",
+      style: "Bayern / Bavaria high-relief decorative pewter stein",
+      countryOfOrigin:
+        "Austria — strongly supported by documentation for the matching ARTINA SKS Bayern model 60192; the individual example does not carry a surviving country-of-origin mark",
+      material:
+        "95% tin pewter alloy, as indicated by the underside mark",
+      productionPeriod:
+        "Undetermined; likely late 20th century or later. The stein closely corresponds to ARTINA SKS Bayern/Bavaria model 60192, documented at approximately 25 cm / 10 inches in height. The exact production date of this individual example cannot be established from the surviving evidence."
+    },
+
+    dimensions: {
+      overall: "Approx. 10 in H × 7 in handle-to-front × 5 in body width",
+      weight: "Approx. 2 lb 9.6 oz"
+    },
+
+    condition: {
+      summary:
+        "Very good display condition; unrestored, with light handling wear and a small rim ding/minor edge deformation.",
+      observed:
+        "The stein appears complete with its hinged lid, hinge, handle, thumb lift, full-relief lion finial, relief body panels, base, and rim borders present.",
+      additional:
+        "Light handling wear and normal surface/reflective variation are visible. A small rim ding/minor edge deformation is documented at the upper inner lip. No major body split, missing handle, detached lid, or missing finial is visible in the supplied photographs."
+    },
+
+    story: {
+      heading: "The Bavarian Lion",
+      paragraphs: [
+        "This Finicky Bee Finds entry documents a substantial ARTINA SKS ZINN 95% pewter lidded beer stein decorated with a distinctly Bavarian relief program.",
+        "The body presents Bavarian imagery including the Bayern banner and crest, Neuschwanstein Castle, and a München/Marienplatz city scene. A full-relief Bavarian lion surmounts the hinged lid.",
+        "The underside is stamped ARTINA / SKS / ZINN / 95%, providing the primary maker and material evidence. The decorative program and approximately 10-inch height correspond closely to documented ARTINA SKS Bayern model 60192.",
+        "Current product documentation for ARTINA SKS model 60192 identifies the matching Bayern/Bavaria stein as approximately 10 inches high, made of pewter, and made in Austria. The surviving example itself does not carry a separate country-of-origin mark, so the Austrian attribution is presented as strongly supported rather than as an object-level stamped origin claim.",
+        "The exact production year cannot be established from the surviving object. It is therefore documented as a likely late-20th-century-or-later ARTINA SKS Bayern/Bavaria product-family example without assigning an unsupported specific year."
+      ]
+    },
+
+    documentary: {
+      url: "https://youtu.be/PMpchZnEAgI",
+      description:
+        "Original Finicky Bee Finds documentary FB-0012."
+    },
+
+    research: {
+      objectIdentification:
+        "ARTINA SKS ZINN 95% Bayern/Bavaria pewter lidded beer stein closely corresponding to ARTINA SKS model 60192, with Bavarian crest, Neuschwanstein Castle, München/Marienplatz relief scenes, hinged lid, and three-dimensional lion finial.",
+
+      physicalDescription:
+        "Cast and assembled pewter lidded stein with raised relief panels, ornamental base and rim borders, cast handle, hinged lid, thumb lift, and full-relief lion finial. The underside is stamped ARTINA / SKS / ZINN / 95%.",
+
+      productionPeriodNote:
+        "The exact production period is undetermined. The stein closely corresponds to ARTINA SKS Bayern/Bavaria model 60192, documented at approximately 25 cm / 10 inches in height. ARTINA was founded in Austria in 1974, and SKS acquired 50% of ARTINA in 1978 before becoming sole owner in 1995. These corporate dates establish historical context for the ARTINA SKS mark but do not establish the production year of this individual stein. The safest public dating is likely late 20th century or later.",
+
+      attributionNote:
+        "The ARTINA SKS attribution is supported by the clear underside ARTINA / SKS / ZINN / 95% mark and by close correspondence with documented ARTINA SKS Bayern model 60192. The matching product documentation identifies the model as a Bayern/Bavaria pewter stein approximately 10 inches high and made in Austria. Because the surviving object does not itself carry a separate country-of-origin mark, the Austrian manufacture attribution is presented as strongly supported by the matching model documentation rather than as an object-level stamped origin claim. This attribution is based on research and examination of the surviving object and has not been professionally authenticated by a qualified specialist."
+    },
+
+    documentation: {
+      sources: [
+        "Original Finicky Bee Finds documentary FB-0012",
+        "Original Finicky Bee photographs",
+        "Surviving eBay listing documentation",
+        "Completed eBay transaction documentation for item 336653810012",
+        "Physical examination of the surviving object",
+        "Underside ARTINA / SKS / ZINN / 95% maker and material mark",
+        {
+  label: "ARTINA SKS product catalog — model 60192 (“BIERHUMPEN BAYERN”), approx. 26 cm / 0.9 L",
+  url: "https://artina-sks.ru/catalogs/Artina-catalog.pdf"
+},
+        "ARTINA official company history and Austrian production history",
+        "ARTINA official pewter quality information",
+        "Comparative documentation of the ARTINA Bayern/Bavaria pewter product family"
+      ],
+
+      integrityStatement:
+        "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, source-attributed information, research-based assessments, and unresolved historical questions are distinguished. The ARTINA SKS attribution and Bayern/Bavaria model-family identification are supported by the surviving mark, physical characteristics, dimensions, and comparative product documentation. Austrian manufacture is strongly supported by documentation for the matching model, while the individual example does not carry a separate country-of-origin mark. The exact production year remains unresolved. No appraisal or valuation is provided."
+    },
+
+    storyPhotoIndex: 1,
+
+    photos: [
+      {
+        src: "/images/finds/FB-0012/front-display.png",
+        alt:
+          "Full front view of the ARTINA SKS ZINN 95% Bayern Bavaria pewter lidded stein"
+      },
+      {
+        src: "/images/finds/FB-0012/maker-mark.png",
+        alt:
+          "Underside view documenting the ARTINA SKS ZINN 95% maker and material mark"
+      },
+      {
+        src: "/images/finds/FB-0012/detail-top-to-bottom.png",
+        alt:
+          "Detailed view of the pewter stein showing the lid, lion finial, relief decoration, and lower body"
+      },
+      {
+        src: "/images/finds/FB-0012/three-quarter-views.png",
+        alt:
+          "Multiple views showing the back, right side, full front, and left side of the pewter stein"
+      },
+      {
+        src: "/images/finds/FB-0012/interior-rim-detail.png",
+        alt:
+          "Interior view documenting the hinged lid and small rim ding with minor edge deformation"
+      },
+      {
+        src: "/images/finds/FB-0012/measurement.png",
+        alt:
+          "Measurement view documenting approximately 10 inches in height, 7 inches handle-to-front, and 5 inches body width"
+      },
+    ],
+
+    sections: [
+      "story",
+      "documentary",
+      "photographic-record",
+      "archive-record"
+    ],
+
+    image:
+      "/images/finds/FB-0012/front-display.png",
+    findSlug: "artina-bayern-pewter-stein"
+  },
 ];
