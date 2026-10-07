@@ -1706,7 +1706,143 @@ documentaryFeatureCandidate: true,
       "archive-record"
     ],
 
-    image: "/images/finds/FB-0015/hero-don-quixote.jpg",
+       image: "/images/finds/FB-0015/hero-don-quixote.jpg",
     findSlug: "the-rueful-knight"
+  },
+    {
+    id: "quiet-regard",
+    documentaryNumber: "FB-0016",
+    archiveNumber: "FBA-0016",
+    title: "Quiet Regard",
+    editorialTitle:
+      "Quiet Regard — Signed J. Willis Jusco 2007 Hand-Modeled Ceramic Portrait Wall Relief",
+    shortDescription:
+      "A one-of-a-kind hand-modeled earthenware portrait wall relief signed J. Willis Jusco and dated '07, interpreted as 2007 based on the artist-applied inscription.",
+
+    object: {
+      makerOrAttribution:
+        "Signed J. Willis Jusco, dated '07; no independent biographical or market record for the maker was located during research",
+      objectType:
+        "Hand-modeled earthenware portrait wall relief",
+      style:
+        "Individual studio ceramic portrait relief; maker's biography and artistic lineage not established",
+      countryOfOrigin: "Unattributed / not established",
+      material:
+        "Buff/white earthenware clay body; glossy dark brown-to-black glaze or stain on the face, neck, and hair; matte peach/terracotta speckled ground on the surround",
+      productionPeriod:
+        "2007, based on the artist-applied '07 inscription (research-supported)"
+    },
+
+    dimensions: {
+      overall: "Approx. 12 in × 10 in × 1.5 in",
+      weight: "Approx. 3.08 lb"
+    },
+
+    condition: {
+      summary:
+        "Good — sound and display-ready; no breaks, body cracks, or repairs observed.",
+      observed:
+        "The hand-built relief is structurally sound. The face, neck, hair, surround, and signature remain intact. One reverse hanging hole is worn through to an open notch.",
+      additional:
+        "Natural irregularities associated with hand-building are retained, including the irregular slab-shaped backing, thumb-pressed hollow on the reverse, individually applied and tooled hair coils, and variations along the hand-shaped edges. The title 'Quiet Regard' is descriptive of the observed expression and does not assert the identity of a sitter or the artist's intent."
+    },
+
+    story: {
+      heading: "Quiet Regard",
+      paragraphs: [
+        "This Finicky Bee Finds entry documents a one-of-a-kind hand-modeled ceramic portrait wall relief signed J. Willis Jusco and dated '07. The date is interpreted as 2007 based on the artist-applied inscription.",
+        "The object shows clear evidence of hand-building rather than production casting. The reverse has an irregular slab backing and a natural thumb-pressed hollow, while the hair is formed from individually applied rope-like coils that were further shaped with a tool. The edges and surface also retain the irregularities of direct hand construction.",
+        "The surviving marks are especially important to the record. The reverse lower left is hand-signed with a looped monogram, the date '07,' and the cursive name J. Willis Jusco. The surname JUSCO is also incised into the front border while the clay was still soft.",
+        "Research located no independent biographical, gallery, museum, auction, or ceramic-directory record for the signed maker. The surviving signature is therefore documented as an object-level mark, while the maker's biography, artistic history, and market history remain unestablished.",
+        "Portrait reliefs and ceramic wall plaques have a long history in ceramic art. Quiet Regard belongs to that broad relief tradition, but its individual maker, studio, and artistic lineage remain unestablished beyond the surviving signature."
+      ]
+    },
+
+    documentary: {
+      url: "https://youtu.be/hVvZH9FB3ws",
+      description:
+        "Original Finicky Bee Finds documentary FB-0016."
+    },
+
+    research: {
+      objectIdentification:
+        "One-off, hand-built earthenware portrait wall relief for wall display, with a life-scaled human face and neck modeled in high relief from an irregular hand-shaped clay surround.",
+      physicalDescription:
+        "Hand-modeled ceramic portrait relief with a buff/white earthenware body, dark glossy face, neck, and hair, and a matte peach/terracotta speckled surround. The reverse shows an irregular slab backing, natural thumb-pressed hollow, and two drilled hanging holes. The hair consists of individually applied rope-like coils that were tooled by hand.",
+      productionPeriodNote:
+        "The object is dated by the artist '07,' interpreted as 2007. The date is treated as research-supported because it is an artist-applied inscription; no independent documentation establishing a different production date was located.",
+      attributionNote:
+        "The surviving signature reads J. Willis Jusco with the date '07,' and the surname JUSCO is separately incised into the front border. No independent biographical, gallery, museum, auction, or ceramic-directory record for the signed maker was located during research. The maker's identity and artistic history therefore remain unestablished beyond the surviving object-level marks. This attribution is based on research and examination of the surviving object and has not been professionally authenticated by a qualified specialist."
+    },
+
+    documentation: {
+      sources: [
+  "Original Finicky Bee Finds documentary FB-0016",
+  "Original Finicky Bee photographs",
+  "Finicky Bee Finds archive record and research notes",
+  "Physical examination and documentation of the surviving object",
+  "Surviving J. Willis Jusco signature and '07' date inscription",
+  "Surviving JUSCO incised mark on the front border",
+  "Independent ceramic, museum, art-market, and artist-directory research conducted by Finicky Bee; no independent record for J. Willis Jusco located"
+],
+      integrityStatement:
+        "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, source-attributed information, research-based assessments, and unresolved historical questions are distinguished. The surviving J. Willis Jusco signature and '07' date are documented from the object itself; the date is interpreted as 2007. The maker's biography, studio, market history, and country of origin remain unestablished. No appraisal or valuation is provided."
+    },
+
+    storyPhotoIndex: 1,
+
+    photos: [
+  {
+    src:
+      "/images/finds/FB-0016/Scene%201-Img1.jpg-%20Full%20front%20view.JPG",
+    alt:
+      "Full front view of Quiet Regard, a hand-modeled ceramic portrait wall relief"
+  },
+  {
+    src:
+      "/images/finds/FB-0016/Scene%202-Img2.jpg-back%20view%20the%20back%20of%20the%20scupture%20and%20the%20%20artist%20mark%20signature.png",
+    alt:
+      "Back view documenting the hand-built reverse, hanging holes, and J. Willis Jusco artist signature"
+  },
+  {
+    src:
+      "/images/finds/FB-0016/Scene%203-Img3.jpg-View%20of%20the%20%20artist%20carved%20mark%20%20located%20on%20the%20front%20side%20of%20the%20scupture.JPG",
+    alt:
+      "Detail view documenting the JUSCO mark incised into the front border"
+  },
+  {
+    src:
+      "/images/finds/FB-0016/Scene%204-Img4.jpg-%20detail%20image%20view.JPG",
+    alt:
+      "Detailed view of the modeled ceramic portrait surface and hand-worked features"
+  },
+  {
+    src:
+      "/images/finds/FB-0016/Scene%205-Img5.jpg-View%20of%20the%20scupture%20left%20and%20right%20side.png",
+    alt:
+      "Left and right side views documenting the relief depth and irregular hand-built edges"
+  },
+  {
+    src:
+      "/images/finds/FB-0016/Scene%206%20img6%20%20Measured%20against%20the%20tape%20.jpg",
+    alt:
+      "Measurement view documenting approximately 12 in × 10 in × 1.5 in"
+  }
+],
+
+    sourceListings: {
+      ebay: "https://www.ebay.com/itm/336675240297"
+    },
+
+    sections: [
+      "story",
+      "documentary",
+      "photographic-record",
+      "archive-record"
+    ],
+
+    image:
+      "/images/finds/FB-0016/Scene 1-Img1.jpg- Full front view.JPG",
+    findSlug: "quiet-regard"
   },
 ];
