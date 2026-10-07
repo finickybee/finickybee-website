@@ -1574,4 +1574,139 @@ documentaryFeatureCandidate: true,
     image: "/images/finds/FB-0014/hero-midnight-garden-teapot.jpg",
     findSlug: "midnight-garden-teapot"
   },
+  {
+    id: "the-rueful-knight",
+    documentaryNumber: "FB-0015",
+    archiveNumber: "FBA-0015",
+    title: "The Rueful Knight",
+    editorialTitle: "The Rueful Knight — Mexican Don Quixote Cast Figure",
+    shortDescription:
+      "A late-20th-century Mexican cast-composition figure of Don Quixote de la Mancha, seated at rest with the character's distinctive barber-basin shield, marked HECHO EN MEXICO.",
+
+    object: {
+      makerOrAttribution:
+        "Maker and workshop unattributed; surviving HECHO EN MEXICO mark identifies country of origin only",
+      objectType:
+        "Freestanding figural sculpture — Don Quixote de la Mancha, seated on a rock with round barber-basin shield at base",
+      style:
+        "Mexican decorative statuary in the elongated Spanish folk-art idiom",
+      countryOfOrigin: "Mexico, based on the surviving HECHO EN MEXICO mark",
+      material:
+        "Cast composition — gypsum/plaster or bonded stone-dust resin; unglazed matte white surface (research-based; not lab-verified)",
+      productionPeriod: "Late 20th century, c. 1970–1995 (research-based)"
+    },
+
+    dimensions: {
+      overall: "Approx. 12 in × 5 in × 5 in",
+      weight: "Approx. 2.91 lb"
+    },
+
+    condition: {
+      summary:
+        "Good — honest display condition; complete and undamaged.",
+      observed:
+        "The figure is structurally sound and complete. Hat, head, both arms, both legs, seated rock base, and barber-basin shield are present and unbroken. No cracks, chips, or losses to the sculpture were observed.",
+      additional:
+        "A small orange/peach residue spot is present at the right hand/fingers and reads as adhesive or paint-transfer residue rather than material loss. A faint yellowish spot is visible on the underside near the mark. Light, even surface soiling and handling grime are consistent with age and open-shelf display. No repaint, fills, or evidence of repair were observed. The hollow open cavity at the base is consistent with the construction of this type of cast composition figure and is not considered a defect."
+    },
+
+    story: {
+  heading: "The Rueful Knight",
+  paragraphs: [
+    "This Finicky Bee Finds entry documents a gaunt figure of Don Quixote de la Mancha, seated at rest on a rock with the character's distinctive round barber-basin shield at the base.",
+    "The surviving underside mark reads “HECHO EN MEXICO.” This establishes Mexico as the marked country of origin, while no workshop name, mold number, or artist signature survives to establish a specific maker.",
+    "The elongated treatment is part of a broader visual tradition associated with Don Quixote sculpture and folk-art representations. The Finicky Bee archive identifies this example as belonging to the Mexican cast-composition branch of that decorative-statuary tradition.",
+    "The figure is preserved as received, with its matte bisque-white surface, light soiling, minor residue spots, and intact elongated extremities documented as part of its condition history."
+  ]
+},
+
+    documentary: {
+      url: "https://youtu.be/N2gCRXrSiE4",
+      description:
+        "Original Finicky Bee Finds documentary FB-0015."
+    },
+
+    research: {
+      objectIdentification:
+        "Mexican cast-composition Don Quixote figure in the elongated Spanish folk-art idiom, depicting Don Quixote seated on a rock with a round barber-basin shield at the base.",
+      physicalDescription:
+  "Gaunt, bearded seated figure wearing a wide-brimmed hat, with elongated limbs and a round barber-basin shield at the base. Hollow-cast construction with an open cavity at the underside and visible mold seams.",
+      productionPeriodNote:
+        "The broad production period is assessed as late 20th century, approximately 1970–1995, based on manufacturing method and market context. The exact manufacturing date is not established.",
+      attributionNote:
+        "The maker and workshop remain unattributed. The surviving red HECHO EN MEXICO stamp establishes Mexican manufacture but is treated as a country-of-origin mark rather than a maker's mark. This attribution is based on research and examination of the surviving object and has not been professionally authenticated by a qualified specialist."
+    },
+
+    documentation: {
+      sources: [
+        "Original Finicky Bee Finds documentary FB-0015",
+        "Original Finicky Bee photographs",
+        "Surviving eBay listing documentation",
+        "Surviving Etsy listing documentation",
+        "Physical examination and documentation of the surviving object",
+        "Surviving HECHO EN MEXICO country-of-origin mark",
+        "Research on Don Quixote iconography and the elongated folk-art tradition",
+        "Comparative research on Mexican decorative cast-composition statuary"
+      ],
+      integrityStatement:
+        "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, source-attributed information, research-based assessments, and unresolved historical questions are distinguished. The country of origin is supported by the surviving HECHO EN MEXICO mark; the maker, workshop, and exact manufacturing date remain unestablished. No appraisal or valuation is provided."
+    },
+
+    storyPhotoIndex: 1,
+
+    photos: [
+      {
+        src: "/images/finds/FB-0015/hero-don-quixote.jpg",
+        alt:
+          "Full front view of The Rueful Knight, a seated Don Quixote figure"
+      },
+      {
+        src: "/images/finds/FB-0015/mark-hecho-en-mexico.png",
+        alt:
+          "Underside view documenting the HECHO EN MEXICO country-of-origin mark"
+      },
+      {
+        src: "/images/finds/FB-0015/back-view.jpg",
+        alt:
+          "Back view of The Rueful Knight sculpture"
+      },
+      {
+        src: "/images/finds/FB-0015/side-views.png",
+        alt:
+          "Right and left profile views documenting the seated figure and shield placement"
+      },
+      {
+        src: "/images/finds/FB-0015/head-to-waist.jpg",
+        alt:
+          "Head-to-waist detail showing the gaunt face, beard, and wide-brimmed hat"
+      },
+      {
+        src: "/images/finds/FB-0015/underside-cavity.jpg",
+        alt:
+          "Underside view documenting the hollow cast cavity and construction"
+      },
+      {
+        src: "/images/finds/FB-0015/measurement.jpg",
+        alt:
+          "Measurement view documenting approximately 12 in × 5 in × 5 in",
+      }
+    ],
+
+    sourceListings: {
+      ebay:
+        "https://www.ebay.com/itm/336694497150",
+      etsy:
+        "https://www.etsy.com/listing/4539847442/vintage-don-quixote-bisque-ceramic"
+    },
+
+    sections: [
+      "story",
+      "documentary",
+      "photographic-record",
+      "archive-record"
+    ],
+
+    image: "/images/finds/FB-0015/hero-don-quixote.jpg",
+    findSlug: "the-rueful-knight"
+  },
 ];
