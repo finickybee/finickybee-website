@@ -1447,4 +1447,131 @@ documentaryFeatureCandidate: true,
   image: "/images/finds/FB-0013/hero-six-plates.jpg",
   findSlug: "six-tales-of-neubacher"
 },
+  {
+    id: "midnight-garden-teapot",
+    documentaryNumber: "FB-0014",
+    archiveNumber: "FBA-0014",
+    title: "The Midnight Garden Teapot",
+    editorialTitle: "The Midnight Garden Teapot — Wood & Yeakle English Jet Ware",
+    shortDescription:
+      "A late-19th to early-20th-century English black-glazed earthenware teapot with gilt and raised-enamel floral decoration, marked Wood & Yeakle, New York and ENGLAND.",
+
+    object: {
+      makerOrAttribution:
+        "Manufacturer unattributed; surviving gilt trade/retailer mark reads WOOD & YEAKLE / NEW YORK with ENGLAND",
+      objectType: "Single-serve household teapot",
+      style: "Victorian English Jet Ware / Jackfield-style",
+      countryOfOrigin: "England, based on the surviving ENGLAND mark",
+      material:
+        "Red/terracotta earthenware body with glossy near-black glaze, hand-applied gilding, and raised polychrome enamel decoration",
+      productionPeriod: "Late 19th to early 20th century (research-based)"
+    },
+
+    dimensions: {
+      overall: "Approx. 6 in H × 8 in L × 5 in W",
+      weight: "Approx. 1 lb 6 oz (1.60 lb)"
+    },
+
+    condition: {
+      summary:
+        "Fair — Honest Antique; display-ready; not for food or drink use.",
+      observed:
+        "The teapot is complete with body, handle, spout, and separate lid. No cracks were observed during documentation.",
+      additional:
+        "A glaze chip with material loss is present at the lid locating lug, and glaze loss is present at the spout tip. Heavy limescale and staining remain inside the body and around the lid gallery. Gilt and raised-enamel decoration show rubbing and loss. Strong oil-slick lustre is visible on portions of the black glaze. The lid rim and underside retain original unglazed areas that are distinct from damage."
+    },
+
+    story: {
+      heading: "The Midnight Garden Teapot",
+      paragraphs: [
+        "This Finicky Bee Finds entry documents a small English black-glazed earthenware teapot with a richly decorated surface of gilding and raised polychrome enamel flowers.",
+        "The surviving base mark reads “ENGLAND / WOOD & YEAKLE [anchor] / NEW YORK.” The mark provides strong evidence for the country of manufacture and the surviving trade/retailer name, while no factory mark survives to establish a specific manufacturer.",
+        "The form belongs to the broader Victorian English jet-ware / Jackfield-style tradition of black-glazed earthenware tea wares. Comparative museum research shows that this decorative tradition was used by more than one English pottery, so the Finicky Bee archive does not assign the teapot to a specific factory.",
+        "The object is preserved as received, including its glaze losses, interior scale, worn gilding and enamel, and strong surface lustre. It is documented for display only and should not be used for food or drink."
+      ]
+    },
+
+    documentary: {
+      url: "https://youtu.be/fLyZ4GTQP2U",
+      description:
+        "Original Finicky Bee Finds documentary FB-0014."
+    },
+
+    research: {
+      objectIdentification:
+        "English black-glazed earthenware teapot in the Victorian jet-ware / Jackfield-style tradition, with gilt and raised polychrome enamel floral decoration and a surviving Wood & Yeakle / New York and ENGLAND mark.",
+      physicalDescription:
+        "Small single-serve teapot with red/terracotta earthenware body, glossy near-black glaze, hand-applied gilding, raised white, coral-orange, and turquoise enamel decoration, separate ceramic lid, pierced internal strainer at the spout base, and kiln-stilt pontil scars around the foot.",
+      productionPeriodNote:
+        "The broad production period is assessed as late 19th to early 20th century based on the black-glazed earthenware form, decorative treatment, surviving ENGLAND country mark, and comparative historical research. The exact manufacturing date is not established.",
+      attributionNote:
+        "The manufacturer is unattributed because no factory mark is present. The surviving gilt mark identifies Wood & Yeakle, New York, as the trade/retailer name and states England as the country of manufacture. This attribution is based on research and examination of the surviving object and has not been professionally authenticated by a qualified specialist."
+    },
+
+    documentation: {
+      sources: [
+        "Original Finicky Bee Finds documentary FB-0014",
+        "Original Finicky Bee photographs",
+        "Surviving eBay listing documentation",
+        "Surviving Etsy listing documentation",
+        "Physical examination and documentation of the surviving object",
+        "Surviving gilt ENGLAND / WOOD & YEAKLE / NEW YORK mark",
+        "Museum and ceramics research on English black ware / jet ware / Jackfield-style earthenware"
+      ],
+      integrityStatement:
+        "This record follows the Finicky Bee Documentation Integrity Standard. Observable facts, source-attributed information, research-based assessments, and unresolved historical questions are distinguished. The country of manufacture and surviving Wood & Yeakle trade/retailer name are supported by the object-level mark; the manufacturer and exact manufacturing date remain unestablished. No appraisal or valuation is provided."
+    },
+
+    storyPhotoIndex: 1,
+
+    photos: [
+      {
+        src: "/images/finds/FB-0014/hero-midnight-garden-teapot.jpg",
+        alt:
+          "Full front display of The Midnight Garden Teapot"
+      },
+      {
+        src: "/images/finds/FB-0014/back-mark-wood-yeakle.jpg",
+        alt:
+          "Base view documenting the ENGLAND and Wood & Yeakle New York mark"
+      },
+      {
+        src: "/images/finds/FB-0014/detail-close-up.jpg",
+        alt:
+          "Close view of the gilded and raised-enamel floral decoration on the teapot"
+      },
+      {
+        src: "/images/finds/FB-0014/views-front-back-side.png",
+        alt:
+          "Multiple views showing the front, back, and side of The Midnight Garden Teapot"
+      },
+      {
+        src: "/images/finds/FB-0014/measurement.jpg",
+        alt:
+          "Measurement view documenting the approximately 6-inch height, 8-inch length, 5-inch width, and 1.60-pound weight"
+      },
+      {
+        src: "/images/finds/FB-0014/inside-and-lid.jpg",
+        alt:
+          "Top-to-bottom view documenting the teapot interior and separate lid"
+      }
+    ],
+
+    sourceListings: {
+      ebay:
+        "https://www.ebay.com/itm/336656753342",
+      etsy:
+        "https://www.etsy.com/listing/4528063624/antique-wood-yeakley-new-york-english"
+    },
+
+    sections: [
+      "story",
+      "documentary",
+      "photographic-record",
+      "archive-record"
+    ],
+
+    image: "/images/finds/FB-0014/hero-midnight-garden-teapot.jpg",
+    findSlug: "midnight-garden-teapot"
+  },
 ];
